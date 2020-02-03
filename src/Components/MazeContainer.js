@@ -8,9 +8,16 @@ const MazeContainer = (props) => {
     // 3 stands for the player location
     mazeGrid[currentLocation[0]][currentLocation[1]] = 3;
 
+    const gameRepresentation = mazeGrid.map(row => {
+        const rowRepresentation = row.map(cell => {
+            return <div>{cell}</div>
+        });
+        return <div>{rowRepresentation}</div>
+    });
+
     return (
         <div>
-
+            {gameRepresentation}
         </div>
     )
 };
