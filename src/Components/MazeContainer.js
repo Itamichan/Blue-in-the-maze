@@ -19,6 +19,10 @@ const MazeContainer = (props) => {
     return (
         <div>
             {gameRepresentation}
+            <button onClick={up} >Button up</button>
+            <button onClick={down}>Button down</button>
+            <button onClick={left}>Button left</button>
+            <button onClick={right}>Button right</button>
         </div>
     )
 };
