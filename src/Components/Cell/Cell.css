@@ -1,0 +1,21 @@
+.grid-cell {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.empty-field {
+    background-color: white;
+}
+
+.wall-field {
+    background-color: black;
+}
+
+.finish-field {
+    background-color: green;
+}
+
+.player-field {
+    background-color: red;
+}

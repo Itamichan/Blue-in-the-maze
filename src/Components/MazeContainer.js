@@ -1,5 +1,6 @@
 import React from 'react';
 import useMaze from "./useMaze";
+import Cell from "./Cell/Cell";
 
 const MazeContainer = (props) => {
 
@@ -10,9 +11,9 @@ const MazeContainer = (props) => {
 
     const gameRepresentation = mazeGrid.map(row => {
         const rowRepresentation = row.map(cell => {
-            return <div>{cell}</div>
+            return <Cell cellValue={cell}/>
         });
-        return <div>{rowRepresentation}</div>
+        return <div style={{height: '50px'}}>{rowRepresentation}</div>
     });
 
     return (
