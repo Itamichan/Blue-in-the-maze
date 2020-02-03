@@ -66,5 +66,17 @@ const useMaze = () => {
         if (currentLocation[1] > 0) {
             move (0, -1)
         }
+    };
+
+    return {
+        mazeGrid,
+        currentLocation,
+        finish,
+        up,
+        down,
+        right,
+        left
     }
 };
+
+export default useMaze;
