@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import useMaze from "./useMaze";
 import Cell from "./Cell/Cell";
 
@@ -20,18 +20,40 @@ const MazeContainer = (props) => {
     //setting the winning condition
     let playerWon;
     if (finish) {
-        playerWon =  <div>You found the exit!</div>
+        playerWon = <div>You found the exit!</div>
     }
 
-    return (
-        <div style={{border: '1px solid black'}}>
-            {gameRepresentation}
-            {playerWon}
-            <button onClick={up} >Button up</button>
-            <button onClick={down}>Button down</button>
-            <button onClick={left}>Button left</button>
-            <button onClick={right}>Button right</button>
-        </div>
+    //controlling the player location with arrow keys
+    const handleKeyDown = (e) => {
+        switch (e.keyCode) {
+            case 37:
+                return left();
+            case 38:
+                return up();
+            case 39:
+                return right();
+            case 40:
+                return down();
+            default:
+                return null
+        }
+    };
+
+    return (<Fragment>
+            <div
+                style={{border: '1px solid black'}}
+                tabIndex={-1}
+                onKeyDown={handleKeyDown}>
+                {gameRepresentation}
+            </div>
+            <div>
+                {playerWon}
+                <button onClick={up}>Button up</button>
+                <button onClick={down}>Button down</button>
+                <button onClick={left}>Button left</button>
+                <button onClick={right}>Button right</button>
+            </div>
+        </Fragment>
     )
 };
 
