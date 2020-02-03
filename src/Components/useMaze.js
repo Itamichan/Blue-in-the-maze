@@ -28,7 +28,7 @@ const useMaze = () => {
 
     // initialization of finish var and setting the condition when it becomes true
     let finish = false;
-    if (mazeGrid[currentLocation[0][currentLocation[1]]] === 2) {
+    if (mazeGrid[currentLocation[0]][currentLocation[1]] === 2) {
         finish = true
     }
 
