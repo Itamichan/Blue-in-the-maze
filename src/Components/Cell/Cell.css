@@ -2,9 +2,14 @@
     display: inline-block;
     width: 70px;
     height: 70px;
+
 }
 
 .empty-field {
+    background: url('../../assets/images/tiles_spritesheet.png') -216px 0;
+}
+
+.path-field {
     background: url('../../assets/images/tiles_spritesheet.png') -576px -864px;
 }
 
@@ -17,7 +22,8 @@
 }
 
 .player-field {
-    background: url('../../assets/images/p1_spritesheet.png') -5px -5px;
+    background: url('../../assets/images/p1_spritesheet.PNG') -5px -1px rgba(203, 115, 56, 0.82);
+
 
 
 
