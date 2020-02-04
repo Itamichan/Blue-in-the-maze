@@ -22,10 +22,7 @@
 }
 
 .player-field {
-    background: url('../../assets/images/p1_spritesheet.PNG') -5px -1px rgba(203, 115, 56, 0.82);
-
-
-
+    background: url('../../assets/images/p1_spritesheet.PNG') -5px -1px, url('../../assets/images/tiles_spritesheet.png') -576px -864px;;
 
 
 
