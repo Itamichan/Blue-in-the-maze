@@ -10,11 +10,12 @@ const MazeContainer = (props) => {
     mazeGrid[currentLocation[0]][currentLocation[1]] = 3;
 
     //maps through the mazeGrid to return cells in specific style
-    const gameRepresentation = mazeGrid.map(row => {
-        const rowRepresentation = row.map(cell => {
-            return <Cell cellValue={cell}/>
+    const gameRepresentation = mazeGrid.map((row, rowIndex) => {
+        const rowRepresentation = row.map((cell, cellIndex) => {
+            return <Cell key = {rowIndex.toString() + cellIndex.toString()} cellValue={cell}/>;
+
         });
-        return <div style={{height: '50px'}}>{rowRepresentation}</div>
+        return <div key = {rowIndex.toString()} style={{height: '50px'}}>{rowRepresentation}</div>
     });
 
     //setting the winning condition
