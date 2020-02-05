@@ -1,0 +1,30 @@
+.grid-cell {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+
+}
+
+.empty-field {
+    background: url('../../../assets/images/tiles_spritesheet.png') -216px 0;
+    }
+
+.path-field {
+    background: url('../../../assets/images/tiles_spritesheet.png') -576px -864px;
+}
+
+.wall-field {
+    background: url('../../../assets/images/tiles_spritesheet.png') -504px -720px;
+}
+
+.finish-field {
+    background: url('../../../assets/images/tiles_spritesheet.png') -648px -432px;
+}
+
+.path-field-player {
+    background: url('../../../assets/images/p1_spritesheet.png') -5px -1px, url('../../../assets/images/tiles_spritesheet.png') -576px -864px;
+}
+
+.finish-field-player {
+    background: url('../../../assets/images/p1_spritesheet.png') -5px -1px, url('../../../assets/images/tiles_spritesheet.png') -648px -432px;
+}

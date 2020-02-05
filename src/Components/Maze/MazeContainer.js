@@ -1,6 +1,7 @@
 import React, {Fragment, useEffect, useState} from 'react';
 import useMaze from "./useMaze";
 import Cell from "./Cell/Cell";
+import './MazeContainer.css';
 
 const MazeContainer = (props) => {
 

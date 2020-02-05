@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import MazeContainer from "../MazeContainer";
+import MazeContainer from "../Maze/MazeContainer";
 
 const Layout = (props) => {
 
