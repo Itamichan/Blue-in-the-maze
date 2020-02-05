@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useEffect, useState} from 'react';
 import useMaze from "./useMaze";
 import Cell from "./Cell/Cell";
 
@@ -7,15 +7,16 @@ const MazeContainer = (props) => {
     const {mazeGrid, currentLocation, up, down, right, left, finish} = useMaze();
 
     // 4 stands for the player location
-    mazeGrid[currentLocation[0]][currentLocation[1]] = 4;
+    // mazeGrid[currentLocation[0]][currentLocation[1]] = 4;
 
     //maps through the mazeGrid to return cells in specific style
     const gameRepresentation = mazeGrid.map((row, rowIndex) => {
         const rowRepresentation = row.map((cell, cellIndex) => {
-            return <Cell key = {rowIndex.toString() + cellIndex.toString()} cellValue={cell}/>;
+            let isPlayerHere = currentLocation[0] === rowIndex && currentLocation[1] === cellIndex;
+            return <Cell key={rowIndex.toString() + cellIndex.toString()} cellValue={cell} isPlayerHere={isPlayerHere}/>;
 
         });
-        return <div key = {rowIndex.toString()} style={{height: '70px'}}>{rowRepresentation}</div>
+        return <div key={rowIndex.toString()} style={{height: '70px'}}>{rowRepresentation}</div>
     });
 
     //setting the winning condition
@@ -23,28 +24,53 @@ const MazeContainer = (props) => {
     if (finish) {
         playerWon = <div>You found the exit!</div>
     }
+    //todo behaves weird
+    // useEffect(() => {
+    //     document.addEventListener('keydown', handleKeyDown);
+    //     document.addEventListener('keyup', handleKeyUp)
+    // });
+
+
+    const [currentA, setA] = useState(true);
 
     //controlling the player location with arrow keys
     const handleKeyDown = (e) => {
-        switch (e.keyCode) {
-            case 37:
-                return left();
-            case 38:
-                return up();
-            case 39:
-                return right();
-            case 40:
-                return down();
-            default:
-                return null
+        if (currentA) {
+            switch (e.keyCode) {
+                case 37:
+                    left();
+                    setA(false);
+                    break;
+                case 38:
+                    up();
+                    setA(false);
+                    break;
+                case 39:
+                    right();
+                    setA(false);
+                    break;
+                case 40:
+                    down();
+                    setA(false);
+                    break;
+                default:
+                    break
+            }
         }
+
     };
+
+    const handleKeyUp = (e) => {
+        setA(true)
+    };
+
 
     return (<Fragment>
 
             <div
                 tabIndex={-1}
-                onKeyDown={handleKeyDown}>
+                onKeyDown={handleKeyDown}
+                onKeyUp={handleKeyUp}>
                 {gameRepresentation}
             </div>
             <div>

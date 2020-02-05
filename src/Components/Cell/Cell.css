@@ -7,7 +7,7 @@
 
 .empty-field {
     background: url('../../assets/images/tiles_spritesheet.png') -216px 0;
-}
+    }
 
 .path-field {
     background: url('../../assets/images/tiles_spritesheet.png') -576px -864px;
@@ -21,9 +21,10 @@
     background: url('../../assets/images/tiles_spritesheet.png') -648px -432px;
 }
 
-.player-field {
-    background: url('../../assets/images/p1_spritesheet.PNG') -5px -1px, url('../../assets/images/tiles_spritesheet.png') -576px -864px;;
+.path-field-player {
+    background: url('../../assets/images/p1_spritesheet.png') -5px -1px, url('../../assets/images/tiles_spritesheet.png') -576px -864px;
+}
 
-
-
+.finish-field-player {
+    background: url('../../assets/images/p1_spritesheet.png') -5px -1px, url('../../assets/images/tiles_spritesheet.png') -648px -432px;
 }

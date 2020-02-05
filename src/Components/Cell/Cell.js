@@ -2,7 +2,7 @@ import React from 'react';
 import './Cell.css';
 
 //component which represents every div in the mazeGrid
-const Cell = ({cellValue}) => {
+const Cell = ({cellValue, isPlayerHere}) => {
 
     switch (cellValue) {
         case 0:
@@ -10,11 +10,9 @@ const Cell = ({cellValue}) => {
         case 1:
             return <div className={'grid-cell wall-field'}/>;
         case 2:
-            return <div className={'grid-cell path-field'}/>;
+            return <div className={isPlayerHere? 'grid-cell path-field-player' : 'grid-cell path-field'}/>;
         case 3:
-            return <div className={'grid-cell finish-field'}/>;
-        case 4:
-            return <div className={'grid-cell player-field'}/>;
+            return <div className={isPlayerHere? 'grid-cell finish-field-player' :'grid-cell finish-field'}/>;
         default:
             return null
     }
