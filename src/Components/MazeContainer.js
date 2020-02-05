@@ -12,6 +12,7 @@ const MazeContainer = (props) => {
     //maps through the mazeGrid to return cells in specific style
     const gameRepresentation = mazeGrid.map((row, rowIndex) => {
         const rowRepresentation = row.map((cell, cellIndex) => {
+            //checks the player's location
             let isPlayerHere = currentLocation[0] === rowIndex && currentLocation[1] === cellIndex;
             return <Cell key={rowIndex.toString() + cellIndex.toString()} cellValue={cell} isPlayerHere={isPlayerHere}/>;
 
@@ -31,27 +32,27 @@ const MazeContainer = (props) => {
     // });
 
 
-    const [currentA, setA] = useState(true);
+    const [currentMoveAllowed, setMoveAllowed] = useState(true);
 
     //controlling the player location with arrow keys
     const handleKeyDown = (e) => {
-        if (currentA) {
+        if (currentMoveAllowed) {
             switch (e.keyCode) {
                 case 37:
                     left();
-                    setA(false);
+                    setMoveAllowed(false);
                     break;
                 case 38:
                     up();
-                    setA(false);
+                    setMoveAllowed(false);
                     break;
                 case 39:
                     right();
-                    setA(false);
+                    setMoveAllowed(false);
                     break;
                 case 40:
                     down();
-                    setA(false);
+                    setMoveAllowed(false);
                     break;
                 default:
                     break
@@ -61,7 +62,7 @@ const MazeContainer = (props) => {
     };
 
     const handleKeyUp = (e) => {
-        setA(true)
+        setMoveAllowed(true)
     };
 
 
