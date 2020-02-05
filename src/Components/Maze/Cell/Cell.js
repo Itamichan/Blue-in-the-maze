@@ -6,13 +6,13 @@ const Cell = ({cellValue, isPlayerHere}) => {
 
     switch (cellValue) {
         case 0:
-            return <div className={'grid-cell empty-field'}/>;
+            return <div className={'empty-field'}/>;
         case 1:
-            return <div className={'grid-cell wall-field'}/>;
+            return <div className={'wall-field'}/>;
         case 2:
-            return <div className={isPlayerHere? 'grid-cell path-field-player' : 'grid-cell path-field'}/>;
+            return <div className={isPlayerHere? 'path-field-player' : 'path-field'}/>;
         case 3:
-            return <div className={isPlayerHere? 'grid-cell finish-field-player' :'grid-cell finish-field'}/>;
+            return <div className={isPlayerHere? 'finish-field-player' :'finish-field'}/>;
         default:
             return null
     }

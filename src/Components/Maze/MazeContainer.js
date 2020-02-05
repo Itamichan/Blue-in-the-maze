@@ -18,7 +18,7 @@ const MazeContainer = (props) => {
             return <Cell key={rowIndex.toString() + cellIndex.toString()} cellValue={cell} isPlayerHere={isPlayerHere}/>;
 
         });
-        return <div key={rowIndex.toString()} style={{height: '70px'}}>{rowRepresentation}</div>
+        return <div key={rowIndex.toString()} className={'mazeRow'}>{rowRepresentation}</div>
     });
 
     //setting the winning condition
@@ -70,6 +70,7 @@ const MazeContainer = (props) => {
     return (<Fragment>
 
             <div
+                className={'gameContainer'}
                 tabIndex={-1}
                 onKeyDown={handleKeyDown}
                 onKeyUp={handleKeyUp}>

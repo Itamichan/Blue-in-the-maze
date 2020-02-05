@@ -1,13 +1,8 @@
-.grid-cell {
-    display: inline-block;
-    width: 70px;
-    height: 70px;
 
-}
-
+/*adding bg images to the cells*/
 .empty-field {
     background: url('../../../assets/images/tiles_spritesheet.png') -216px 0;
-    }
+}
 
 .path-field {
     background: url('../../../assets/images/tiles_spritesheet.png') -576px -864px;
@@ -27,4 +22,34 @@
 
 .finish-field-player {
     background: url('../../../assets/images/p1_spritesheet.png') -5px -1px, url('../../../assets/images/tiles_spritesheet.png') -648px -432px;
+}
+
+.mazeRow {
+    height: 7.5vw;
+}
+
+.empty-field, .path-field, .wall-field, .finish-field, .path-field-player, .finish-field-player {
+    display: inline-block;
+    width: 7.5vw;
+    height: 7.5vw;
+}
+
+@media (min-width: 450px) {
+    .mazeRow {
+        height: 17px;
+    }
+
+    .empty-field, .path-field, .wall-field, .finish-field, .path-field-player, .finish-field-player {
+        zoom: 0.25;
+    }
+}
+
+@media (min-width: 900px) {
+    .mazeRow {
+        height: 35px;
+    }
+
+    .empty-field, .path-field, .wall-field, .finish-field, .path-field-player, .finish-field-player {
+        zoom: 0.5;
+    }
 }
