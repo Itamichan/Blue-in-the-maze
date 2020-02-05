@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import MazeContainer from "./Components/MazeContainer";
+import Layout from "./Components/Layout/Layout";
 
 function App() {
     return (
         <div>
-            <MazeContainer/>
+            <Layout/>
         </div>
     );
 }
