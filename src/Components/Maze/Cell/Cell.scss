@@ -1,0 +1,60 @@
+
+/*adding bg images to the cells*/
+
+
+$bgTiles: '../../../assets/images/tiles_spritesheet.png';
+$bgPlayer: '../../../assets/images/p1_spritesheet.png';
+
+.empty-field {
+    background: url(#{$bgTiles}) -216px 0;
+}
+
+.path-field {
+    background: url(#{$bgTiles}) -576px -864px;
+}
+
+.wall-field {
+    background: url(#{$bgTiles}) -504px -720px;
+}
+
+.finish-field {
+    background: url(#{$bgTiles}) -648px -432px;
+}
+
+.path-field-player {
+    background: url(#{$bgPlayer}) -5px -1px, url(#{$bgTiles}) -576px -864px;
+}
+
+.finish-field-player {
+    background: url(#{$bgPlayer}) -5px -1px, url(#{$bgTiles}) -648px -432px;
+}
+
+.mazeRow {
+    height: 7.5vw;
+}
+
+.empty-field, .path-field, .wall-field, .finish-field, .path-field-player, .finish-field-player {
+    display: inline-block;
+    width: 7.5vw;
+    height: 7.5vw;
+}
+
+@media (min-width: 450px) {
+    .mazeRow {
+        height: 17px;
+    }
+
+    .empty-field, .path-field, .wall-field, .finish-field, .path-field-player, .finish-field-player {
+        zoom: 0.25;
+    }
+}
+
+@media (min-width: 900px) {
+    .mazeRow {
+        height: 35px;
+    }
+
+    .empty-field, .path-field, .wall-field, .finish-field, .path-field-player, .finish-field-player {
+        zoom: 0.5;
+    }
+}

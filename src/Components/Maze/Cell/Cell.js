@@ -1,5 +1,5 @@
 import React from 'react';
-import './Cell.css';
+import './Cell.scss';
 
 //component which represents every div in the mazeGrid
 const Cell = ({cellValue, isPlayerHere}) => {

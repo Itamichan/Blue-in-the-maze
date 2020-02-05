@@ -1,55 +1,41 @@
-
 /*adding bg images to the cells*/
 .empty-field {
-    background: url('../../../assets/images/tiles_spritesheet.png') -216px 0;
-}
+  background: url(../../../assets/images/tiles_spritesheet.png) -216px 0; }
 
 .path-field {
-    background: url('../../../assets/images/tiles_spritesheet.png') -576px -864px;
-}
+  background: url(../../../assets/images/tiles_spritesheet.png) -576px -864px; }
 
 .wall-field {
-    background: url('../../../assets/images/tiles_spritesheet.png') -504px -720px;
-}
+  background: url(../../../assets/images/tiles_spritesheet.png) -504px -720px; }
 
 .finish-field {
-    background: url('../../../assets/images/tiles_spritesheet.png') -648px -432px;
-}
+  background: url(../../../assets/images/tiles_spritesheet.png) -648px -432px; }
 
 .path-field-player {
-    background: url('../../../assets/images/p1_spritesheet.png') -5px -1px, url('../../../assets/images/tiles_spritesheet.png') -576px -864px;
-}
+  background: url(../../../assets/images/p1_spritesheet.png) -5px -1px, url(../../../assets/images/tiles_spritesheet.png) -576px -864px; }
 
 .finish-field-player {
-    background: url('../../../assets/images/p1_spritesheet.png') -5px -1px, url('../../../assets/images/tiles_spritesheet.png') -648px -432px;
-}
+  background: url(../../../assets/images/p1_spritesheet.png) -5px -1px, url(../../../assets/images/tiles_spritesheet.png) -648px -432px; }
 
 .mazeRow {
-    height: 7.5vw;
-}
+  height: 7.5vw; }
 
 .empty-field, .path-field, .wall-field, .finish-field, .path-field-player, .finish-field-player {
-    display: inline-block;
-    width: 7.5vw;
-    height: 7.5vw;
-}
+  display: inline-block;
+  width: 7.5vw;
+  height: 7.5vw; }
 
 @media (min-width: 450px) {
-    .mazeRow {
-        height: 17px;
-    }
+  .mazeRow {
+    height: 17px; }
 
-    .empty-field, .path-field, .wall-field, .finish-field, .path-field-player, .finish-field-player {
-        zoom: 0.25;
-    }
-}
-
+  .empty-field, .path-field, .wall-field, .finish-field, .path-field-player, .finish-field-player {
+    zoom: 0.25; } }
 @media (min-width: 900px) {
-    .mazeRow {
-        height: 35px;
-    }
+  .mazeRow {
+    height: 35px; }
 
-    .empty-field, .path-field, .wall-field, .finish-field, .path-field-player, .finish-field-player {
-        zoom: 0.5;
-    }
-}
+  .empty-field, .path-field, .wall-field, .finish-field, .path-field-player, .finish-field-player {
+    zoom: 0.5; } }
+
+/*# sourceMappingURL=Cell.css.map */
