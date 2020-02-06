@@ -11,9 +11,11 @@
   text-align: center;
   padding: 20px 0; }
 
+.containerPaddingTop {
+  padding-top: 24px; }
+
 .buttonCenter {
-  text-align: center;
-  float: left; }
+  text-align: center; }
 
 .buttonJustify {
   text-align: center; }
@@ -23,11 +25,8 @@
   padding: 0;
   width: 25vw;
   height: 10vh; }
-  @media (max-width: 800px) {
+  @media (max-width: 600px) {
     .moveButtons {
-      display: unset; } }
-
-#buttonUp {
-  padding-top: 24px; }
+      display: inline-block; } }
 
 /*# sourceMappingURL=MazeContainer.css.map */

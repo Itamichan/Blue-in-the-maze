@@ -1,6 +1,7 @@
 import React, {Fragment, useEffect, useState} from 'react';
 import useMaze from "./useMaze";
 import Cell from "./Cell/Cell";
+import ControlButtons from "../ControlButtons";
 
 import './MazeContainer.scss';
 import {Container, Row, Col, Button} from 'reactstrap';
@@ -73,46 +74,21 @@ const MazeContainer = (props) => {
 
 
     return (<Fragment>
-            <Container fluid={true} className={'noXPaddings'}>
-                <Row className={'noxMargins'}>
-                    <Col className={'noXPaddings'}>
-                        <div
-                            className={'gameContainer'}
-                            tabIndex={-1}
-                            onKeyDown={handleKeyDown}
-                            onKeyUp={handleKeyUp}>
-                            {gameRepresentation}
-                            {playerWon}
-                        </div>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <Row>
-                            <Col className={'buttonCenter'} id={'buttonUp'}>
-                                <Button className={'moveButtons'} color="warning" onClick={up}>Button up</Button>
-                            </Col>
-                        </Row>
-                        <Row className={'buttonJustify'}>
-                            <Col>
-                                <Button className={'moveButtons'} color="warning" onClick={left}>Button left</Button>
-                            </Col>
-                            <Col>
-                                <Button className={'moveButtons'} color="warning" onClick={right}>Button right</Button>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col className={'buttonCenter'}>
-                                <Button className={'moveButtons'} color="warning" onClick={down}>Button down</Button>
-                            </Col>
-                        </Row>
+            <div
+                className={'gameContainer'}
+                tabIndex={-1}
+                onKeyDown={handleKeyDown}
+                onKeyUp={handleKeyUp}>
+                {gameRepresentation}
+                {playerWon}
+            </div>
 
-
-                    </Col>
-                </Row>
-            </Container>
-
-
+            <ControlButtons
+                up={up}
+                down={down}
+                left={left}
+                right={right}
+            />
         </Fragment>
     )
 };
