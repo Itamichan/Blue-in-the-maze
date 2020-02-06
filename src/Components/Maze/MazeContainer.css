@@ -1,6 +1,32 @@
+.noXPaddings {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
+.noxMargins {
+  margin-left: 0 !important;
+  margin-right: 0 !important; }
+
 .gameContainer {
   background-color: black;
   text-align: center;
   padding: 20px 0; }
+
+.buttonCenter {
+  text-align: center; }
+
+.buttonCombination {
+  text-align: center; }
+
+.moveButtons {
+  display: none;
+  padding: 0;
+  width: 25vw;
+  height: 10vh; }
+  @media (max-width: 800px) {
+    .moveButtons {
+      display: unset; } }
+
+#buttonUp {
+  padding-top: 20px; }
 
 /*# sourceMappingURL=MazeContainer.css.map */

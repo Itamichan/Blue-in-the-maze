@@ -3,11 +3,7 @@ import useMaze from "./useMaze";
 import Cell from "./Cell/Cell";
 
 import './MazeContainer.scss';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
+import {Container, Row, Col, Button} from 'reactstrap';
 
 const MazeContainer = (props) => {
 
@@ -21,7 +17,8 @@ const MazeContainer = (props) => {
         const rowRepresentation = row.map((cell, cellIndex) => {
             //checks the player's location
             let isPlayerHere = currentLocation[0] === rowIndex && currentLocation[1] === cellIndex;
-            return <Cell key={rowIndex.toString() + cellIndex.toString()} cellValue={cell} isPlayerHere={isPlayerHere}/>;
+            return <Cell key={rowIndex.toString() + cellIndex.toString()} cellValue={cell}
+                         isPlayerHere={isPlayerHere}/>;
 
         });
         return <div key={rowIndex.toString()} className={'mazeRow'}>{rowRepresentation}</div>
@@ -76,27 +73,39 @@ const MazeContainer = (props) => {
 
 
     return (<Fragment>
-            <Container fluid={true}>
-                <Row noGutters={true}>
-                    <Col>
+            <Container fluid={true} className={'noXPaddings'}>
+                <Row className={'noxMargins'}>
+                    <Col className={'noXPaddings'}>
                         <div
                             className={'gameContainer'}
                             tabIndex={-1}
                             onKeyDown={handleKeyDown}
                             onKeyUp={handleKeyUp}>
                             {gameRepresentation}
+                            {playerWon}
                         </div>
                     </Col>
                 </Row>
                 <Row>
                     <Col>
-                        <div>
-                            {playerWon}
-                            <Button variant="warning" onClick={up}>Button up</Button>
-                            <Button onClick={down}>Button down</Button>
-                            <Button onClick={left}>Button left</Button>
-                            <Button onClick={right}>Button right</Button>
-                        </div>
+                        <Row>
+                            <Col className={'buttonCenter'} id={'buttonUp'}>
+                                <Button className={'moveButtons'} color="warning" onClick={up}>Button up</Button>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col className={'buttonCombination'}>
+                                <Button className={'moveButtons'} color="warning" onClick={left}>Button left</Button>
+                                <Button className={'moveButtons'} color="warning" onClick={right}>Button right</Button>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col className={'buttonCenter'}>
+                                <Button className={'moveButtons'} color="warning" onClick={down}>Button down</Button>
+                            </Col>
+                        </Row>
+
+
                     </Col>
                 </Row>
             </Container>
