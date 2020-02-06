@@ -1,8 +1,12 @@
 import React, {Fragment, useEffect, useState} from 'react';
 import useMaze from "./useMaze";
 import Cell from "./Cell/Cell";
-import './MazeContainer.css';
+
+import './MazeContainer.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
 const MazeContainer = (props) => {
@@ -72,20 +76,32 @@ const MazeContainer = (props) => {
 
 
     return (<Fragment>
-            <div
-                className={'gameContainer'}
-                tabIndex={-1}
-                onKeyDown={handleKeyDown}
-                onKeyUp={handleKeyUp}>
-                {gameRepresentation}
-            </div>
-            <div>
-                {playerWon}
-                <Button onClick={up}>Button up</Button>
-                <Button onClick={down}>Button down</Button>
-                <Button onClick={left}>Button left</Button>
-                <Button onClick={right}>Button right</Button>
-            </div>
+            <Container fluid={true}>
+                <Row noGutters={true}>
+                    <Col>
+                        <div
+                            className={'gameContainer'}
+                            tabIndex={-1}
+                            onKeyDown={handleKeyDown}
+                            onKeyUp={handleKeyUp}>
+                            {gameRepresentation}
+                        </div>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <div>
+                            {playerWon}
+                            <Button variant="warning" onClick={up}>Button up</Button>
+                            <Button onClick={down}>Button down</Button>
+                            <Button onClick={left}>Button left</Button>
+                            <Button onClick={right}>Button right</Button>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+
+
         </Fragment>
     )
 };
