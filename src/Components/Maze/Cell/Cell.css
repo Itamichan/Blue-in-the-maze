@@ -72,21 +72,21 @@
       height: 40px; } }
 
 .empty-field {
-  background: url("../../../assets/images/brickWall.png"); }
+  background: url("../../../assets/images/game_cells/brickWall.png"); }
 
 .path-field {
-  background: url("../../../assets/images/grassCenter.png"); }
+  background: url("../../../assets/images/game_cells/grassCenter.png"); }
 
 .wall-field {
-  background: url("../../../assets/images/castleCenter.png"); }
+  background: url("../../../assets/images/game_cells/castleCenter.png"); }
 
 .finish-field {
-  background: url("../../../assets/images/door_closedMid.png"); }
+  background: url("../../../assets/images/game_cells/door_closedMid.png"); }
 
 .path-field-player {
-  background: url("../../../assets/images/p1_walk01.png"), url("../../../assets/images/grassCenter.png"); }
+  background: url("../../../assets/images/game_cells/p1_walk01.png"), url("../../../assets/images/game_cells/grassCenter.png"); }
 
 .finish-field-player {
-  background: url("../../../assets/images/p1_walk01.png"), url("../../../assets/images/door_closedMid.png"); }
+  background: url("../../../assets/images/game_cells/p1_walk01.png"), url("../../../assets/images/game_cells/door_closedMid.png"); }
 
 /*# sourceMappingURL=Cell.css.map */
