@@ -43,6 +43,22 @@
       .mazeRow div {
         width: 40px;
         height: 40px; } }
+    @media (min-width: 650px) {
+      .mazeRow div {
+        width: 43px;
+        height: 43px; } }
+    @media (min-width: 700px) {
+      .mazeRow div {
+        width: 46px;
+        height: 46px; } }
+    @media (min-width: 750px) {
+      .mazeRow div {
+        width: 50px;
+        height: 50px; } }
+    @media (min-width: 800px) {
+      .mazeRow div {
+        width: 53px;
+        height: 53px; } }
   @media (min-width: 200px) {
     .mazeRow {
       height: 13px; } }
@@ -70,6 +86,18 @@
   @media (min-width: 600px) {
     .mazeRow {
       height: 40px; } }
+  @media (min-width: 650px) {
+    .mazeRow {
+      height: 43px; } }
+  @media (min-width: 700px) {
+    .mazeRow {
+      height: 46px; } }
+  @media (min-width: 750px) {
+    .mazeRow {
+      height: 50px; } }
+  @media (min-width: 800px) {
+    .mazeRow {
+      height: 53px; } }
 
 .empty-field {
   background: url("../../../assets/images/game_cells/brickWall.png"); }

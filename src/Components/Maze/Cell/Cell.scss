@@ -6,7 +6,7 @@ $bgDoor: '../../../assets/images/game_cells/door_closedMid.png';
 $bgPlayer: '../../../assets/images/game_cells/p1_walk01.png';
 
 $minWidth: 4;
-$maxWidth: 12;
+$maxWidth: 16;
 $stepSize: 50px;
 
 .mazeRow {
@@ -16,6 +16,7 @@ $stepSize: 50px;
     height: 21px;
     background-size: contain;
     background-repeat: no-repeat;
+    //keeps the cells responsive to the screen size until 800px width
     @for $i from $minWidth through $maxWidth {
       @media (min-width: $i*$stepSize) {
         width: floor($i*$stepSize/15);
@@ -25,6 +26,7 @@ $stepSize: 50px;
   }
 
   height: 21px;
+  //keeps the rows responsive to the screen size until 800px width
   @for $i from $minWidth through $maxWidth {
     @media (min-width: $i*$stepSize) {
       height: floor($i*$stepSize/15);
