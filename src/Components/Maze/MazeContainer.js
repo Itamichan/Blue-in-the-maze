@@ -27,9 +27,10 @@ const MazeContainer = (props) => {
         playerWon = <div>You found the exit!</div>
     }
     //todo behaves weird
+    //
     // useEffect(() => {
-    //     document.addEventListener('keydown', handleKeyDown);
-    //     document.addEventListener('keyup', handleKeyUp)
+    //     localStorage.setItem('currentLevel', 'level_1');
+    //     alert(localStorage.getItem('currentLevel'))
     // });
 
 

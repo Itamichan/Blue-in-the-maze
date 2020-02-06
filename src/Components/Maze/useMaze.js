@@ -22,8 +22,24 @@ const useMaze = () => {
         [0, 0, 1, 2, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 ],
     ];
 
+
+
+    let valueX = localStorage.getItem('X');
+    let valueY = localStorage.getItem('Y');
+
+    if (valueX === null) {
+        valueX = 14
+    } else {
+        valueX = parseInt(valueX)
+    }
+
+    if (valueY === null) {
+        valueY = 3
+    } else {
+        valueY = parseInt(valueY)
+    }
     // setting the currentLocation variable
-    const [currentLocation, setCurrentLocation] = useState([14, 3]);
+    const [currentLocation, setCurrentLocation] = useState([valueX, valueY]);
 
     // initialization of finish var and setting the condition when it becomes true
     let finish = false;
@@ -40,6 +56,8 @@ const useMaze = () => {
         // doesn't allow to walk into a wall
         if (mazeGrid[newLocation[0]][newLocation[1]] !== 1) {
             setCurrentLocation(newLocation);
+            localStorage.setItem('X', newLocation[0]);
+            localStorage.setItem('Y', newLocation[1]);
         }
     };
 

@@ -1,41 +1,92 @@
 /*adding bg images to the cells*/
+.mazeRow {
+  height: 21px; }
+  .mazeRow div {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background-size: contain;
+    background-repeat: no-repeat; }
+    @media (min-width: 200px) {
+      .mazeRow div {
+        width: 13px;
+        height: 13px; } }
+    @media (min-width: 250px) {
+      .mazeRow div {
+        width: 16px;
+        height: 16px; } }
+    @media (min-width: 300px) {
+      .mazeRow div {
+        width: 20px;
+        height: 20px; } }
+    @media (min-width: 350px) {
+      .mazeRow div {
+        width: 23px;
+        height: 23px; } }
+    @media (min-width: 400px) {
+      .mazeRow div {
+        width: 26px;
+        height: 26px; } }
+    @media (min-width: 450px) {
+      .mazeRow div {
+        width: 30px;
+        height: 30px; } }
+    @media (min-width: 500px) {
+      .mazeRow div {
+        width: 33px;
+        height: 33px; } }
+    @media (min-width: 550px) {
+      .mazeRow div {
+        width: 36px;
+        height: 36px; } }
+    @media (min-width: 600px) {
+      .mazeRow div {
+        width: 40px;
+        height: 40px; } }
+  @media (min-width: 200px) {
+    .mazeRow {
+      height: 13px; } }
+  @media (min-width: 250px) {
+    .mazeRow {
+      height: 16px; } }
+  @media (min-width: 300px) {
+    .mazeRow {
+      height: 20px; } }
+  @media (min-width: 350px) {
+    .mazeRow {
+      height: 23px; } }
+  @media (min-width: 400px) {
+    .mazeRow {
+      height: 26px; } }
+  @media (min-width: 450px) {
+    .mazeRow {
+      height: 30px; } }
+  @media (min-width: 500px) {
+    .mazeRow {
+      height: 33px; } }
+  @media (min-width: 550px) {
+    .mazeRow {
+      height: 36px; } }
+  @media (min-width: 600px) {
+    .mazeRow {
+      height: 40px; } }
+
 .empty-field {
-  background: url(../../../assets/images/tiles_spritesheet.png) -216px 0; }
+  background: url("../../../assets/images/brickWall.png"); }
 
 .path-field {
-  background: url(../../../assets/images/tiles_spritesheet.png) -576px -864px; }
+  background: url("../../../assets/images/grassCenter.png"); }
 
 .wall-field {
-  background: url(../../../assets/images/tiles_spritesheet.png) -504px -720px; }
+  background: url("../../../assets/images/castleCenter.png"); }
 
 .finish-field {
-  background: url(../../../assets/images/tiles_spritesheet.png) -648px -432px; }
+  background: url("../../../assets/images/door_closedMid.png"); }
 
 .path-field-player {
-  background: url(../../../assets/images/p1_spritesheet.png) -5px -1px, url(../../../assets/images/tiles_spritesheet.png) -576px -864px; }
+  background: url("../../../assets/images/p1_walk01.png"), url("../../../assets/images/grassCenter.png"); }
 
 .finish-field-player {
-  background: url(../../../assets/images/p1_spritesheet.png) -5px -1px, url(../../../assets/images/tiles_spritesheet.png) -648px -432px; }
-
-.mazeRow {
-  height: 7.5vw; }
-
-.empty-field, .path-field, .wall-field, .finish-field, .path-field-player, .finish-field-player {
-  display: inline-block;
-  width: 7.5vw;
-  height: 7.5vw; }
-
-@media (min-width: 450px) {
-  .mazeRow {
-    height: 17px; }
-
-  .empty-field, .path-field, .wall-field, .finish-field, .path-field-player, .finish-field-player {
-    zoom: 0.25; } }
-@media (min-width: 900px) {
-  .mazeRow {
-    height: 35px; }
-
-  .empty-field, .path-field, .wall-field, .finish-field, .path-field-player, .finish-field-player {
-    zoom: 0.5; } }
+  background: url("../../../assets/images/p1_walk01.png"), url("../../../assets/images/door_closedMid.png"); }
 
 /*# sourceMappingURL=Cell.css.map */
