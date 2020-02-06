@@ -2,6 +2,8 @@ import React, {Fragment, useEffect, useState} from 'react';
 import useMaze from "./useMaze";
 import Cell from "./Cell/Cell";
 import './MazeContainer.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from 'react-bootstrap/Button';
 
 const MazeContainer = (props) => {
 
@@ -34,6 +36,7 @@ const MazeContainer = (props) => {
     // });
 
 
+    //setting the rule which allows to move only one move at a time
     const [currentMoveAllowed, setMoveAllowed] = useState(true);
 
     //controlling the player location with arrow keys
@@ -69,7 +72,6 @@ const MazeContainer = (props) => {
 
 
     return (<Fragment>
-
             <div
                 className={'gameContainer'}
                 tabIndex={-1}
@@ -79,10 +81,10 @@ const MazeContainer = (props) => {
             </div>
             <div>
                 {playerWon}
-                <button onClick={up}>Button up</button>
-                <button onClick={down}>Button down</button>
-                <button onClick={left}>Button left</button>
-                <button onClick={right}>Button right</button>
+                <Button onClick={up}>Button up</Button>
+                <Button onClick={down}>Button down</Button>
+                <Button onClick={left}>Button left</Button>
+                <Button onClick={right}>Button right</Button>
             </div>
         </Fragment>
     )
