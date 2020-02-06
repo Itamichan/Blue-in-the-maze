@@ -12,9 +12,10 @@
   padding: 20px 0; }
 
 .buttonCenter {
-  text-align: center; }
+  text-align: center;
+  float: left; }
 
-.buttonCombination {
+.buttonJustify {
   text-align: center; }
 
 .moveButtons {
@@ -27,6 +28,6 @@
       display: unset; } }
 
 #buttonUp {
-  padding-top: 20px; }
+  padding-top: 24px; }
 
 /*# sourceMappingURL=MazeContainer.css.map */

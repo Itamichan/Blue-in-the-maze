@@ -16,10 +16,11 @@
 
 .buttonCenter {
   text-align: center;
+  float: left;
 }
 
-.buttonCombination {
-  text-align: center;
+.buttonJustify {
+    text-align: center;
 }
 
 .moveButtons {
@@ -34,6 +35,6 @@
 }
 
 #buttonUp {
-  padding-top: 20px;
+  padding-top: 24px;
 }
 

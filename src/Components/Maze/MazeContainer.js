@@ -93,9 +93,11 @@ const MazeContainer = (props) => {
                                 <Button className={'moveButtons'} color="warning" onClick={up}>Button up</Button>
                             </Col>
                         </Row>
-                        <Row>
-                            <Col className={'buttonCombination'}>
+                        <Row className={'buttonJustify'}>
+                            <Col>
                                 <Button className={'moveButtons'} color="warning" onClick={left}>Button left</Button>
+                            </Col>
+                            <Col>
                                 <Button className={'moveButtons'} color="warning" onClick={right}>Button right</Button>
                             </Col>
                         </Row>
