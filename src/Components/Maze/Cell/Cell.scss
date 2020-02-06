@@ -16,6 +16,7 @@ $stepSize: 50px;
     height: 21px;
     background-size: contain;
     background-repeat: no-repeat;
+
     //keeps the cells responsive to the screen size until 800px width
     @for $i from $minWidth through $maxWidth {
       @media (min-width: $i*$stepSize) {

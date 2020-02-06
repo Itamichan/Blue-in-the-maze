@@ -10,7 +10,7 @@ const MazeContainer = (props) => {
     // 4 stands for the player location
     // mazeGrid[currentLocation[0]][currentLocation[1]] = 4;
 
-    //maps through the mazeGrid to return cells in specific style
+    //maps through the mazeGrid to return cells in a specific style
     const gameRepresentation = mazeGrid.map((row, rowIndex) => {
         const rowRepresentation = row.map((cell, cellIndex) => {
             //checks the player's location
@@ -21,7 +21,7 @@ const MazeContainer = (props) => {
         return <div key={rowIndex.toString()} className={'mazeRow'}>{rowRepresentation}</div>
     });
 
-    //setting the winning condition
+    //setts the winning condition
     let playerWon;
     if (finish) {
         playerWon = <div>You found the exit!</div>
