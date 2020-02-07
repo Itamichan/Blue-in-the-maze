@@ -1,5 +1,13 @@
 #startButton {
   position: absolute;
-  top: 80%; }
+  top: 87%;
+  left: 35%;
+  width: 30%;
+  background-color: #1db394;
+  font-weight: 600;
+  font-size: 4vw; }
+  @media (min-width: 400px) {
+    #startButton {
+      font-size: 1.5rem; } }
 
 /*# sourceMappingURL=StartButton.css.map */

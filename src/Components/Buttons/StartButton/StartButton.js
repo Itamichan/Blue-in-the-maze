@@ -1,5 +1,8 @@
 import React from 'react';
+
 import {Button, Col, Container, Row} from "reactstrap";
+import './StartButton.scss';
+
 
 const StartButton = (props) => {
     return (
