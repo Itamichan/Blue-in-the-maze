@@ -6,19 +6,19 @@
   background-repeat: no-repeat;
 
 
-  @media (min-width: 0) and (max-width: 299px) {
+  @media (min-width: 0) and (max-width: 399px) {
     width: 100%;
   }
 
   //ensured that the StartGame is always centered
-  $minWidth: 30;
+  $minWidth: 40;
   $maxWidth: 200;
   $stepSize: 10px;
 
   @for $i from $minWidth through $maxWidth {
     @media (min-width: $i*$stepSize) {
-      width: 300px;
-      left: floor((($i*$stepSize)-300)/2);
+      width: 400px;
+      left: floor((($i*$stepSize)-400)/2);
     }
   }
 }
