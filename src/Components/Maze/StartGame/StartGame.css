@@ -4,412 +4,692 @@
   background-image: url("../../../assets/images/intro image.png");
   background-size: contain;
   background-repeat: no-repeat; }
-  @media (max-width: 999px) {
+  @media (min-width: 0) and (max-width: 299px) {
     #startGame {
       width: 100%; } }
+  @media (min-width: 300px) {
+    #startGame {
+      width: 300px;
+      left: 0px; } }
+  @media (min-width: 310px) {
+    #startGame {
+      width: 300px;
+      left: 5px; } }
+  @media (min-width: 320px) {
+    #startGame {
+      width: 300px;
+      left: 10px; } }
+  @media (min-width: 330px) {
+    #startGame {
+      width: 300px;
+      left: 15px; } }
+  @media (min-width: 340px) {
+    #startGame {
+      width: 300px;
+      left: 20px; } }
+  @media (min-width: 350px) {
+    #startGame {
+      width: 300px;
+      left: 25px; } }
+  @media (min-width: 360px) {
+    #startGame {
+      width: 300px;
+      left: 30px; } }
+  @media (min-width: 370px) {
+    #startGame {
+      width: 300px;
+      left: 35px; } }
+  @media (min-width: 380px) {
+    #startGame {
+      width: 300px;
+      left: 40px; } }
+  @media (min-width: 390px) {
+    #startGame {
+      width: 300px;
+      left: 45px; } }
+  @media (min-width: 400px) {
+    #startGame {
+      width: 300px;
+      left: 50px; } }
+  @media (min-width: 410px) {
+    #startGame {
+      width: 300px;
+      left: 55px; } }
+  @media (min-width: 420px) {
+    #startGame {
+      width: 300px;
+      left: 60px; } }
+  @media (min-width: 430px) {
+    #startGame {
+      width: 300px;
+      left: 65px; } }
+  @media (min-width: 440px) {
+    #startGame {
+      width: 300px;
+      left: 70px; } }
+  @media (min-width: 450px) {
+    #startGame {
+      width: 300px;
+      left: 75px; } }
+  @media (min-width: 460px) {
+    #startGame {
+      width: 300px;
+      left: 80px; } }
+  @media (min-width: 470px) {
+    #startGame {
+      width: 300px;
+      left: 85px; } }
+  @media (min-width: 480px) {
+    #startGame {
+      width: 300px;
+      left: 90px; } }
+  @media (min-width: 490px) {
+    #startGame {
+      width: 300px;
+      left: 95px; } }
+  @media (min-width: 500px) {
+    #startGame {
+      width: 300px;
+      left: 100px; } }
+  @media (min-width: 510px) {
+    #startGame {
+      width: 300px;
+      left: 105px; } }
+  @media (min-width: 520px) {
+    #startGame {
+      width: 300px;
+      left: 110px; } }
+  @media (min-width: 530px) {
+    #startGame {
+      width: 300px;
+      left: 115px; } }
+  @media (min-width: 540px) {
+    #startGame {
+      width: 300px;
+      left: 120px; } }
+  @media (min-width: 550px) {
+    #startGame {
+      width: 300px;
+      left: 125px; } }
+  @media (min-width: 560px) {
+    #startGame {
+      width: 300px;
+      left: 130px; } }
+  @media (min-width: 570px) {
+    #startGame {
+      width: 300px;
+      left: 135px; } }
+  @media (min-width: 580px) {
+    #startGame {
+      width: 300px;
+      left: 140px; } }
+  @media (min-width: 590px) {
+    #startGame {
+      width: 300px;
+      left: 145px; } }
+  @media (min-width: 600px) {
+    #startGame {
+      width: 300px;
+      left: 150px; } }
+  @media (min-width: 610px) {
+    #startGame {
+      width: 300px;
+      left: 155px; } }
+  @media (min-width: 620px) {
+    #startGame {
+      width: 300px;
+      left: 160px; } }
+  @media (min-width: 630px) {
+    #startGame {
+      width: 300px;
+      left: 165px; } }
+  @media (min-width: 640px) {
+    #startGame {
+      width: 300px;
+      left: 170px; } }
+  @media (min-width: 650px) {
+    #startGame {
+      width: 300px;
+      left: 175px; } }
+  @media (min-width: 660px) {
+    #startGame {
+      width: 300px;
+      left: 180px; } }
+  @media (min-width: 670px) {
+    #startGame {
+      width: 300px;
+      left: 185px; } }
+  @media (min-width: 680px) {
+    #startGame {
+      width: 300px;
+      left: 190px; } }
+  @media (min-width: 690px) {
+    #startGame {
+      width: 300px;
+      left: 195px; } }
+  @media (min-width: 700px) {
+    #startGame {
+      width: 300px;
+      left: 200px; } }
+  @media (min-width: 710px) {
+    #startGame {
+      width: 300px;
+      left: 205px; } }
+  @media (min-width: 720px) {
+    #startGame {
+      width: 300px;
+      left: 210px; } }
+  @media (min-width: 730px) {
+    #startGame {
+      width: 300px;
+      left: 215px; } }
+  @media (min-width: 740px) {
+    #startGame {
+      width: 300px;
+      left: 220px; } }
+  @media (min-width: 750px) {
+    #startGame {
+      width: 300px;
+      left: 225px; } }
+  @media (min-width: 760px) {
+    #startGame {
+      width: 300px;
+      left: 230px; } }
+  @media (min-width: 770px) {
+    #startGame {
+      width: 300px;
+      left: 235px; } }
+  @media (min-width: 780px) {
+    #startGame {
+      width: 300px;
+      left: 240px; } }
+  @media (min-width: 790px) {
+    #startGame {
+      width: 300px;
+      left: 245px; } }
+  @media (min-width: 800px) {
+    #startGame {
+      width: 300px;
+      left: 250px; } }
+  @media (min-width: 810px) {
+    #startGame {
+      width: 300px;
+      left: 255px; } }
+  @media (min-width: 820px) {
+    #startGame {
+      width: 300px;
+      left: 260px; } }
+  @media (min-width: 830px) {
+    #startGame {
+      width: 300px;
+      left: 265px; } }
+  @media (min-width: 840px) {
+    #startGame {
+      width: 300px;
+      left: 270px; } }
+  @media (min-width: 850px) {
+    #startGame {
+      width: 300px;
+      left: 275px; } }
+  @media (min-width: 860px) {
+    #startGame {
+      width: 300px;
+      left: 280px; } }
+  @media (min-width: 870px) {
+    #startGame {
+      width: 300px;
+      left: 285px; } }
+  @media (min-width: 880px) {
+    #startGame {
+      width: 300px;
+      left: 290px; } }
+  @media (min-width: 890px) {
+    #startGame {
+      width: 300px;
+      left: 295px; } }
+  @media (min-width: 900px) {
+    #startGame {
+      width: 300px;
+      left: 300px; } }
+  @media (min-width: 910px) {
+    #startGame {
+      width: 300px;
+      left: 305px; } }
+  @media (min-width: 920px) {
+    #startGame {
+      width: 300px;
+      left: 310px; } }
+  @media (min-width: 930px) {
+    #startGame {
+      width: 300px;
+      left: 315px; } }
+  @media (min-width: 940px) {
+    #startGame {
+      width: 300px;
+      left: 320px; } }
+  @media (min-width: 950px) {
+    #startGame {
+      width: 300px;
+      left: 325px; } }
+  @media (min-width: 960px) {
+    #startGame {
+      width: 300px;
+      left: 330px; } }
+  @media (min-width: 970px) {
+    #startGame {
+      width: 300px;
+      left: 335px; } }
+  @media (min-width: 980px) {
+    #startGame {
+      width: 300px;
+      left: 340px; } }
+  @media (min-width: 990px) {
+    #startGame {
+      width: 300px;
+      left: 345px; } }
   @media (min-width: 1000px) {
     #startGame {
-      width: 1000px;
-      left: 0px; } }
+      width: 300px;
+      left: 350px; } }
   @media (min-width: 1010px) {
     #startGame {
-      width: 1000px;
-      left: 5px; } }
+      width: 300px;
+      left: 355px; } }
   @media (min-width: 1020px) {
     #startGame {
-      width: 1000px;
-      left: 10px; } }
+      width: 300px;
+      left: 360px; } }
   @media (min-width: 1030px) {
     #startGame {
-      width: 1000px;
-      left: 15px; } }
+      width: 300px;
+      left: 365px; } }
   @media (min-width: 1040px) {
     #startGame {
-      width: 1000px;
-      left: 20px; } }
+      width: 300px;
+      left: 370px; } }
   @media (min-width: 1050px) {
     #startGame {
-      width: 1000px;
-      left: 25px; } }
+      width: 300px;
+      left: 375px; } }
   @media (min-width: 1060px) {
     #startGame {
-      width: 1000px;
-      left: 30px; } }
+      width: 300px;
+      left: 380px; } }
   @media (min-width: 1070px) {
     #startGame {
-      width: 1000px;
-      left: 35px; } }
+      width: 300px;
+      left: 385px; } }
   @media (min-width: 1080px) {
     #startGame {
-      width: 1000px;
-      left: 40px; } }
+      width: 300px;
+      left: 390px; } }
   @media (min-width: 1090px) {
     #startGame {
-      width: 1000px;
-      left: 45px; } }
+      width: 300px;
+      left: 395px; } }
   @media (min-width: 1100px) {
     #startGame {
-      width: 1000px;
-      left: 50px; } }
+      width: 300px;
+      left: 400px; } }
   @media (min-width: 1110px) {
     #startGame {
-      width: 1000px;
-      left: 55px; } }
+      width: 300px;
+      left: 405px; } }
   @media (min-width: 1120px) {
     #startGame {
-      width: 1000px;
-      left: 60px; } }
+      width: 300px;
+      left: 410px; } }
   @media (min-width: 1130px) {
     #startGame {
-      width: 1000px;
-      left: 65px; } }
+      width: 300px;
+      left: 415px; } }
   @media (min-width: 1140px) {
     #startGame {
-      width: 1000px;
-      left: 70px; } }
+      width: 300px;
+      left: 420px; } }
   @media (min-width: 1150px) {
     #startGame {
-      width: 1000px;
-      left: 75px; } }
+      width: 300px;
+      left: 425px; } }
   @media (min-width: 1160px) {
     #startGame {
-      width: 1000px;
-      left: 80px; } }
+      width: 300px;
+      left: 430px; } }
   @media (min-width: 1170px) {
     #startGame {
-      width: 1000px;
-      left: 85px; } }
+      width: 300px;
+      left: 435px; } }
   @media (min-width: 1180px) {
     #startGame {
-      width: 1000px;
-      left: 90px; } }
+      width: 300px;
+      left: 440px; } }
   @media (min-width: 1190px) {
     #startGame {
-      width: 1000px;
-      left: 95px; } }
+      width: 300px;
+      left: 445px; } }
   @media (min-width: 1200px) {
     #startGame {
-      width: 1000px;
-      left: 100px; } }
+      width: 300px;
+      left: 450px; } }
   @media (min-width: 1210px) {
     #startGame {
-      width: 1000px;
-      left: 105px; } }
+      width: 300px;
+      left: 455px; } }
   @media (min-width: 1220px) {
     #startGame {
-      width: 1000px;
-      left: 110px; } }
+      width: 300px;
+      left: 460px; } }
   @media (min-width: 1230px) {
     #startGame {
-      width: 1000px;
-      left: 115px; } }
+      width: 300px;
+      left: 465px; } }
   @media (min-width: 1240px) {
     #startGame {
-      width: 1000px;
-      left: 120px; } }
+      width: 300px;
+      left: 470px; } }
   @media (min-width: 1250px) {
     #startGame {
-      width: 1000px;
-      left: 125px; } }
+      width: 300px;
+      left: 475px; } }
   @media (min-width: 1260px) {
     #startGame {
-      width: 1000px;
-      left: 130px; } }
+      width: 300px;
+      left: 480px; } }
   @media (min-width: 1270px) {
     #startGame {
-      width: 1000px;
-      left: 135px; } }
+      width: 300px;
+      left: 485px; } }
   @media (min-width: 1280px) {
     #startGame {
-      width: 1000px;
-      left: 140px; } }
+      width: 300px;
+      left: 490px; } }
   @media (min-width: 1290px) {
     #startGame {
-      width: 1000px;
-      left: 145px; } }
+      width: 300px;
+      left: 495px; } }
   @media (min-width: 1300px) {
     #startGame {
-      width: 1000px;
-      left: 150px; } }
+      width: 300px;
+      left: 500px; } }
   @media (min-width: 1310px) {
     #startGame {
-      width: 1000px;
-      left: 155px; } }
+      width: 300px;
+      left: 505px; } }
   @media (min-width: 1320px) {
     #startGame {
-      width: 1000px;
-      left: 160px; } }
+      width: 300px;
+      left: 510px; } }
   @media (min-width: 1330px) {
     #startGame {
-      width: 1000px;
-      left: 165px; } }
+      width: 300px;
+      left: 515px; } }
   @media (min-width: 1340px) {
     #startGame {
-      width: 1000px;
-      left: 170px; } }
+      width: 300px;
+      left: 520px; } }
   @media (min-width: 1350px) {
     #startGame {
-      width: 1000px;
-      left: 175px; } }
+      width: 300px;
+      left: 525px; } }
   @media (min-width: 1360px) {
     #startGame {
-      width: 1000px;
-      left: 180px; } }
+      width: 300px;
+      left: 530px; } }
   @media (min-width: 1370px) {
     #startGame {
-      width: 1000px;
-      left: 185px; } }
+      width: 300px;
+      left: 535px; } }
   @media (min-width: 1380px) {
     #startGame {
-      width: 1000px;
-      left: 190px; } }
+      width: 300px;
+      left: 540px; } }
   @media (min-width: 1390px) {
     #startGame {
-      width: 1000px;
-      left: 195px; } }
+      width: 300px;
+      left: 545px; } }
   @media (min-width: 1400px) {
     #startGame {
-      width: 1000px;
-      left: 200px; } }
+      width: 300px;
+      left: 550px; } }
   @media (min-width: 1410px) {
     #startGame {
-      width: 1000px;
-      left: 205px; } }
+      width: 300px;
+      left: 555px; } }
   @media (min-width: 1420px) {
     #startGame {
-      width: 1000px;
-      left: 210px; } }
+      width: 300px;
+      left: 560px; } }
   @media (min-width: 1430px) {
     #startGame {
-      width: 1000px;
-      left: 215px; } }
+      width: 300px;
+      left: 565px; } }
   @media (min-width: 1440px) {
     #startGame {
-      width: 1000px;
-      left: 220px; } }
+      width: 300px;
+      left: 570px; } }
   @media (min-width: 1450px) {
     #startGame {
-      width: 1000px;
-      left: 225px; } }
+      width: 300px;
+      left: 575px; } }
   @media (min-width: 1460px) {
     #startGame {
-      width: 1000px;
-      left: 230px; } }
+      width: 300px;
+      left: 580px; } }
   @media (min-width: 1470px) {
     #startGame {
-      width: 1000px;
-      left: 235px; } }
+      width: 300px;
+      left: 585px; } }
   @media (min-width: 1480px) {
     #startGame {
-      width: 1000px;
-      left: 240px; } }
+      width: 300px;
+      left: 590px; } }
   @media (min-width: 1490px) {
     #startGame {
-      width: 1000px;
-      left: 245px; } }
+      width: 300px;
+      left: 595px; } }
   @media (min-width: 1500px) {
     #startGame {
-      width: 1000px;
-      left: 250px; } }
+      width: 300px;
+      left: 600px; } }
   @media (min-width: 1510px) {
     #startGame {
-      width: 1000px;
-      left: 255px; } }
+      width: 300px;
+      left: 605px; } }
   @media (min-width: 1520px) {
     #startGame {
-      width: 1000px;
-      left: 260px; } }
+      width: 300px;
+      left: 610px; } }
   @media (min-width: 1530px) {
     #startGame {
-      width: 1000px;
-      left: 265px; } }
+      width: 300px;
+      left: 615px; } }
   @media (min-width: 1540px) {
     #startGame {
-      width: 1000px;
-      left: 270px; } }
+      width: 300px;
+      left: 620px; } }
   @media (min-width: 1550px) {
     #startGame {
-      width: 1000px;
-      left: 275px; } }
+      width: 300px;
+      left: 625px; } }
   @media (min-width: 1560px) {
     #startGame {
-      width: 1000px;
-      left: 280px; } }
+      width: 300px;
+      left: 630px; } }
   @media (min-width: 1570px) {
     #startGame {
-      width: 1000px;
-      left: 285px; } }
+      width: 300px;
+      left: 635px; } }
   @media (min-width: 1580px) {
     #startGame {
-      width: 1000px;
-      left: 290px; } }
+      width: 300px;
+      left: 640px; } }
   @media (min-width: 1590px) {
     #startGame {
-      width: 1000px;
-      left: 295px; } }
+      width: 300px;
+      left: 645px; } }
   @media (min-width: 1600px) {
     #startGame {
-      width: 1000px;
-      left: 300px; } }
+      width: 300px;
+      left: 650px; } }
   @media (min-width: 1610px) {
     #startGame {
-      width: 1000px;
-      left: 305px; } }
+      width: 300px;
+      left: 655px; } }
   @media (min-width: 1620px) {
     #startGame {
-      width: 1000px;
-      left: 310px; } }
+      width: 300px;
+      left: 660px; } }
   @media (min-width: 1630px) {
     #startGame {
-      width: 1000px;
-      left: 315px; } }
+      width: 300px;
+      left: 665px; } }
   @media (min-width: 1640px) {
     #startGame {
-      width: 1000px;
-      left: 320px; } }
+      width: 300px;
+      left: 670px; } }
   @media (min-width: 1650px) {
     #startGame {
-      width: 1000px;
-      left: 325px; } }
+      width: 300px;
+      left: 675px; } }
   @media (min-width: 1660px) {
     #startGame {
-      width: 1000px;
-      left: 330px; } }
+      width: 300px;
+      left: 680px; } }
   @media (min-width: 1670px) {
     #startGame {
-      width: 1000px;
-      left: 335px; } }
+      width: 300px;
+      left: 685px; } }
   @media (min-width: 1680px) {
     #startGame {
-      width: 1000px;
-      left: 340px; } }
+      width: 300px;
+      left: 690px; } }
   @media (min-width: 1690px) {
     #startGame {
-      width: 1000px;
-      left: 345px; } }
+      width: 300px;
+      left: 695px; } }
   @media (min-width: 1700px) {
     #startGame {
-      width: 1000px;
-      left: 350px; } }
+      width: 300px;
+      left: 700px; } }
   @media (min-width: 1710px) {
     #startGame {
-      width: 1000px;
-      left: 355px; } }
+      width: 300px;
+      left: 705px; } }
   @media (min-width: 1720px) {
     #startGame {
-      width: 1000px;
-      left: 360px; } }
+      width: 300px;
+      left: 710px; } }
   @media (min-width: 1730px) {
     #startGame {
-      width: 1000px;
-      left: 365px; } }
+      width: 300px;
+      left: 715px; } }
   @media (min-width: 1740px) {
     #startGame {
-      width: 1000px;
-      left: 370px; } }
+      width: 300px;
+      left: 720px; } }
   @media (min-width: 1750px) {
     #startGame {
-      width: 1000px;
-      left: 375px; } }
+      width: 300px;
+      left: 725px; } }
   @media (min-width: 1760px) {
     #startGame {
-      width: 1000px;
-      left: 380px; } }
+      width: 300px;
+      left: 730px; } }
   @media (min-width: 1770px) {
     #startGame {
-      width: 1000px;
-      left: 385px; } }
+      width: 300px;
+      left: 735px; } }
   @media (min-width: 1780px) {
     #startGame {
-      width: 1000px;
-      left: 390px; } }
+      width: 300px;
+      left: 740px; } }
   @media (min-width: 1790px) {
     #startGame {
-      width: 1000px;
-      left: 395px; } }
+      width: 300px;
+      left: 745px; } }
   @media (min-width: 1800px) {
     #startGame {
-      width: 1000px;
-      left: 400px; } }
+      width: 300px;
+      left: 750px; } }
   @media (min-width: 1810px) {
     #startGame {
-      width: 1000px;
-      left: 405px; } }
+      width: 300px;
+      left: 755px; } }
   @media (min-width: 1820px) {
     #startGame {
-      width: 1000px;
-      left: 410px; } }
+      width: 300px;
+      left: 760px; } }
   @media (min-width: 1830px) {
     #startGame {
-      width: 1000px;
-      left: 415px; } }
+      width: 300px;
+      left: 765px; } }
   @media (min-width: 1840px) {
     #startGame {
-      width: 1000px;
-      left: 420px; } }
+      width: 300px;
+      left: 770px; } }
   @media (min-width: 1850px) {
     #startGame {
-      width: 1000px;
-      left: 425px; } }
+      width: 300px;
+      left: 775px; } }
   @media (min-width: 1860px) {
     #startGame {
-      width: 1000px;
-      left: 430px; } }
+      width: 300px;
+      left: 780px; } }
   @media (min-width: 1870px) {
     #startGame {
-      width: 1000px;
-      left: 435px; } }
+      width: 300px;
+      left: 785px; } }
   @media (min-width: 1880px) {
     #startGame {
-      width: 1000px;
-      left: 440px; } }
+      width: 300px;
+      left: 790px; } }
   @media (min-width: 1890px) {
     #startGame {
-      width: 1000px;
-      left: 445px; } }
+      width: 300px;
+      left: 795px; } }
   @media (min-width: 1900px) {
     #startGame {
-      width: 1000px;
-      left: 450px; } }
+      width: 300px;
+      left: 800px; } }
   @media (min-width: 1910px) {
     #startGame {
-      width: 1000px;
-      left: 455px; } }
+      width: 300px;
+      left: 805px; } }
   @media (min-width: 1920px) {
     #startGame {
-      width: 1000px;
-      left: 460px; } }
+      width: 300px;
+      left: 810px; } }
   @media (min-width: 1930px) {
     #startGame {
-      width: 1000px;
-      left: 465px; } }
+      width: 300px;
+      left: 815px; } }
   @media (min-width: 1940px) {
     #startGame {
-      width: 1000px;
-      left: 470px; } }
+      width: 300px;
+      left: 820px; } }
   @media (min-width: 1950px) {
     #startGame {
-      width: 1000px;
-      left: 475px; } }
+      width: 300px;
+      left: 825px; } }
   @media (min-width: 1960px) {
     #startGame {
-      width: 1000px;
-      left: 480px; } }
+      width: 300px;
+      left: 830px; } }
   @media (min-width: 1970px) {
     #startGame {
-      width: 1000px;
-      left: 485px; } }
+      width: 300px;
+      left: 835px; } }
   @media (min-width: 1980px) {
     #startGame {
-      width: 1000px;
-      left: 490px; } }
+      width: 300px;
+      left: 840px; } }
   @media (min-width: 1990px) {
     #startGame {
-      width: 1000px;
-      left: 495px; } }
+      width: 300px;
+      left: 845px; } }
   @media (min-width: 2000px) {
     #startGame {
-      width: 1000px;
-      left: 500px; } }
+      width: 300px;
+      left: 850px; } }
 
 /*# sourceMappingURL=StartGame.css.map */

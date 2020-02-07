@@ -5,19 +5,20 @@
   background-size: contain;
   background-repeat: no-repeat;
 
-  @media (max-width: 999px) {
+
+  @media (min-width: 0) and (max-width: 299px) {
     width: 100%;
   }
 
   //ensured that the StartGame is always centered
-  $minWidth: 100;
+  $minWidth: 30;
   $maxWidth: 200;
   $stepSize: 10px;
 
   @for $i from $minWidth through $maxWidth {
     @media (min-width: $i*$stepSize) {
-      width: 1000px;
-      left: floor((($i*$stepSize)-1000)/2);
+      width: 300px;
+      left: floor((($i*$stepSize)-300)/2);
     }
   }
 }

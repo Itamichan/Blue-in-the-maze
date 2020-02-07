@@ -2,14 +2,15 @@
   text-align: center; }
 #controlButtons .buttonJustify {
   text-align: center; }
-#controlButtons .moveButtons {
-  display: none;
-  padding: 0;
-  width: 25vw;
-  height: 10vh; }
-  @media (max-width: 600px) {
-    #controlButtons .moveButtons {
-      display: inline-block; } }
+@media (min-width: 10px) and (max-width: 480px) {
+  #controlButtons .moveButtons {
+    display: inline-block;
+    padding: 0;
+    width: 25vw;
+    height: 10vh; } }
+@media (min-width: 481px) {
+  #controlButtons .moveButtons {
+    display: none; } }
 #controlButtons .fa-chevron-down, #controlButtons .fa-chevron-up, #controlButtons .fa-chevron-left, #controlButtons .fa-chevron-right {
   font-size: 10vw;
   color: rgba(0, 0, 0, 0.7); }
