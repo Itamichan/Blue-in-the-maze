@@ -2,6 +2,7 @@ import React, {Fragment, useEffect, useState} from 'react';
 import useMaze from "./useMaze";
 import Cell from "./Cell/Cell";
 import ControlButtons from "../Buttons/ControlButtons/ControlButtons";
+import StartGame from "./StartGame/StartGame";
 
 import {Container, Row, Col, Button} from 'reactstrap';
 import './MazeContainer.scss';
