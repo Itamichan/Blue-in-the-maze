@@ -3,8 +3,8 @@ import useMaze from "./useMaze";
 import Cell from "./Cell/Cell";
 import ControlButtons from "../ControlButtons";
 
-import './MazeContainer.scss';
 import {Container, Row, Col, Button} from 'reactstrap';
+import './MazeContainer.scss';
 
 const MazeContainer = (props) => {
 

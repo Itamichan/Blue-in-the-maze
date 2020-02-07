@@ -1,5 +1,7 @@
 import React from 'react';
 import {Button, Col, Container, Row} from "reactstrap";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+
 import PropTypes from 'prop-types';
 
 const ControlButtons = ({up, left, down, right}) => {
@@ -20,7 +22,9 @@ const ControlButtons = ({up, left, down, right}) => {
             </Row>
             <Row>
                 <Col className={'buttonCenter'}>
-                    <Button className={'moveButtons'} color="warning" onClick={down}>Button down</Button>
+                    <Button className={'moveButtons'} color="warning" onClick={down}>
+                        <FontAwesomeIcon icon="coffee"/>
+                    </Button>
                 </Col>
             </Row>
         </Container>
