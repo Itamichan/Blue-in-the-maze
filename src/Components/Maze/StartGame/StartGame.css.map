@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,UAAW;EACT,QAAQ,EAAE,QAAQ;EAClB,gBAAgB,EAAE,KAAK;EACvB,KAAK,EAAE,OAAO;EACd,WAAW,EAAE,GAAG;EAChB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,6CAA6C;EAC/D,eAAe,EAAE,KAAK;EACtB,iBAAiB,EAAE,SAAS",
+"sources": ["StartGame.scss"],
 "names": [],
 "file": "StartGame.css"
 }

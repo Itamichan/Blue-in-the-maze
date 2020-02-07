@@ -29,7 +29,7 @@ const MazeContainer = (props) => {
     //setts the winning condition
     let playerWon;
     if (finish) {
-        playerWon = <div>You found the exit!</div>
+        playerWon = <div id={'playerWon'}>You found the exit!</div>
     }
     //todo behaves weird
     //
@@ -75,13 +75,19 @@ const MazeContainer = (props) => {
 
 
     return (<Fragment>
+
             <div
                 className={'gameContainer'}
                 tabIndex={-1}
                 onKeyDown={handleKeyDown}
                 onKeyUp={handleKeyUp}>
-                {gameRepresentation}
+                <div style={{position: 'relative'}}>
+                    <StartGame/>
+                    {gameRepresentation}
+                </div>
+
                 {playerWon}
+
             </div>
 
             <ControlButtons
