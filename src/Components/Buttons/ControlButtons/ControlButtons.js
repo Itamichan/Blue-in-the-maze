@@ -6,24 +6,30 @@ import PropTypes from 'prop-types';
 
 const ControlButtons = ({up, left, down, right}) => {
     return (
-        <Container fluid={true} className={'containerPaddingTop'}>
+        <Container fluid={true} className={'containerPaddingTop'} id={'controlButtons'}>
             <Row>
                 <Col className={'buttonCenter'}>
-                    <Button className={'moveButtons'} color="warning" onClick={up}>Button up</Button>
+                    <Button className={'moveButtons'} color="warning" onClick={up}>
+                        <FontAwesomeIcon icon="chevron-up"/>
+                    </Button>
                 </Col>
             </Row>
             <Row className={'buttonJustify'}>
                 <Col>
-                    <Button className={'moveButtons'} color="warning" onClick={left}>Button left</Button>
+                    <Button className={'moveButtons'} color="warning" onClick={left}>
+                        <FontAwesomeIcon icon="chevron-left"/>
+                    </Button>
                 </Col>
                 <Col>
-                    <Button className={'moveButtons'} color="warning" onClick={right}>Button right</Button>
+                    <Button className={'moveButtons'} color="warning" onClick={right}>
+                        <FontAwesomeIcon icon="chevron-right"/>
+                    </Button>
                 </Col>
             </Row>
             <Row>
                 <Col className={'buttonCenter'}>
                     <Button className={'moveButtons'} color="warning" onClick={down}>
-                        <FontAwesomeIcon icon="coffee"/>
+                        <FontAwesomeIcon icon="chevron-down"/>
                     </Button>
                 </Col>
             </Row>
