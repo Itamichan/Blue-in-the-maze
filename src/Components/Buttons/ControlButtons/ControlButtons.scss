@@ -4,12 +4,8 @@
     text-align: center;
   }
 
-  .buttonJustify {
-    text-align: center;
-  }
-
   .moveButtons {
-    @media (min-width: 10px) and (max-width: 480px) {
+    @media (min-width: 0) and (max-width: 480px) {
       display: inline-block;
       padding: 0;
       width: 25vw;

@@ -15,7 +15,7 @@ const ControlButtons = ({up, left, down, right}) => {
                     </Button>
                 </Col>
             </Row>
-            <Row className={'buttonJustify'}>
+            <Row className={'buttonCenter'}>
                 <Col>
                     <Button className={'moveButtons'} color="warning" onClick={left}>
                         <FontAwesomeIcon icon="chevron-left"/>

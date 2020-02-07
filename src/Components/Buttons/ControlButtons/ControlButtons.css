@@ -1,8 +1,6 @@
 #controlButtons .buttonCenter {
   text-align: center; }
-#controlButtons .buttonJustify {
-  text-align: center; }
-@media (min-width: 10px) and (max-width: 480px) {
+@media (min-width: 0) and (max-width: 480px) {
   #controlButtons .moveButtons {
     display: inline-block;
     padding: 0;
