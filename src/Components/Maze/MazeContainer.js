@@ -82,7 +82,7 @@ const MazeContainer = (props) => {
                 onKeyDown={handleKeyDown}
                 onKeyUp={handleKeyUp}>
                 <div style={{position: 'relative'}}>
-                    <StartGame/>
+                    {/*<StartGame/>*/}
                     {gameRepresentation}
                 </div>
 
