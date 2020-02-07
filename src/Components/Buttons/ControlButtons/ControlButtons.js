@@ -1,6 +1,7 @@
 import React from 'react';
 import {Button, Col, Container, Row} from "reactstrap";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import './ControlButtons.scss';
 
 import PropTypes from 'prop-types';
 

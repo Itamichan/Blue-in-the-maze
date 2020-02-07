@@ -1,0 +1,25 @@
+#controlButtons {
+
+  .buttonCenter {
+    text-align: center;
+  }
+
+  .buttonJustify {
+    text-align: center;
+  }
+
+  .moveButtons {
+    display: none;
+    padding: 0;
+    width: 25vw;
+    height: 10vh;
+    @media (max-width: 600px) {
+      display: inline-block;
+    }
+  }
+
+  .fa-chevron-down, .fa-chevron-up, .fa-chevron-left, .fa-chevron-right {
+    font-size: 10vw;
+    color: rgba(0, 0, 0, 0.7);
+  }
+}

@@ -8,33 +8,16 @@
   margin-right: 0 !important;
 }
 
+.containerPaddingTop {
+  padding-top: 24px;
+}
+
 .gameContainer {
   background-color: black;
   text-align: center;
   padding: 20px 0;
 }
 
-.containerPaddingTop {
-    padding-top: 24px;
-}
 
-.buttonCenter {
-  text-align: center;
-}
-
-.buttonJustify {
-    text-align: center;
-}
-
-.moveButtons {
-  display: none;
-  padding: 0;
-  width: 25vw;
-  height: 10vh;
-  @media (max-width: 600px) {
-    display: inline-block;
-  }
-
-}
 
 
