@@ -1,12 +1,42 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useState} from 'react';
 import MazeContainer from "../Maze/MazeContainer";
+import StartScreen from "../Maze/StartGame/StartScreen";
+import LevelSelection from "../Maze/LevelSelection";
+
+import GameBackground from "../GameBackground/GameBackground";
 
 
 const Layout = (props) => {
 
+    const [currentScreen, setCurrentScreen] = useState('startScreen');
+
+    const [currentLevel, setCurrentLevel] = useState(null);
+
+    let screenOption;
+    if (currentScreen === 'startScreen') {
+        screenOption = <StartScreen startClicked={() => setCurrentScreen('levelSelection')}/>
+    } else if (currentScreen === 'levelSelection') {
+        screenOption = <LevelSelection chooseLevel={(level) => {
+            setCurrentLevel(level);
+            setCurrentScreen('gamePlay')
+        }}/>
+    } else if (currentScreen === 'gamePlay') {
+        screenOption = <MazeContainer mazeLevel={currentLevel}/>
+    }
+
+
     return (
         <Fragment>
-            <MazeContainer/>
+            <div>
+                navbar
+            </div>
+            <GameBackground>
+                {screenOption}
+            </GameBackground>
+
+            <footer>
+                footer
+            </footer>
 
         </Fragment>
     )

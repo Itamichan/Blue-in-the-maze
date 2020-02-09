@@ -1,45 +1,17 @@
 import {useState} from "react";
+import {LEVELS} from "./levels";
 
-const useMaze = () => {
+const useMaze = (mazeLevel) => {
 
     // data structure of the Maze
     // numbers meaning: 0 - empty; 1 - wall; 2 - path; 3 - finish
-    const mazeGrid = [
-        [1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 1, 0, 1, 0, 0 ],
-        [2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 1, 0, 1, 1, 0 ],
-        [2, 1, 1, 1, 1, 1, 1, 2, 2, 2, 1, 0, 0, 1, 1 ],
-        [2, 1, 1, 0, 0, 1, 2, 2, 1, 1, 1, 1, 1, 2, 2 ],
-        [2, 2, 2, 1, 0, 1, 2, 1, 1, 0, 0, 1, 2, 1, 1 ],
-        [1, 1, 2, 1, 1, 2, 2, 1, 1, 0, 0, 1, 2, 2, 1 ],
-        [0, 1, 2, 1, 2, 2, 1, 1, 1, 0, 1, 1, 1, 2, 1 ],
-        [0, 1, 2, 2, 2, 1, 0, 1, 1, 1, 2, 2, 2, 2, 1 ],
-        [0, 0, 1, 1, 2, 1, 1, 2, 2, 2, 2, 1, 1, 1, 1 ],
-        [0, 0, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 2, 2, 1 ],
-        [0, 0, 1, 2, 2, 2, 2, 2, 2, 1, 2, 1, 1, 2, 1 ],
-        [1, 1, 1, 2, 1, 1, 1, 1, 2, 2, 2, 2, 1, 2, 1 ],
-        [0, 0, 1, 2, 1, 0, 1, 1, 1, 1, 1, 2, 1, 2, 1 ],
-        [0, 0, 1, 2, 1, 0, 0, 0, 0, 0, 1, 2, 2, 2, 1 ],
-        [0, 0, 1, 2, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 ],
-    ];
+    const mazeGrid = LEVELS[mazeLevel].levelGrid;
 
 
 
-    let valueX = localStorage.getItem('X');
-    let valueY = localStorage.getItem('Y');
 
-    if (valueX === null) {
-        valueX = 14
-    } else {
-        valueX = parseInt(valueX)
-    }
-
-    if (valueY === null) {
-        valueY = 3
-    } else {
-        valueY = parseInt(valueY)
-    }
     // setting the currentLocation variable
-    const [currentLocation, setCurrentLocation] = useState([valueX, valueY]);
+    const [currentLocation, setCurrentLocation] = useState(LEVELS[mazeLevel].levelStart);
 
     // initialization of finish var and setting the condition when it becomes true
     let finish = false;
@@ -56,8 +28,6 @@ const useMaze = () => {
         // doesn't allow to walk into a wall
         if (mazeGrid[newLocation[0]][newLocation[1]] !== 1) {
             setCurrentLocation(newLocation);
-            localStorage.setItem('X', newLocation[0]);
-            localStorage.setItem('Y', newLocation[1]);
         }
     };
 

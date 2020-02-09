@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,QAAS;EACP,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,MAAM;EAClB,gBAAgB,EAAE,OAAO;EACzB,OAAO,EAAE,MAAM",
+"sources": ["GameBackground.scss"],
+"names": [],
+"file": "GameBackground.css"
+}

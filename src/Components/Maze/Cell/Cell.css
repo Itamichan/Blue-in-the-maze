@@ -3,71 +3,11 @@
   display: inline-block;
   background-size: contain;
   background-repeat: no-repeat; }
-  @media (min-width: 10px) {
-    .mazeRow div {
-      width: 0px;
-      height: 0px; } }
-  @media (min-width: 20px) {
-    .mazeRow div {
-      width: 1px;
-      height: 1px; } }
-  @media (min-width: 30px) {
-    .mazeRow div {
-      width: 2px;
-      height: 2px; } }
-  @media (min-width: 40px) {
-    .mazeRow div {
-      width: 2px;
-      height: 2px; } }
-  @media (min-width: 50px) {
-    .mazeRow div {
-      width: 3px;
-      height: 3px; } }
-  @media (min-width: 60px) {
-    .mazeRow div {
-      width: 4px;
-      height: 4px; } }
-  @media (min-width: 70px) {
-    .mazeRow div {
-      width: 4px;
-      height: 4px; } }
-  @media (min-width: 80px) {
-    .mazeRow div {
-      width: 5px;
-      height: 5px; } }
-  @media (min-width: 90px) {
-    .mazeRow div {
-      width: 6px;
-      height: 6px; } }
-  @media (min-width: 100px) {
-    .mazeRow div {
-      width: 6px;
-      height: 6px; } }
-  @media (min-width: 110px) {
-    .mazeRow div {
-      width: 7px;
-      height: 7px; } }
-  @media (min-width: 120px) {
-    .mazeRow div {
-      width: 8px;
-      height: 8px; } }
-  @media (min-width: 130px) {
-    .mazeRow div {
-      width: 8px;
-      height: 8px; } }
-  @media (min-width: 140px) {
-    .mazeRow div {
-      width: 9px;
-      height: 9px; } }
   @media (min-width: 150px) {
     .mazeRow div {
       width: 10px;
       height: 10px; } }
-  @media (min-width: 160px) {
-    .mazeRow div {
-      width: 10px;
-      height: 10px; } }
-  @media (min-width: 170px) {
+  @media (min-width: 165px) {
     .mazeRow div {
       width: 11px;
       height: 11px; } }
@@ -75,11 +15,7 @@
     .mazeRow div {
       width: 12px;
       height: 12px; } }
-  @media (min-width: 190px) {
-    .mazeRow div {
-      width: 12px;
-      height: 12px; } }
-  @media (min-width: 200px) {
+  @media (min-width: 195px) {
     .mazeRow div {
       width: 13px;
       height: 13px; } }
@@ -87,11 +23,7 @@
     .mazeRow div {
       width: 14px;
       height: 14px; } }
-  @media (min-width: 220px) {
-    .mazeRow div {
-      width: 14px;
-      height: 14px; } }
-  @media (min-width: 230px) {
+  @media (min-width: 225px) {
     .mazeRow div {
       width: 15px;
       height: 15px; } }
@@ -99,11 +31,7 @@
     .mazeRow div {
       width: 16px;
       height: 16px; } }
-  @media (min-width: 250px) {
-    .mazeRow div {
-      width: 16px;
-      height: 16px; } }
-  @media (min-width: 260px) {
+  @media (min-width: 255px) {
     .mazeRow div {
       width: 17px;
       height: 17px; } }
@@ -111,11 +39,7 @@
     .mazeRow div {
       width: 18px;
       height: 18px; } }
-  @media (min-width: 280px) {
-    .mazeRow div {
-      width: 18px;
-      height: 18px; } }
-  @media (min-width: 290px) {
+  @media (min-width: 285px) {
     .mazeRow div {
       width: 19px;
       height: 19px; } }
@@ -123,11 +47,7 @@
     .mazeRow div {
       width: 20px;
       height: 20px; } }
-  @media (min-width: 310px) {
-    .mazeRow div {
-      width: 20px;
-      height: 20px; } }
-  @media (min-width: 320px) {
+  @media (min-width: 315px) {
     .mazeRow div {
       width: 21px;
       height: 21px; } }
@@ -135,11 +55,7 @@
     .mazeRow div {
       width: 22px;
       height: 22px; } }
-  @media (min-width: 340px) {
-    .mazeRow div {
-      width: 22px;
-      height: 22px; } }
-  @media (min-width: 350px) {
+  @media (min-width: 345px) {
     .mazeRow div {
       width: 23px;
       height: 23px; } }
@@ -147,142 +63,58 @@
     .mazeRow div {
       width: 24px;
       height: 24px; } }
-  @media (min-width: 370px) {
-    .mazeRow div {
-      width: 24px;
-      height: 24px; } }
-  @media (min-width: 380px) {
+  @media (min-width: 375px) {
     .mazeRow div {
       width: 25px;
       height: 25px; } }
-  @media (min-width: 390px) {
-    .mazeRow div {
-      width: 26px;
-      height: 26px; } }
-  @media (min-width: 400px) {
-    .mazeRow div {
-      width: 26px;
-      height: 26px; } }
-@media (min-width: 10px) {
-  .mazeRow {
-    height: 0px; } }
-@media (min-width: 20px) {
-  .mazeRow {
-    height: 1px; } }
-@media (min-width: 30px) {
-  .mazeRow {
-    height: 2px; } }
-@media (min-width: 40px) {
-  .mazeRow {
-    height: 2px; } }
-@media (min-width: 50px) {
-  .mazeRow {
-    height: 3px; } }
-@media (min-width: 60px) {
-  .mazeRow {
-    height: 4px; } }
-@media (min-width: 70px) {
-  .mazeRow {
-    height: 4px; } }
-@media (min-width: 80px) {
-  .mazeRow {
-    height: 5px; } }
-@media (min-width: 90px) {
-  .mazeRow {
-    height: 6px; } }
-@media (min-width: 100px) {
-  .mazeRow {
-    height: 6px; } }
-@media (min-width: 110px) {
-  .mazeRow {
-    height: 7px; } }
-@media (min-width: 120px) {
-  .mazeRow {
-    height: 8px; } }
-@media (min-width: 130px) {
-  .mazeRow {
-    height: 8px; } }
-@media (min-width: 140px) {
-  .mazeRow {
-    height: 9px; } }
 @media (min-width: 150px) {
   .mazeRow {
     height: 10px; } }
-@media (min-width: 160px) {
-  .mazeRow {
-    height: 10px; } }
-@media (min-width: 170px) {
+@media (min-width: 165px) {
   .mazeRow {
     height: 11px; } }
 @media (min-width: 180px) {
   .mazeRow {
     height: 12px; } }
-@media (min-width: 190px) {
-  .mazeRow {
-    height: 12px; } }
-@media (min-width: 200px) {
+@media (min-width: 195px) {
   .mazeRow {
     height: 13px; } }
 @media (min-width: 210px) {
   .mazeRow {
     height: 14px; } }
-@media (min-width: 220px) {
-  .mazeRow {
-    height: 14px; } }
-@media (min-width: 230px) {
+@media (min-width: 225px) {
   .mazeRow {
     height: 15px; } }
 @media (min-width: 240px) {
   .mazeRow {
     height: 16px; } }
-@media (min-width: 250px) {
-  .mazeRow {
-    height: 16px; } }
-@media (min-width: 260px) {
+@media (min-width: 255px) {
   .mazeRow {
     height: 17px; } }
 @media (min-width: 270px) {
   .mazeRow {
     height: 18px; } }
-@media (min-width: 280px) {
-  .mazeRow {
-    height: 18px; } }
-@media (min-width: 290px) {
+@media (min-width: 285px) {
   .mazeRow {
     height: 19px; } }
 @media (min-width: 300px) {
   .mazeRow {
     height: 20px; } }
-@media (min-width: 310px) {
-  .mazeRow {
-    height: 20px; } }
-@media (min-width: 320px) {
+@media (min-width: 315px) {
   .mazeRow {
     height: 21px; } }
 @media (min-width: 330px) {
   .mazeRow {
     height: 22px; } }
-@media (min-width: 340px) {
-  .mazeRow {
-    height: 22px; } }
-@media (min-width: 350px) {
+@media (min-width: 345px) {
   .mazeRow {
     height: 23px; } }
 @media (min-width: 360px) {
   .mazeRow {
     height: 24px; } }
-@media (min-width: 370px) {
-  .mazeRow {
-    height: 24px; } }
-@media (min-width: 380px) {
+@media (min-width: 375px) {
   .mazeRow {
     height: 25px; } }
-@media (min-width: 390px) {
-  .mazeRow {
-    height: 26px; } }
-@media (min-width: 400px) {
-  .mazeRow {
-    height: 26px; } }
 
 .empty-field {
   background: url("../../../assets/images/game_cells/brickWall.png"); }

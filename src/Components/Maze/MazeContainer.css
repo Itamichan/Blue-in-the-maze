@@ -9,11 +9,6 @@
 .containerPaddingTop {
   padding-top: 24px; }
 
-.gameContainer {
-  background-color: black;
-  text-align: center;
-  padding: 20px 0; }
-
 #playerWon {
   color: white; }
 

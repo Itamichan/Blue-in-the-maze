@@ -1,12 +1,14 @@
 import React from 'react';
 
-import {Button, Col, Container, Row} from "reactstrap";
+import {Button} from "reactstrap";
 import './StartButton.scss';
 
 
-const StartButton = (props) => {
+const StartButton = ({start}) => {
     return (
-        <Button id={'startButton'}>
+        <Button id={'startButton'}
+        onClick={start}
+        >
             Start
         </Button>
 

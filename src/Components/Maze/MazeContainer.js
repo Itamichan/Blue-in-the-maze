@@ -1,15 +1,14 @@
-import React, {Fragment, useEffect, useState} from 'react';
+import React, {Fragment, useState} from 'react';
 import useMaze from "./useMaze";
 import Cell from "./Cell/Cell";
 import ControlButtons from "../Buttons/ControlButtons/ControlButtons";
-import StartGame from "./StartGame/StartGame";
-
-import {Container, Row, Col, Button} from 'reactstrap';
 import './MazeContainer.scss';
 
-const MazeContainer = (props) => {
+import PropTypes from 'prop-types';
 
-    const {mazeGrid, currentLocation, up, down, right, left, finish} = useMaze();
+const MazeContainer = ({mazeLevel}) => {
+
+    const {mazeGrid, currentLocation, up, down, right, left, finish} = useMaze(mazeLevel);
 
     // 4 stands for the player location
     // mazeGrid[currentLocation[0]][currentLocation[1]] = 4;
@@ -81,12 +80,9 @@ const MazeContainer = (props) => {
                 tabIndex={-1}
                 onKeyDown={handleKeyDown}
                 onKeyUp={handleKeyUp}>
-                <div id={'gameLayers'}>
-                    <StartGame/>
-                    {gameRepresentation}
-                </div>
-
+                {gameRepresentation}
                 {playerWon}
+
 
             </div>
 
@@ -98,6 +94,10 @@ const MazeContainer = (props) => {
             />
         </Fragment>
     )
+};
+
+MazeContainer.prototype = {
+    mazeLevel: PropTypes.string.isRequired
 };
 
 export default MazeContainer;

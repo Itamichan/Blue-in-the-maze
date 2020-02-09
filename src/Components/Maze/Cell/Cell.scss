@@ -5,9 +5,9 @@ $bgEarth: '../../../assets/images/game_cells/brickWall.png';
 $bgDoor: '../../../assets/images/game_cells/door_closedMid.png';
 $bgPlayer: '../../../assets/images/game_cells/p1_walk01.png';
 
-$minWidth: 1;
-$maxWidth: 40;
-$stepSize: 10px;
+$minWidth: 10;
+$maxWidth: 25;
+$stepSize: 15px;
 
 .mazeRow {
   div {
