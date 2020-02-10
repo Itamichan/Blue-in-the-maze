@@ -1,14 +1,20 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import GameScreen from "../Layout/GameScreen/GameScreen";
+import StartButton from "./Buttons/StartButton/StartButton";
 
 
 const StartScreen = ({onStartClick}) => {
 
     return (
-        <GameScreen
-            screenBackground="./intro-image.png"
-            onButtonClick={onStartClick}
-        />
+        <Fragment>
+            <GameScreen
+                screenBackground="./intro-image.png"/>
+            <StartButton
+                changeScreen={onStartClick}
+                buttonName={'Start'}
+            />
+        </Fragment>
+
     )
 };
 

@@ -6,7 +6,7 @@ import {LEVELS} from "./levels";
 
 const LevelSelection = ({chooseLevel}) => {
 
-    let levelsArray = Object.keys(LEVELS).map((i, idx) => {
+    let availableLevel = Object.keys(LEVELS).map((i, idx) => {
 
         return <StartButton
             buttonName={`level ${idx+1}`}
@@ -18,11 +18,11 @@ const LevelSelection = ({chooseLevel}) => {
 
     return (
         <Fragment>
-            <div id={'game-screen'}>
-                <img src="./bg-for-screen-state.png" alt="background image"/>
-                <h1>Level selection screen</h1>
-                {levelsArray}
-            </div>
+            <GameScreen
+                screenBackground="./bg-for-screen-state.png"
+                screenHeader={'Level selection screen'}
+            />
+                {availableLevel}
         </Fragment>
     )
 };
