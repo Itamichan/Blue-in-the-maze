@@ -1,8 +1,5 @@
 #startButton {
-  flex: 1;
-  flex-direction: row;
-  align-items: center;
-  position: absolute;
+  display: block;
   font-size: 1.5rem;
   background-color: #1db394;
   font-weight: 600; }

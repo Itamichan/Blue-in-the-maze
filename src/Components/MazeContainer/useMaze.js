@@ -8,8 +8,6 @@ const useMaze = (mazeLevel) => {
     const mazeGrid = LEVELS[mazeLevel].levelGrid;
 
 
-
-
     // setting the currentLocation variable
     const [currentLocation, setCurrentLocation] = useState(LEVELS[mazeLevel].levelStart);
 

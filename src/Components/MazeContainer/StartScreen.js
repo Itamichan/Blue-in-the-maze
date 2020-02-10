@@ -7,7 +7,6 @@ const StartScreen = ({onStartClick}) => {
     return (
         <GameScreen
             screenBackground="./intro-image.png"
-            screenHeader="First screen"
             onButtonClick={onStartClick}
         />
     )
