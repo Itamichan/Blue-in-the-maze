@@ -7,7 +7,7 @@ const FinishScreen = ({startClicked}) => {
     return (
         <Fragment>
             <div id={'startScreen'}>
-                <img src="intro-image.png" alt="game image"/>
+                <img src="./bg-for-screen-state.png" alt="background image"/>
                 <div id={'gameName'}>
                     Finish screen
                 </div>
