@@ -21,9 +21,12 @@ const Layout = (props) => {
             setCurrentScreen('gamePlay')
         }}/>
     } else if (currentScreen === 'gamePlay') {
-        screenOption = <MazeContainer mazeLevel={currentLevel}/>
+        screenOption = <MazeContainer
+            mazeLevel={currentLevel}
+            onPlayerFinish={() => setCurrentScreen('finishScreen')}/>
+    } else if (currentScreen === 'finishScreen') {
+        screenOption = <div/>
     }
-
 
     return (
         <Fragment>

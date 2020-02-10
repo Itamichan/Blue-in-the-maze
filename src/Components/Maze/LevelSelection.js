@@ -1,12 +1,11 @@
-import React, {Fragment, useState} from 'react';
+import React, {Fragment} from 'react';
 import StartButton from "../Buttons/StartButton/StartButton";
 import '../Maze/StartGame/StartScreen.scss';
 
 import PropTypes from 'prop-types';
 
-import ControlButtons from "../Buttons/ControlButtons/ControlButtons";
-
 const LevelSelection = ({chooseLevel}) => {
+
 
     return (
         <Fragment>

@@ -6,7 +6,7 @@ import './MazeContainer.scss';
 
 import PropTypes from 'prop-types';
 
-const MazeContainer = ({mazeLevel}) => {
+const MazeContainer = ({mazeLevel, onPlayerFinish}) => {
 
     const {mazeGrid, currentLocation, up, down, right, left, finish} = useMaze(mazeLevel);
 
@@ -26,9 +26,9 @@ const MazeContainer = ({mazeLevel}) => {
     });
 
     //setts the winning condition
-    let playerWon;
+
     if (finish) {
-        playerWon = <div id={'playerWon'}>You found the exit!</div>
+       onPlayerFinish()
     }
     //todo behaves weird
     //
@@ -81,9 +81,6 @@ const MazeContainer = ({mazeLevel}) => {
                 onKeyDown={handleKeyDown}
                 onKeyUp={handleKeyUp}>
                 {gameRepresentation}
-                {playerWon}
-
-
             </div>
 
             <ControlButtons
