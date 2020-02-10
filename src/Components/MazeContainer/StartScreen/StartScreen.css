@@ -2,18 +2,5 @@
   width: 100%;
   height: auto;
   max-width: 375px; }
-#startScreen #gameName {
-  position: absolute;
-  top: 25%;
-  left: 10%;
-  width: 80%;
-  font-weight: 600;
-  font-size: 2rem; }
-  @media (min-width: 400px) {
-    #startScreen #gameName {
-      font-size: 3rem; } }
-
-#hideStartGame {
-  display: none; }
 
 /*# sourceMappingURL=StartScreen.css.map */
