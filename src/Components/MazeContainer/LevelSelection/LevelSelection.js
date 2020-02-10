@@ -31,8 +31,10 @@ const LevelSelection = ({chooseLevel}) => {
             <GameScreen
                 screenBackground="./bg-for-screen-state.png"
                 screenHeader={'Level selection screen'}
-            />
+            >
                 {availableLevel}
+            </GameScreen>
+
         </Fragment>
     )
 };
