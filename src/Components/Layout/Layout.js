@@ -4,6 +4,7 @@ import StartScreen from "../Maze/StartGame/StartScreen";
 import LevelSelection from "../Maze/LevelSelection";
 
 import GameBackground from "../GameBackground/GameBackground";
+import FinishScreen from "../Maze/FinishScreen";
 
 
 const Layout = (props) => {
@@ -25,7 +26,7 @@ const Layout = (props) => {
             mazeLevel={currentLevel}
             onPlayerFinish={() => setCurrentScreen('finishScreen')}/>
     } else if (currentScreen === 'finishScreen') {
-        screenOption = <div/>
+        screenOption = <FinishScreen/>
     }
 
     return (
