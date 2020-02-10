@@ -4,10 +4,10 @@ import {Button} from "reactstrap";
 import './StartButton.scss';
 
 
-const StartButton = ({start}) => {
+const StartButton = ({changeScreen}) => {
     return (
         <Button id={'startButton'}
-        onClick={start}
+        onClick={changeScreen}
         >
             Start
         </Button>

@@ -1,22 +1,18 @@
-import React, {Fragment} from 'react';
-import StartButton from "../Buttons/StartButton/StartButton";
-import '../StartScreen/StartScreen.scss';
+import React from 'react';
+
 
 import PropTypes from 'prop-types';
+import GameScreen from "../../Layout/GameScreen/GameScreen";
 
 const LevelSelection = ({chooseLevel}) => {
 
 
     return (
-        <Fragment>
-            <div id={'startScreen'}>
-                <img src="./bg-for-screen-state.png" alt="background image"/>
-                <div id={'gameName'}>
-                    Level selection
-                </div>
-                <StartButton start={() => chooseLevel('level2')}/>
-            </div>
-        </Fragment>
+        <GameScreen
+            screenBackground="./intro-image.png"
+            screenHeader="Level selection screen"
+            onButtonClick={() => chooseLevel('level2')}
+        />
     )
 };
 
