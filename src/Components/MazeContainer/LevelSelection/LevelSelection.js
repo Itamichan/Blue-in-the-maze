@@ -8,8 +8,18 @@ const LevelSelection = ({chooseLevel}) => {
 
     let availableLevel = Object.keys(LEVELS).map((i, idx) => {
 
+        let levelDifficulty;
+        if (idx === 0) {
+            levelDifficulty = 'Easy'
+        } else if (idx === 1) {
+            levelDifficulty = 'Medium'
+        } else if (idx === 2) {
+            levelDifficulty = 'Hard'
+        }
+
+
         return <StartButton
-            buttonName={`level ${idx+1}`}
+            buttonName={levelDifficulty}
             changeScreen={() => chooseLevel(i)}
             key={`level ${idx+1}`}
         />;
