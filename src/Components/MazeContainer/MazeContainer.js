@@ -1,7 +1,7 @@
 import React, {Fragment, useState} from 'react';
 import useMaze from "./useMaze";
 import Cell from "./Cell/Cell";
-import ControlButtons from "../Buttons/ControlButtons/ControlButtons";
+import ControlButtons from "./Buttons/ControlButtons/ControlButtons";
 import './MazeContainer.scss';
 
 import PropTypes from 'prop-types';

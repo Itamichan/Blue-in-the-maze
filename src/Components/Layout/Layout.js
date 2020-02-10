@@ -1,10 +1,10 @@
 import React, {Fragment, useState} from 'react';
-import MazeContainer from "../Maze/MazeContainer";
-import StartScreen from "../Maze/StartGame/StartScreen";
-import LevelSelection from "../Maze/LevelSelection";
+import MazeContainer from "../MazeContainer/MazeContainer";
+import StartScreen from "../MazeContainer/StartScreen/StartScreen";
+import LevelSelection from "../MazeContainer/LevelSelection/LevelSelection";
 
-import GameBackground from "../GameBackground/GameBackground";
-import FinishScreen from "../Maze/FinishScreen";
+import GameBackground from "./GameBackground/GameBackground";
+import FinishScreen from "../MazeContainer/FinishScreen/FinishScreen";
 
 
 const Layout = (props) => {

@@ -1,5 +1,5 @@
 import React, {Fragment, useState} from 'react';
-import StartButton from "../../Buttons/StartButton/StartButton";
+import StartButton from "../Buttons/StartButton/StartButton";
 import './StartScreen.scss';
 
 const StartScreen = ({startClicked}) => {

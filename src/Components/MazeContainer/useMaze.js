@@ -1,9 +1,9 @@
 import {useState} from "react";
-import {LEVELS} from "./levels";
+import {LEVELS} from "./LevelSelection/levels";
 
 const useMaze = (mazeLevel) => {
 
-    // data structure of the Maze
+    // data structure of the MazeContainer
     // numbers meaning: 0 - empty; 1 - wall; 2 - path; 3 - finish
     const mazeGrid = LEVELS[mazeLevel].levelGrid;
 

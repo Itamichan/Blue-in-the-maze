@@ -1,27 +1,20 @@
 import React, {Fragment} from 'react';
 import StartButton from "../Buttons/StartButton/StartButton";
-import '../Maze/StartGame/StartScreen.scss';
+import '../StartScreen/StartScreen.scss';
 
-import PropTypes from 'prop-types';
-
-const LevelSelection = ({chooseLevel}) => {
-
+const FinishScreen = ({startClicked}) => {
 
     return (
         <Fragment>
             <div id={'startScreen'}>
                 <img src="intro-image.png" alt="game image"/>
                 <div id={'gameName'}>
-                    Level selection
+                    Finish screen
                 </div>
-                <StartButton start={() => chooseLevel('level2')}/>
+                <StartButton start={startClicked}/>
             </div>
         </Fragment>
     )
 };
 
-LevelSelection.prototype = {
-    chooseLevel: PropTypes.func.isRequired
-};
-
-export default LevelSelection;
+export default FinishScreen;
