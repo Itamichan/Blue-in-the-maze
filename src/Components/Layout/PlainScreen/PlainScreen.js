@@ -1,11 +1,11 @@
 import React, {Fragment} from 'react';
-import './GameScreen.scss';
+import './PlainScreen.scss';
 
-const GameScreen = ({textArea, screenHeader, screenBackground, children}) => {
+const PlainScreen = ({textArea, screenHeader, screenBackground, children}) => {
 
     return (
         <Fragment>
-            <div id={'game-screen'}>
+            <div id={'plain-screen'}>
                 <img src={screenBackground} alt="background image"/>
                 <div className={'screenHead'}>{children}</div>
 
@@ -14,4 +14,4 @@ const GameScreen = ({textArea, screenHeader, screenBackground, children}) => {
     )
 };
 
-export default GameScreen;
+export default PlainScreen;

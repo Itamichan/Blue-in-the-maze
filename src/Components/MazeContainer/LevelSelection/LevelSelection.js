@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import GameScreen from "../../Layout/GameScreen/GameScreen";
+import GameScreen from "../../Layout/PlainScreen/PlainScreen";
 import PropTypes from 'prop-types';
 import StartButton from "../Buttons/StartButton/StartButton";
 import {LEVELS} from "./levels";
