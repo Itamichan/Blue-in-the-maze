@@ -1,5 +1,6 @@
 #startButton {
   display: block;
+  position: absolute;
   font-size: 1.5rem;
   background-color: #1db394;
   font-weight: 600; }
@@ -19,5 +20,23 @@
     #startButton {
       left: 45%;
       width: 10%; } }
+  @media (min-width: 320px) {
+    #startButton {
+      top: 310px; } }
+  @media (min-width: 330px) {
+    #startButton {
+      top: 318px; } }
+  @media (min-width: 340px) {
+    #startButton {
+      top: 330px; } }
+  @media (min-width: 350px) {
+    #startButton {
+      top: 340px; } }
+  @media (min-width: 360px) {
+    #startButton {
+      top: 350px; } }
+  @media (min-width: 375px) {
+    #startButton {
+      top: 355px; } }
 
 /*# sourceMappingURL=StartButton.css.map */

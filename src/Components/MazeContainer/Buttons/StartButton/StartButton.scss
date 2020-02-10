@@ -1,15 +1,12 @@
 #startButton {
   display: block;
-  //flex: 1;
-  //flex-direction: row;
-  //align-items: center;
-  //
-  //position: absolute;
+  position: absolute;
 
   font-size: 1.5rem;
   background-color: #1db394;
   font-weight: 600;
 
+  //align button center
   @media (min-width: 0) {
     left: 35%;
     width: 30%;
@@ -25,5 +22,25 @@
   @media (min-width: 768px) {
     left: 45%;
     width: 10%;
+  }
+
+  //align button in the bottom of the component
+  @media (min-width: 320px) {
+    top: 310px;
+  }
+  @media (min-width: 330px) {
+    top: 318px;
+  }
+  @media (min-width: 340px) {
+    top: 330px;
+  }
+  @media (min-width: 350px) {
+    top: 340px;
+  }
+  @media (min-width: 360px) {
+    top: 350px;
+  }
+  @media (min-width: 375px) {
+    top: 355px;
   }
 }
