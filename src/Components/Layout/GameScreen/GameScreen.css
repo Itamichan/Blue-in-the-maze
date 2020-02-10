@@ -16,5 +16,16 @@
     @media (min-width: 400px) {
       #game-screen h1 {
         font-size: 24px; } }
+  #game-screen #textBox {
+    position: absolute;
+    left: 10%;
+    width: 80%; }
+    @media (min-width: 250px) {
+      #game-screen #textBox {
+        top: 30%;
+        font-size: 2rem; } }
+    @media (min-width: 400px) {
+      #game-screen #textBox {
+        font-size: 24px; } }
 
 /*# sourceMappingURL=GameScreen.css.map */

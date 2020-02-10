@@ -10,23 +10,31 @@ import FinishScreen from "../MazeContainer/FinishScreen";
 const Layout = (props) => {
 
     const [currentScreen, setCurrentScreen] = useState('startScreen');
-
     const [currentLevel, setCurrentLevel] = useState(null);
+    const [currentGameResult, setCurrentGameResult] = useState(null);
 
+    //renders the necessary Screen component
     let screenOption;
     if (currentScreen === 'startScreen') {
         screenOption = <StartScreen onStartClick={() => setCurrentScreen('levelSelection')}/>
     } else if (currentScreen === 'levelSelection') {
-        screenOption = <LevelSelection chooseLevel={(level) => {
-            setCurrentLevel(level);
-            setCurrentScreen('gamePlay')
-        }}/>
+        screenOption = <LevelSelection
+            chooseLevel={(level) => {
+                setCurrentLevel(level);
+                setCurrentScreen('gamePlay')
+            }}/>
     } else if (currentScreen === 'gamePlay') {
         screenOption = <MazeContainer
             mazeLevel={currentLevel}
-            onPlayerFinish={() => setCurrentScreen('finishScreen')}/>
+            onPlayerFinish={(score) => {
+                setCurrentScreen('finishScreen');
+                setCurrentGameResult(score)
+
+            }}/>
     } else if (currentScreen === 'finishScreen') {
-        screenOption = <FinishScreen/>
+        screenOption = <FinishScreen
+            gameResult={currentGameResult}
+        />
     }
 
     return (

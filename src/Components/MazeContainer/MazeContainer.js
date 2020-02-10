@@ -28,7 +28,7 @@ const MazeContainer = ({mazeLevel, onPlayerFinish}) => {
     //setts the winning condition
 
     if (finish) {
-       onPlayerFinish()
+       onPlayerFinish('show total Score')
     }
     //todo behaves weird
     //
