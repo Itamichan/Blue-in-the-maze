@@ -1,12 +1,12 @@
 import React from 'react';
 
 import {Button} from "reactstrap";
-import './StartButton.scss';
+import './GenericButton.scss';
 
 
-const StartButton = ({changeScreen, buttonName}) => {
+const GenericButton = ({changeScreen, buttonName}) => {
     return (
-        <Button id={'startButton'}
+        <Button id={'generic-button'}
         onClick={changeScreen}
         >
             {buttonName}
@@ -15,4 +15,4 @@ const StartButton = ({changeScreen, buttonName}) => {
     )
 };
 
-export default StartButton;
+export default GenericButton;

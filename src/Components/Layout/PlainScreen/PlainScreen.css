@@ -11,7 +11,7 @@
     width: 80%; }
     #plain-screen .screenHead h1 {
       font-weight: 600;
-      padding-bottom: 10px; }
+      padding-bottom: 20px; }
     @media (min-width: 250px) {
       #plain-screen .screenHead {
         font-size: 2rem; } }

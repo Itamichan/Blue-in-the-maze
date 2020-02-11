@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
 import GameScreen from "../Layout/PlainScreen/PlainScreen";
-import StartButton from "./Buttons/StartButton/StartButton";
+import StartButton from "./Buttons/StartButton/GenericButton";
 
 
 const FinishScreen = ({gameResult}) => {

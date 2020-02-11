@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react';
-import GameScreen from "../../Layout/PlainScreen/PlainScreen";
+import PlainScreen from "../../Layout/PlainScreen/PlainScreen";
 import PropTypes from 'prop-types';
-import StartButton from "../Buttons/StartButton/StartButton";
+import GenericButton from "../Buttons/StartButton/GenericButton";
 import {LEVELS} from "./levels";
 
 const LevelSelection = ({chooseLevel}) => {
@@ -17,23 +17,22 @@ const LevelSelection = ({chooseLevel}) => {
             levelDifficulty = 'Hard'
         }
 
-
-        return <StartButton
-            buttonName={levelDifficulty}
+        return <GenericButton
             changeScreen={() => chooseLevel(i)}
-            key={`level ${idx+1}`}
-        />;
+            key={`level ${idx + 1}`}>
+            buttonName={levelDifficulty}
+        </GenericButton>;
     });
 
 
     return (
         <Fragment>
-            <GameScreen
+            <PlainScreen
                 screenBackground="./bg-for-screen-state.png"
-                screenHeader={'Level selection screen'}
             >
+                <h1>Level selection screen</h1>
                 {availableLevel}
-            </GameScreen>
+            </PlainScreen>
 
         </Fragment>
     )
