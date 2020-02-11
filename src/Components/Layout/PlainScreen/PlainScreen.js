@@ -1,14 +1,13 @@
 import React, {Fragment} from 'react';
 import './PlainScreen.scss';
 
-const PlainScreen = ({textArea, screenHeader, screenBackground, children}) => {
+const PlainScreen = ({screenBackground, children}) => {
 
     return (
         <Fragment>
             <div id={'plain-screen'}>
                 <img src={screenBackground} alt="background image"/>
                 <div className={'screenHead'}>{children}</div>
-
             </div>
         </Fragment>
     )

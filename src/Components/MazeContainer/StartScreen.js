@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import GameScreen from "../Layout/PlainScreen/PlainScreen";
+import PlainScreen from "../Layout/PlainScreen/PlainScreen";
 import StartButton from "./Buttons/StartButton/StartButton";
 
 
@@ -7,15 +7,13 @@ const StartScreen = ({onStartClick}) => {
 
     return (
         <Fragment>
-            <GameScreen
+            <PlainScreen
                 screenBackground="./intro-image.png">
-                <h1>header</h1>
-                <p id={'textBox'}>text area</p>
+                <h1>Blue in the Maze</h1>
                 <StartButton
                     changeScreen={onStartClick}
-                    buttonName={'Start'}
-                />
-            </GameScreen>
+                    buttonName={'Start'}/>
+            </PlainScreen>
 
         </Fragment>
 
