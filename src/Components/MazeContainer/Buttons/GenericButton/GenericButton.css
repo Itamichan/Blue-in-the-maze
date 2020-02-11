@@ -5,5 +5,7 @@
   font-weight: 600;
   margin-right: 10px;
   margin-top: 20px; }
+  #generic-button:hover {
+    background-color: #1fa787; }
 
 /*# sourceMappingURL=GenericButton.css.map */

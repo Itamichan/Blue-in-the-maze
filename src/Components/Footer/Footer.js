@@ -11,9 +11,9 @@ const Footer = (props) => {
                     <li><a href="https://github.com/Itamichan" rel='noreferrer noopener' target="_blank"> <FontAwesomeIcon icon={['fab', 'github']} /></a></li>
                     <li><a href="mailto:garbuz@gmail.com"><FontAwesomeIcon icon='envelope' /></a></li>
                     <li><a href="https://www.facebook.com/cristina.garbuz" rel='noreferrer noopener' target="_blank"> <FontAwesomeIcon icon={['fab', 'facebook']} /></a></li>
-
                 </ul>
             </div>
+            <div> &copy; 2020</div>
         </footer>
     )
 };
