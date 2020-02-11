@@ -11,6 +11,8 @@ const useMaze = (mazeLevel) => {
     // setting the currentLocation variable
     const [currentLocation, setCurrentLocation] = useState(LEVELS[mazeLevel].levelStart);
 
+    const [currentTime, setCurrentTime] = useState(null);
+
     // initialization of finish var and setting the condition when it becomes true
     let finish = false;
     if (mazeGrid[currentLocation[0]][currentLocation[1]] === 3) {
@@ -53,6 +55,13 @@ const useMaze = (mazeLevel) => {
         }
     };
 
+    let playTime;
+
+    let startGame = () => {
+        playTime = new Date();
+        setCurrentTime(playTime);
+    };
+
     return {
         mazeGrid,
         currentLocation,
@@ -60,7 +69,9 @@ const useMaze = (mazeLevel) => {
         up,
         down,
         right,
-        left
+        left,
+        currentTime,
+        startGame
     }
 };
 

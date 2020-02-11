@@ -2,7 +2,6 @@ import React, {Fragment, useState} from 'react';
 import MazeContainer from "../MazeContainer/MazeContainer";
 import StartScreen from "../MazeContainer/StartScreen";
 import LevelSelection from "../MazeContainer/LevelSelection/LevelSelection";
-
 import GameBackground from "./GameBackground/GameBackground";
 import FinishScreen from "../MazeContainer/FinishScreen";
 

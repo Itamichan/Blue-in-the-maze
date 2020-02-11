@@ -7,10 +7,8 @@ import TimeTracker from "../TimeTracker/TimeTracker";
 
 const MazeContainer = ({mazeLevel, onPlayerFinish}) => {
 
-    const {mazeGrid, currentLocation, up, down, right, left, finish} = useMaze(mazeLevel);
+    const {mazeGrid, currentLocation, up, down, right, left, finish, currentTime, startGame} = useMaze(mazeLevel);
 
-    // 4 stands for the player location
-    // mazeGrid[currentLocation[0]][currentLocation[1]] = 4;
 
     //maps through the mazeGrid to return cells in a specific style
     const gameRepresentation = mazeGrid.map((row, rowIndex) => {
@@ -65,6 +63,8 @@ const MazeContainer = ({mazeLevel, onPlayerFinish}) => {
     };
 
 
+    console.log(currentTime);
+
     return (<Fragment>
 
             <div
@@ -73,7 +73,8 @@ const MazeContainer = ({mazeLevel, onPlayerFinish}) => {
                 onKeyUp={handleKeyUp}>
                 {gameRepresentation}
             </div>
-            <TimeTracker/>
+            <TimeTracker>Time: {currentTime} </TimeTracker>
+            <button onClick={() => startGame()}>start</button>
             <ControlButtons
                 up={up}
                 down={down}
