@@ -10,7 +10,7 @@ const FinishScreen = ({gameResult}) => {
             <PlainScreen
                 screenBackground="./bg-for-screen-state.png">
                 <h1>Finish screen</h1>
-                {gameResult}
+                <div>{gameResult}</div>
                 <GenericButton>Finish</GenericButton>
             </PlainScreen>
         </Fragment>
