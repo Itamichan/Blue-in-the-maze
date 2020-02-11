@@ -2,9 +2,8 @@ import React, {Fragment, useState} from 'react';
 import useMaze from "./useMaze";
 import Cell from "./Cell/Cell";
 import ControlButtons from "./Buttons/ControlButtons/ControlButtons";
-import './MazeContainer.scss';
-
 import PropTypes from 'prop-types';
+import TimeTracker from "../TimeTracker/TimeTracker";
 
 const MazeContainer = ({mazeLevel, onPlayerFinish}) => {
 
@@ -28,7 +27,7 @@ const MazeContainer = ({mazeLevel, onPlayerFinish}) => {
     //setts the winning condition
 
     if (finish) {
-       onPlayerFinish('show total Score')
+        onPlayerFinish('show total Score')
     }
 
     //setting the rule which allows to move only one move at a time
@@ -69,13 +68,12 @@ const MazeContainer = ({mazeLevel, onPlayerFinish}) => {
     return (<Fragment>
 
             <div
-                className={'gameContainer'}
                 tabIndex={-1}
                 onKeyDown={handleKeyDown}
                 onKeyUp={handleKeyUp}>
                 {gameRepresentation}
             </div>
-
+            <TimeTracker/>
             <ControlButtons
                 up={up}
                 down={down}

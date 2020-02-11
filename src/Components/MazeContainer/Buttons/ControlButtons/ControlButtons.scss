@@ -1,10 +1,10 @@
-#controlButtons {
+#control-buttons {
 
-  .buttonCenter {
+  .button-center {
     text-align: center;
   }
 
-  .moveButtons {
+  .move-buttons {
     @media (min-width: 0) and (max-width: 480px) {
       display: inline-block;
       padding: 0;
@@ -14,6 +14,9 @@
     @media (min-width: 481px) {
       display: none;
     }
+  }
+  #arrow-up {
+    margin-top: 10px;
   }
 
   .fa-chevron-down, .fa-chevron-up, .fa-chevron-left, .fa-chevron-right {

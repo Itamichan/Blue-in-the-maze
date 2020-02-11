@@ -1,15 +1,17 @@
-#controlButtons .buttonCenter {
+#control-buttons .button-center {
   text-align: center; }
 @media (min-width: 0) and (max-width: 480px) {
-  #controlButtons .moveButtons {
+  #control-buttons .move-buttons {
     display: inline-block;
     padding: 0;
     width: 25vw;
     height: 10vh; } }
 @media (min-width: 481px) {
-  #controlButtons .moveButtons {
+  #control-buttons .move-buttons {
     display: none; } }
-#controlButtons .fa-chevron-down, #controlButtons .fa-chevron-up, #controlButtons .fa-chevron-left, #controlButtons .fa-chevron-right {
+#control-buttons #arrow-up {
+  margin-top: 10px; }
+#control-buttons .fa-chevron-down, #control-buttons .fa-chevron-up, #control-buttons .fa-chevron-left, #control-buttons .fa-chevron-right {
   font-size: 10vw;
   color: rgba(0, 0, 0, 0.7); }
 

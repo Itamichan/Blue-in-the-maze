@@ -1,9 +1,9 @@
 import React from 'react';
 import './TimeTracker.scss';
 
-const TimeTracker = (props) => {
+const TimeTracker = ({onCurrentScreen}) => {
     return (
-        <div id={'time-tracker'}>Time:</div>
+        <div id={'show-tracker'}>Time:</div>
     )
 };
 

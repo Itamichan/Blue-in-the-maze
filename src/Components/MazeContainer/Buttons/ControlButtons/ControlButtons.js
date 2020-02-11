@@ -7,29 +7,29 @@ import PropTypes from 'prop-types';
 
 const ControlButtons = ({up, left, down, right}) => {
     return (
-        <Container fluid={true} className={'containerPaddingTop'} id={'controlButtons'}>
+        <Container fluid={true} id={'control-buttons'}>
             <Row>
-                <Col className={'buttonCenter'}>
-                    <Button className={'moveButtons'} color="warning" onClick={up}>
+                <Col className={'button-center'}>
+                    <Button className={'move-buttons'} id={'arrow-up'} color="warning" onClick={up}>
                         <FontAwesomeIcon icon="chevron-up"/>
                     </Button>
                 </Col>
             </Row>
-            <Row className={'buttonCenter'}>
+            <Row className={'button-center'}>
                 <Col>
-                    <Button className={'moveButtons'} color="warning" onClick={left}>
+                    <Button className={'move-buttons'} color="warning" onClick={left}>
                         <FontAwesomeIcon icon="chevron-left"/>
                     </Button>
                 </Col>
                 <Col>
-                    <Button className={'moveButtons'} color="warning" onClick={right}>
+                    <Button className={'move-buttons'} color="warning" onClick={right}>
                         <FontAwesomeIcon icon="chevron-right"/>
                     </Button>
                 </Col>
             </Row>
             <Row>
-                <Col className={'buttonCenter'}>
-                    <Button className={'moveButtons'} color="warning" onClick={down}>
+                <Col className={'button-center'}>
+                    <Button className={'move-buttons'} color="warning" onClick={down}>
                         <FontAwesomeIcon icon="chevron-down"/>
                     </Button>
                 </Col>
