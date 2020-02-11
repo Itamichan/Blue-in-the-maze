@@ -5,6 +5,7 @@ import LevelSelection from "../MazeContainer/LevelSelection/LevelSelection";
 
 import GameBackground from "./GameBackground/GameBackground";
 import FinishScreen from "../MazeContainer/FinishScreen";
+import TimeTracker from "../TimeTracker/TimeTracker";
 
 
 const Layout = (props) => {
@@ -46,6 +47,7 @@ const Layout = (props) => {
             </div>
             <GameBackground>
                 {screenOption}
+                <TimeTracker/>
             </GameBackground>
 
             <footer>

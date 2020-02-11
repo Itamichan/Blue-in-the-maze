@@ -30,13 +30,6 @@ const MazeContainer = ({mazeLevel, onPlayerFinish}) => {
     if (finish) {
        onPlayerFinish('show total Score')
     }
-    //todo behaves weird
-    //
-    // useEffect(() => {
-    //     localStorage.setItem('currentLevel', 'level_1');
-    //     alert(localStorage.getItem('currentLevel'))
-    // });
-
 
     //setting the rule which allows to move only one move at a time
     const [currentMoveAllowed, setMoveAllowed] = useState(true);

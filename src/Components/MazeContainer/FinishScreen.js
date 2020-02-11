@@ -13,10 +13,10 @@ const FinishScreen = ({gameResult, onRepeatLevel, onNewLevel}) => {
                 <div>{gameResult}</div>
                 <GenericButton
                     changeScreen={onRepeatLevel}
-                >Repeat level</GenericButton>
+                >Try again!</GenericButton>
                 <GenericButton
                     changeScreen={onNewLevel}
-                >Choose a new level</GenericButton>
+                >New level</GenericButton>
             </PlainScreen>
         </Fragment>
 
