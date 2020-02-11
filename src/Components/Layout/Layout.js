@@ -34,6 +34,8 @@ const Layout = (props) => {
     } else if (currentScreen === 'finishScreen') {
         screenOption = <FinishScreen
             gameResult={currentGameResult}
+            onRepeatLevel={() => {setCurrentScreen('gamePlay')}}
+            onNewLevel={() => {setCurrentScreen('levelSelection')}}
         />
     }
 
