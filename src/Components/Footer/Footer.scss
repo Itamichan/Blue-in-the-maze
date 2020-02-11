@@ -1,0 +1,25 @@
+footer {
+  background-color: #333333;
+  text-align: center;
+  padding: 12px 0;
+
+  ul {
+    list-style: none;
+    padding-inline-start: 0;
+
+    li {
+      display: inline-block;
+      margin-right: 10px;
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.5rem;
+
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+}

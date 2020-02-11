@@ -4,6 +4,7 @@ import StartScreen from "../MazeContainer/StartScreen";
 import LevelSelection from "../MazeContainer/LevelSelection/LevelSelection";
 import GameBackground from "./GameBackground/GameBackground";
 import FinishScreen from "../MazeContainer/FinishScreen";
+import Footer from "../Footer/Footer";
 
 
 const Layout = (props) => {
@@ -48,9 +49,7 @@ const Layout = (props) => {
 
             </GameBackground>
 
-            <footer>
-                footer
-            </footer>
+            <Footer/>
 
         </Fragment>
     )

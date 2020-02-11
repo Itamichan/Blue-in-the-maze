@@ -74,7 +74,6 @@ const MazeContainer = ({mazeLevel, onPlayerFinish}) => {
                 {gameRepresentation}
             </div>
             <TimeTracker>Time: {currentTime} </TimeTracker>
-            <button onClick={() => startGame()}>start</button>
             <ControlButtons
                 up={up}
                 down={down}
