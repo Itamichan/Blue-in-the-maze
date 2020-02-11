@@ -1,21 +1,18 @@
 import React, {Fragment} from 'react';
-import GameScreen from "../Layout/PlainScreen/PlainScreen";
-import StartButton from "./Buttons/StartButton/GenericButton";
+import PlainScreen from "../Layout/PlainScreen/PlainScreen";
+import GenericButton from "./Buttons/GenericButton/GenericButton";
 
 
 const FinishScreen = ({gameResult}) => {
 
     return (
         <Fragment>
-            <GameScreen
-                screenBackground="./bg-for-screen-state.png"
-                screenHeader="Finish screen"
-                textArea={gameResult}
-            />
-            <StartButton
-                buttonName={'Finish'}
-            />
-
+            <PlainScreen
+                screenBackground="./bg-for-screen-state.png">
+                <h1>Finish screen</h1>
+                {gameResult}
+                <GenericButton>Finish</GenericButton>
+            </PlainScreen>
         </Fragment>
 
     )

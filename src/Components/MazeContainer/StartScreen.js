@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
 import PlainScreen from "../Layout/PlainScreen/PlainScreen";
-import GenericButton from "./Buttons/StartButton/GenericButton";
+import GenericButton from "./Buttons/GenericButton/GenericButton";
 
 
 const StartScreen = ({onStartClick}) => {

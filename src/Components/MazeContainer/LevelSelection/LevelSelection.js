@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react';
 import PlainScreen from "../../Layout/PlainScreen/PlainScreen";
 import PropTypes from 'prop-types';
-import GenericButton from "../Buttons/StartButton/GenericButton";
+import GenericButton from "../Buttons/GenericButton/GenericButton";
 import {LEVELS} from "./levels";
 
 const LevelSelection = ({chooseLevel}) => {
