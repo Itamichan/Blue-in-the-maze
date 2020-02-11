@@ -11,8 +11,9 @@ const StartScreen = ({onStartClick}) => {
                 screenBackground="./intro-image.png">
                 <h1>Blue in the Maze</h1>
                 <GenericButton
-                    changeScreen={onStartClick}
-                    buttonName={'Start'}/>
+                    changeScreen={onStartClick}>
+                    Start
+                </GenericButton>
             </PlainScreen>
 
         </Fragment>

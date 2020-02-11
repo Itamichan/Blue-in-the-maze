@@ -20,7 +20,7 @@ const LevelSelection = ({chooseLevel}) => {
         return <GenericButton
             changeScreen={() => chooseLevel(i)}
             key={`level ${idx + 1}`}>
-            buttonName={levelDifficulty}
+            {levelDifficulty}
         </GenericButton>;
     });
 

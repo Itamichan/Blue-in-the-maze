@@ -4,12 +4,12 @@ import {Button} from "reactstrap";
 import './GenericButton.scss';
 
 
-const GenericButton = ({changeScreen, buttonName}) => {
+const GenericButton = ({changeScreen, children}) => {
     return (
         <Button id={'generic-button'}
         onClick={changeScreen}
         >
-            {buttonName}
+            {children}
         </Button>
 
     )
