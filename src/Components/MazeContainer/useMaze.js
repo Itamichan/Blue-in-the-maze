@@ -19,6 +19,7 @@ const useMaze = (mazeLevel) => {
         finish = true
     }
 
+
     // allows us to change the currentLocation in the mazeGrid
     const move = (deltaY, deltaX) => {
         let Y = currentLocation[0];

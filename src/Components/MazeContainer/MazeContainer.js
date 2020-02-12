@@ -5,7 +5,7 @@ import ControlButtons from "./Buttons/ControlButtons/ControlButtons";
 import PropTypes from 'prop-types';
 import TimeTracker from "../TimeTracker/TimeTracker";
 
-const MazeContainer = ({mazeLevel, onPlayerFinish}) => {
+const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
 
     const {mazeGrid, currentLocation, up, down, right, left, finish} = useMaze(mazeLevel);
     const [currentTime, setCurrentTime] = useState(0);
@@ -22,12 +22,6 @@ const MazeContainer = ({mazeLevel, onPlayerFinish}) => {
         });
         return <div key={rowIndex.toString()} className={'mazeRow'}>{rowRepresentation}</div>
     });
-
-    //setts the winning condition
-
-    if (finish) {
-        onPlayerFinish(`You got free in ${currentTime} seconds!`)
-    }
 
     //setting the rule which allows to move only one move at a time
     const [currentMoveAllowed, setMoveAllowed] = useState(true);
@@ -93,12 +87,29 @@ const MazeContainer = ({mazeLevel, onPlayerFinish}) => {
         }
     );
 
+    //decides which timer to show based on the game level
     let timer;
     if (mazeLevel === 'level1') {
         timer = currentTime;
     } else {
         timer = countDown;
     }
+
+    //setts the winning condition
+
+    if (finish) {
+        onPlayerFinish(`You got free in ${timer} seconds!`)
+    }
+
+    let lost = false;
+    if (countDown <= 0) {
+        lost = true;
+    }
+
+    if (lost) {
+        onPlayerLose()
+    }
+
 
     return (<Fragment>
 

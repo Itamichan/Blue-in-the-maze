@@ -4,6 +4,7 @@ import StartScreen from "../MazeContainer/StartScreen";
 import LevelSelection from "../MazeContainer/LevelSelection/LevelSelection";
 import GameBackground from "./GameBackground/GameBackground";
 import FinishScreen from "../MazeContainer/FinishScreen";
+import LostScreen from "../MazeContainer/LostScreen";
 import Footer from "../Footer/Footer";
 
 
@@ -29,11 +30,19 @@ const Layout = (props) => {
             onPlayerFinish={(score) => {
                 setCurrentScreen('finishScreen');
                 setCurrentGameResult(score)
-
-            }}/>
+            }}
+            onPlayerLose={() => {
+                setCurrentScreen('lostScreen')
+            }}
+        />
     } else if (currentScreen === 'finishScreen') {
         screenOption = <FinishScreen
             gameResult={currentGameResult}
+            onRepeatLevel={() => {setCurrentScreen('gamePlay')}}
+            onNewLevel={() => {setCurrentScreen('levelSelection')}}
+        />
+    } else if (currentScreen === 'lostScreen') {
+        screenOption = <LostScreen
             onRepeatLevel={() => {setCurrentScreen('gamePlay')}}
             onNewLevel={() => {setCurrentScreen('levelSelection')}}
         />
