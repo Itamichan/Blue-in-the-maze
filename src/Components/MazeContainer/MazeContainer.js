@@ -1,4 +1,4 @@
-import React, {Fragment, useState} from 'react';
+import React, {Fragment, useEffect, useState} from 'react';
 import useMaze from "./useMaze";
 import Cell from "./Cell/Cell";
 import ControlButtons from "./Buttons/ControlButtons/ControlButtons";
@@ -7,7 +7,7 @@ import TimeTracker from "../TimeTracker/TimeTracker";
 
 const MazeContainer = ({mazeLevel, onPlayerFinish}) => {
 
-    const {mazeGrid, currentLocation, up, down, right, left, finish, currentTime, startGame} = useMaze(mazeLevel);
+    const {mazeGrid, currentLocation, up, down, right, left, finish, currentTime, setCurrentTime} = useMaze(mazeLevel);
 
 
     //maps through the mazeGrid to return cells in a specific style
@@ -63,7 +63,19 @@ const MazeContainer = ({mazeLevel, onPlayerFinish}) => {
     };
 
 
-    console.log(currentTime);
+    useEffect(() => {
+           let timer = setInterval(
+                (prevState) => {
+                    setCurrentTime(prevState => prevState += 1)
+                },
+                1000
+            );
+            return () => {
+                clearInterval(timer)
+            }
+        }
+    );
+
 
     return (<Fragment>
 
@@ -81,7 +93,9 @@ const MazeContainer = ({mazeLevel, onPlayerFinish}) => {
                 right={right}
             />
         </Fragment>
-    )
+    );
+
+
 };
 
 MazeContainer.prototype = {
