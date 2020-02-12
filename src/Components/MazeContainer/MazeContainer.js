@@ -7,8 +7,9 @@ import TimeTracker from "../TimeTracker/TimeTracker";
 
 const MazeContainer = ({mazeLevel, onPlayerFinish}) => {
 
-    const {mazeGrid, currentLocation, up, down, right, left, finish, currentTime, setCurrentTime} = useMaze(mazeLevel);
-
+    const {mazeGrid, currentLocation, up, down, right, left, finish} = useMaze(mazeLevel);
+    const [currentTime, setCurrentTime] = useState(0);
+    const [countDown, setCountDown] = useState(60);
 
     //maps through the mazeGrid to return cells in a specific style
     const gameRepresentation = mazeGrid.map((row, rowIndex) => {
@@ -25,7 +26,7 @@ const MazeContainer = ({mazeLevel, onPlayerFinish}) => {
     //setts the winning condition
 
     if (finish) {
-        onPlayerFinish('show total Score')
+        onPlayerFinish(`You got free in ${currentTime} seconds!`)
     }
 
     //setting the rule which allows to move only one move at a time
@@ -62,20 +63,42 @@ const MazeContainer = ({mazeLevel, onPlayerFinish}) => {
         setMoveAllowed(true)
     };
 
+    //re-renders the component every second and adds a second to the TimeTracker
 
     useEffect(() => {
-           let timer = setInterval(
+            let timer = setInterval(
                 (prevState) => {
-                    setCurrentTime(prevState => prevState += 1)
+                    setCurrentTime(prevState => prevState += 1);
                 },
                 1000
             );
+
             return () => {
                 clearInterval(timer)
             }
         }
     );
 
+    useEffect(() => {
+            let timer = setInterval(
+                (prevState) => {
+                    setCountDown(prevState => prevState -= 1);
+                },
+                1000
+            );
+
+            return () => {
+                clearInterval(timer)
+            }
+        }
+    );
+
+    let timer;
+    if (mazeLevel === 'level1') {
+        timer = currentTime;
+    } else {
+        timer = countDown;
+    }
 
     return (<Fragment>
 
@@ -85,7 +108,7 @@ const MazeContainer = ({mazeLevel, onPlayerFinish}) => {
                 onKeyUp={handleKeyUp}>
                 {gameRepresentation}
             </div>
-            <TimeTracker>Time: {currentTime} </TimeTracker>
+            <TimeTracker>Time: {timer} </TimeTracker>
             <ControlButtons
                 up={up}
                 down={down}
