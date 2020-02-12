@@ -60,40 +60,36 @@ const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
     //re-renders the component every second and adds a second to the TimeTracker
 
     useEffect(() => {
-            let timer = setInterval(
-                (prevState) => {
-                    setCurrentTime(prevState => prevState += 1);
-                },
-                1000
-            );
-
+            let count;
+            //decides which timer to show based on the game level
+            if (mazeLevel === 'level1') {
+                count = setInterval(
+                    (prevState) => {
+                        setCurrentTime(prevState => prevState += 1);
+                    },
+                    1000
+                );
+            } else {
+                count = setInterval(
+                    (prevState) => {
+                        setCountDown(prevState => prevState -= 1);
+                    },
+                    1000
+                );
+            }
             return () => {
-                clearInterval(timer)
+                clearInterval(count)
             }
         }
     );
 
-    useEffect(() => {
-            let timer = setInterval(
-                (prevState) => {
-                    setCountDown(prevState => prevState -= 1);
-                },
-                1000
-            );
-
-            return () => {
-                clearInterval(timer)
-            }
-        }
-    );
-
-    //decides which timer to show based on the game level
     let timer;
     if (mazeLevel === 'level1') {
         timer = currentTime;
     } else {
         timer = countDown;
     }
+
 
     //setts the winning condition
 
@@ -119,7 +115,7 @@ const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
                 onKeyUp={handleKeyUp}>
                 {gameRepresentation}
             </div>
-            <TimeTracker>Time: {timer} </TimeTracker>
+            <TimeTracker>Time: {timer} seconds </TimeTracker>
             <ControlButtons
                 up={up}
                 down={down}
