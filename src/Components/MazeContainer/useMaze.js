@@ -11,6 +11,8 @@ const useMaze = (mazeLevel) => {
     // setting the currentLocation variable
     const [currentLocation, setCurrentLocation] = useState(LEVELS[mazeLevel].levelStart);
 
+    const [keyLocation, setKeyLocation] = useState(LEVELS[mazeLevel].keyLocation);
+
 
 
     // initialization of finish var and setting the condition when it becomes true
@@ -64,7 +66,8 @@ const useMaze = (mazeLevel) => {
         up,
         down,
         right,
-        left
+        left,
+        keyLocation
     }
 };
 

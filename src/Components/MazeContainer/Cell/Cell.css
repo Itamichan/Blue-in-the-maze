@@ -236,6 +236,9 @@
 .path-field-player {
   background: url("../../../assets/images/game_cells/p1_walk01.png"), url("../../../assets/images/game_cells/grassCenter.png"); }
 
+.path-field-key {
+  background: url("../../../assets/images/game_cells/keyGreen.png"), url("../../../assets/images/game_cells/grassCenter.png"); }
+
 .finish-field-player {
   background: url("../../../assets/images/game_cells/p1_walk01.png"), url("../../../assets/images/game_cells/door_closedMid.png"); }
 

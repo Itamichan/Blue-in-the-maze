@@ -3,7 +3,9 @@ $bgPath: '../../../assets/images/game_cells/grassCenter.png';
 $bgWall: '../../../assets/images/game_cells/castleCenter.png';
 $bgEarth: '../../../assets/images/game_cells/brickWall.png';
 $bgDoor: '../../../assets/images/game_cells/door_closedMid.png';
+$bg-key: '../../../assets/images/game_cells/keyGreen.png';
 $bgPlayer: '../../../assets/images/game_cells/p1_walk01.png';
+
 
 $minWidth: 10;
 $maxWidth: 40;
@@ -16,7 +18,7 @@ $stepSize: 15px;
     background-repeat: no-repeat;
 
     //todo update the max widh in the comment in accordance with the final decision
-    //keeps the cells responsive to the screen size until 800px width
+    //keeps the cells responsive to the screen size until 600px width
     @for $i from $minWidth through $maxWidth {
       @media (min-width: $i*$stepSize) {
         width: floor($i*$stepSize/15);
@@ -25,7 +27,7 @@ $stepSize: 15px;
     }
   }
 
-  //keeps the rows responsive to the screen size until 800px width
+  //keeps the rows responsive to the screen size until 600px width
   @for $i from $minWidth through $maxWidth {
     @media (min-width: $i*$stepSize) {
       height: floor($i*$stepSize/15);
@@ -54,6 +56,11 @@ $stepSize: 15px;
 
 .path-field-player {
   background: url($bgPlayer), url($bgPath);
+
+}
+
+.path-field-key {
+  background: url($bg-key), url($bgPath);
 
 }
 

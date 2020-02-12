@@ -7,7 +7,7 @@ import TimeTracker from "../TimeTracker/TimeTracker";
 
 const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
 
-    const {mazeGrid, currentLocation, up, down, right, left, finish} = useMaze(mazeLevel);
+    const {mazeGrid, currentLocation, up, down, right, left, finish, keyLocation} = useMaze(mazeLevel);
     const [currentTime, setCurrentTime] = useState(0);
     const [countDown, setCountDown] = useState(60);
 
@@ -16,8 +16,13 @@ const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
         const rowRepresentation = row.map((cell, cellIndex) => {
             //checks the player's location
             let isPlayerHere = currentLocation[0] === rowIndex && currentLocation[1] === cellIndex;
+            let key = keyLocation[0] === rowIndex && keyLocation[0] !== 0 && keyLocation[1] === cellIndex;
+            // console.log(key);
             return <Cell key={rowIndex.toString() + cellIndex.toString()} cellValue={cell}
-                         isPlayerHere={isPlayerHere}/>;
+                         isPlayerHere={isPlayerHere}
+                         exitKey={key}
+
+            />;
 
         });
         return <div key={rowIndex.toString()} className={'mazeRow'}>{rowRepresentation}</div>
