@@ -46,9 +46,7 @@ const Layout = (props) => {
             </div>
             <GameBackground>
                 {screenOption}
-
             </GameBackground>
-
             <Footer/>
 
         </Fragment>

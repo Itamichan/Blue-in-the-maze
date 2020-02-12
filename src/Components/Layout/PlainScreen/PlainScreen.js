@@ -6,7 +6,7 @@ const PlainScreen = ({screenBackground, children}) => {
     return (
         <Fragment>
             <div id={'plain-screen'}>
-                <img src={screenBackground} alt="background image"/>
+                <img src={screenBackground} alt="background"/>
                 <div className={'screenHead'}>{children}</div>
             </div>
         </Fragment>

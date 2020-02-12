@@ -3,7 +3,7 @@
   #plain-screen img {
     width: 100%;
     height: auto;
-    max-width: 375px; }
+    max-width: 600px; }
   #plain-screen .screenHead {
     position: absolute;
     left: 10%;
@@ -11,12 +11,10 @@
     width: 80%; }
     #plain-screen .screenHead h1 {
       font-weight: 600;
-      padding-bottom: 20px; }
+      padding-bottom: 20px;
+      font-size: 2.5rem; }
     @media (min-width: 250px) {
       #plain-screen .screenHead {
         font-size: 2rem; } }
-    @media (min-width: 400px) {
-      #plain-screen .screenHead {
-        font-size: 24px; } }
 
 /*# sourceMappingURL=PlainScreen.css.map */
