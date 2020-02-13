@@ -7,16 +7,8 @@ import {LEVELS} from "./levels";
 const LevelSelection = ({chooseLevel}) => {
 
     let availableLevel = Object.keys(LEVELS).map((i, idx) => {
-
         let levelDifficulty;
-        if (idx === 0) {
-            levelDifficulty = 'Easy'
-        } else if (idx === 1) {
-            levelDifficulty = 'Medium'
-        } else if (idx === 2) {
-            levelDifficulty = 'Hard'
-        }
-
+        levelDifficulty = `Level ${idx + 1}`;
         return <GenericButton
             changeScreen={() => chooseLevel(i)}
             key={`level ${idx + 1}`}>

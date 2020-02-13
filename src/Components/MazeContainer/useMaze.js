@@ -12,7 +12,7 @@ const useMaze = (mazeLevel, onPlayerLose) => {
     const [currentLocation, setCurrentLocation] = useState(LEVELS[mazeLevel].levelStart);
     const [startTime, setStartTime] = useState(new Date());
 
-    let timeLeft = mazeLevel === 'level1' ? undefined : 10;
+    let timeLeft = mazeLevel === 'level1' ? undefined : 60;
     let countDirection = mazeLevel === 'level1' ? 'up' : 'down';
 
     const [screenTime, setScreenTime] = useState(countDirection === 'up' ? 0 : timeLeft);
