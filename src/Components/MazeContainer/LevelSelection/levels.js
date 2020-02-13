@@ -63,7 +63,14 @@ export const LEVELS = {
             [0, 0, 4, 2, 1, 0, 0, 0, 0, 0, 1, 2, 2, 2, 1],
             [0, 0, 3, 2, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1],
         ],
-        levelStart: [14, 3]
+        levelStart: [14, 3],
+        keys: [
+            {
+                color: 'green',
+                keyPosition: [13, 2],
+                associatedDoor: [9,4]
+            }
+        ]
     }
 
 

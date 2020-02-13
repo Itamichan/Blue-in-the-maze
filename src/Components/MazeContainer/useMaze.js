@@ -1,7 +1,7 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {LEVELS} from "./LevelSelection/levels";
 
-const useMaze = (mazeLevel) => {
+const useMaze = (mazeLevel, onPlayerLose) => {
 
     // data structure of the MazeContainer
     // numbers meaning: 0 - empty; 1 - wall; 2 - path; 3 - finish
@@ -10,6 +10,41 @@ const useMaze = (mazeLevel) => {
 
     // setting the currentLocation variable
     const [currentLocation, setCurrentLocation] = useState(LEVELS[mazeLevel].levelStart);
+    const [startTime, setStartTime] = useState(new Date());
+
+    let timeLeft = mazeLevel === 'level1' ? undefined : 60;
+    let countDirection = mazeLevel === 'level1' ? 'up' : 'down';
+
+    const [screenTime, setScreenTime] = useState(countDirection === 'up' ? 0 : timeLeft);
+    const [playerLost, setPlayerLost] = useState(false);
+
+
+    let updateScreenTime = () => {
+        let timeDifference = (new Date() - startTime) / 1000;
+        console.log(timeDifference);
+        let newScreenTime = countDirection === 'up' ? timeDifference : timeLeft - timeDifference;
+        //checks when the timeLeft expires
+        if (countDirection === 'down' && newScreenTime < 1) {
+            setPlayerLost(true);
+        }
+        setScreenTime(newScreenTime)
+    };
+
+
+    useEffect(() => {
+
+            let intervalId = setInterval(() => {
+                updateScreenTime()
+            }, 100);
+            return () => {
+                clearInterval(intervalId)
+            }
+        }
+    );
+
+    if (playerLost) {
+        onPlayerLose()
+    }
 
     // initialization of finish var and setting the condition when it becomes true
     let finish = false;
@@ -62,6 +97,7 @@ const useMaze = (mazeLevel) => {
         down,
         right,
         left,
+        screenTime
     }
 };
 

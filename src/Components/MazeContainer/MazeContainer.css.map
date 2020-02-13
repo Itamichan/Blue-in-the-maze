@@ -1,7 +1,7 @@
 {
 "version": 3,
 "mappings": "AAAA,aAAc;EACZ,KAAK,EAAE,KAAK;EACZ,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,MAAM;EACjB,UAAU,EAAE,IAAI",
-"sources": ["TimeTracker.scss"],
+"sources": ["MazeContainer.scss"],
 "names": [],
-"file": "TimeTracker.css"
+"file": "MazeContainer.css"
 }

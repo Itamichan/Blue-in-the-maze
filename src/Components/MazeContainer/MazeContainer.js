@@ -1,28 +1,28 @@
-import React, {Fragment, useEffect, useState} from 'react';
+import React, {Fragment, useState} from 'react';
 import useMaze from "./useMaze";
 import Cell from "./Cell/Cell";
 import ControlButtons from "./Buttons/ControlButtons/ControlButtons";
 import PropTypes from 'prop-types';
-import TimeTracker from "../TimeTracker/TimeTracker";
+import './MazeContainer.scss';
 
 const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
 
-    const {mazeGrid, currentLocation, up, down, right, left, finish} = useMaze(mazeLevel);
-    const [currentTime, setCurrentTime] = useState(0);
-    const [countDown, setCountDown] = useState(60);
+    const {mazeGrid, currentLocation, up, down, right, left, finish, screenTime} = useMaze(mazeLevel, onPlayerLose);
 
     //maps through the mazeGrid to return cells in a specific style
     const gameRepresentation = mazeGrid.map((row, rowIndex) => {
         const rowRepresentation = row.map((cell, cellIndex) => {
             //checks the player's location
             let isPlayerHere = currentLocation[0] === rowIndex && currentLocation[1] === cellIndex;
+            // level.keys.filter((e)=>{
+            //
+            // })
             return <Cell key={rowIndex.toString() + cellIndex.toString()} cellValue={cell}
                          isPlayerHere={isPlayerHere}
             />;
         });
         return <div key={rowIndex.toString()} className={'mazeRow'}>{rowRepresentation}</div>
     });
-
 
 
     //setting the rule which allows to move only one move at a time
@@ -61,51 +61,11 @@ const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
 
     //re-renders the component every second and adds a second to the TimeTracker
 
-    useEffect(() => {
-            let count;
-            //decides which timer to show based on the game level
-            if (mazeLevel === 'level1') {
-                count = setInterval(
-                    (prevState) => {
-                        setCurrentTime(prevState => prevState += 1);
-                    },
-                    1000
-                );
-            } else {
-                count = setInterval(
-                    (prevState) => {
-                        setCountDown(prevState => prevState -= 1);
-                    },
-                    1000
-                );
-            }
-            return () => {
-                clearInterval(count)
-            }
-        }
-    );
-
-    let timer;
-    if (mazeLevel === 'level1') {
-        timer = currentTime;
-    } else {
-        timer = countDown;
-    }
-
 
     //setts the winning condition
 
     if (finish) {
-        onPlayerFinish(`You got free in ${timer} seconds!`)
-    }
-
-    let lost = false;
-    if (countDown <= 0) {
-        lost = true;
-    }
-
-    if (lost) {
-        onPlayerLose()
+        onPlayerFinish(`You got free in  seconds!`)
     }
 
 
@@ -117,7 +77,7 @@ const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
                 onKeyUp={handleKeyUp}>
                 {gameRepresentation}
             </div>
-            <TimeTracker>Time: {timer} seconds </TimeTracker>
+            <div id={'time-tracker'}>Time: {screenTime}</div>
             <ControlButtons
                 up={up}
                 down={down}
