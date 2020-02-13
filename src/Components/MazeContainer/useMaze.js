@@ -12,7 +12,7 @@ const useMaze = (mazeLevel, onPlayerLose) => {
     const [currentLocation, setCurrentLocation] = useState(LEVELS[mazeLevel].levelStart);
     const [startTime, setStartTime] = useState(new Date());
 
-    let timeLeft = mazeLevel === 'level1' ? undefined : 60;
+    let timeLeft = mazeLevel === 'level1' ? undefined : 10;
     let countDirection = mazeLevel === 'level1' ? 'up' : 'down';
 
     const [screenTime, setScreenTime] = useState(countDirection === 'up' ? 0 : timeLeft);
@@ -21,13 +21,12 @@ const useMaze = (mazeLevel, onPlayerLose) => {
 
     let updateScreenTime = () => {
         let timeDifference = (new Date() - startTime) / 1000;
-        console.log(timeDifference);
         let newScreenTime = countDirection === 'up' ? timeDifference : timeLeft - timeDifference;
         //checks when the timeLeft expires
-        if (countDirection === 'down' && newScreenTime < 1) {
+        if (countDirection === 'down' && screenTime < 1) {
             setPlayerLost(true);
         }
-        setScreenTime(newScreenTime)
+        setScreenTime(Math.floor(newScreenTime))
     };
 
 
@@ -35,16 +34,12 @@ const useMaze = (mazeLevel, onPlayerLose) => {
 
             let intervalId = setInterval(() => {
                 updateScreenTime()
-            }, 100);
+            }, 50);
             return () => {
                 clearInterval(intervalId)
             }
         }
     );
-
-    if (playerLost) {
-        onPlayerLose()
-    }
 
     // initialization of finish var and setting the condition when it becomes true
     let finish = false;
@@ -97,7 +92,8 @@ const useMaze = (mazeLevel, onPlayerLose) => {
         down,
         right,
         left,
-        screenTime
+        screenTime,
+        playerLost
     }
 };
 

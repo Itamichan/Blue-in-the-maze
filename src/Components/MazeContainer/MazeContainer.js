@@ -7,7 +7,7 @@ import './MazeContainer.scss';
 
 const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
 
-    const {mazeGrid, currentLocation, up, down, right, left, finish, screenTime} = useMaze(mazeLevel, onPlayerLose);
+    const {mazeGrid, currentLocation, up, down, right, left, finish, screenTime, playerLost} = useMaze(mazeLevel, onPlayerLose);
 
     //maps through the mazeGrid to return cells in a specific style
     const gameRepresentation = mazeGrid.map((row, rowIndex) => {
@@ -65,9 +65,12 @@ const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
     //setts the winning condition
 
     if (finish) {
-        onPlayerFinish(`You got free in  seconds!`)
+        onPlayerFinish(`You got free in ${screenTime} seconds!`)
     }
 
+    if (playerLost) {
+        onPlayerLose()
+    }
 
     return (<Fragment>
 
