@@ -1,14 +1,19 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import './Rules.scss';
 
 
 const Rules = ({onReadRules}) => {
-    return (
-        <div
-            id={'rules'}
-            onClick={onReadRules}
 
-        >Rules</div>
+    return (
+        <Fragment>
+            <div
+                id={'rules'}
+                onClick={() => onReadRules(true)}
+
+            >Rules</div>
+
+        </Fragment>
+
     )
 };
 

@@ -7,6 +7,7 @@ import FinishScreen from "../MazeContainer/FinishScreen";
 import LostScreen from "../MazeContainer/LostScreen";
 import Footer from "../Footer/Footer";
 import Rules from "../MazeContainer/Rules/Rules";
+import {Button, Modal, ModalBody, ModalFooter, ModalHeader} from "reactstrap";
 
 
 const Layout = (props) => {
@@ -39,15 +40,27 @@ const Layout = (props) => {
     } else if (currentScreen === 'finishScreen') {
         screenOption = <FinishScreen
             gameResult={currentGameResult}
-            onRepeatLevel={() => {setCurrentScreen('gamePlay')}}
-            onNewLevel={() => {setCurrentScreen('levelSelection')}}
+            onRepeatLevel={() => {
+                setCurrentScreen('gamePlay')
+            }}
+            onNewLevel={() => {
+                setCurrentScreen('levelSelection')
+            }}
         />
     } else if (currentScreen === 'lostScreen') {
         screenOption = <LostScreen
-            onRepeatLevel={() => {setCurrentScreen('gamePlay')}}
-            onNewLevel={() => {setCurrentScreen('levelSelection')}}
+            onRepeatLevel={() => {
+                setCurrentScreen('gamePlay')
+            }}
+            onNewLevel={() => {
+                setCurrentScreen('levelSelection')
+            }}
         />
     }
+
+    const [showRules, setShowRules] = useState(false);
+
+    const toggleModal = () => setShowRules(!showRules);
 
     return (
         <Fragment>
@@ -55,7 +68,21 @@ const Layout = (props) => {
                 navbar
             </div>
             <GameBackground>
-                <Rules onReadRules={'open the modal window'}/>
+                <Rules onReadRules={(showModal) => {
+                    setShowRules(showModal)
+                }}/>
+                <Modal
+                    isOpen={showRules}
+                >
+                    <ModalHeader>Rules</ModalHeader>
+                    <ModalBody>
+                        here goes the rules
+                    </ModalBody>
+                    <ModalFooter>
+                        <Button onClick={toggleModal}> Understood!
+                        </Button>
+                    </ModalFooter>
+                </Modal>
                 {screenOption}
             </GameBackground>
             <Footer/>
