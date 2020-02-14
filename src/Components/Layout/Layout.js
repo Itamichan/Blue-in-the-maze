@@ -6,6 +6,7 @@ import GameBackground from "./GameBackground/GameBackground";
 import FinishScreen from "../MazeContainer/FinishScreen";
 import LostScreen from "../MazeContainer/LostScreen";
 import Footer from "../Footer/Footer";
+import Rules from "../MazeContainer/Rules/Rules";
 
 
 const Layout = (props) => {
@@ -54,6 +55,7 @@ const Layout = (props) => {
                 navbar
             </div>
             <GameBackground>
+                <Rules onReadRules={'open the modal window'}/>
                 {screenOption}
             </GameBackground>
             <Footer/>
