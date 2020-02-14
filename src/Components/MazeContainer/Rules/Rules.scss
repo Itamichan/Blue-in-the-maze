@@ -7,6 +7,12 @@
   padding-bottom: 0.5rem;
   padding-right: 1rem;
   text-align: end;
+
+  &:hover {
+  cursor: pointer;
+    color: $main-color-dark;
+  }
+
   //to keep rules on top-end of the PlainScreen
   @media (min-width: 601px) {
     width: 600px;

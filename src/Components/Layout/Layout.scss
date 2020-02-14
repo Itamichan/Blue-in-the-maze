@@ -1,21 +1,46 @@
 @import "../../assets/scss/global-styles";
 
 #rules-modal {
+
   #modal-header {
     border-bottom: none;
-    text-align: center;
+    justify-content: center;
     background-color: $main-color;
     color: #ffffff;
   }
 
   #modal-body {
+    font-size: 1.5rem;
     padding-bottom: 8px;
+    @media (min-width: 600px) {
+      font-size: 2rem;
 
+    }
+
+    div {
+      :nth-child(3) {
+        text-align: center;
+        font-weight: $global-weight;
+      }
+    }
+
+    ul {
+      //padding-inline-start: 0;
+    }
   }
 
   #modal-footer {
-    justify-content: space-between;
+    justify-content: center;
     border-top: none;
+
+    button {
+      font-size: 2rem;
+      background-color: $main-color;
+
+      &:hover {
+        background-color: $main-color-dark;
+      }
+    }
 
   }
 }
