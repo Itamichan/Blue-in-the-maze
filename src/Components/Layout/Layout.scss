@@ -1,7 +1,6 @@
 @import "../../assets/scss/global-styles";
 
 #rules-modal {
-
   #modal-header {
     border-bottom: none;
     justify-content: center;
@@ -10,8 +9,8 @@
   }
 
   #modal-body {
+    padding: 1rem 2rem ;
     font-size: 1.5rem;
-    padding-bottom: 8px;
     @media (min-width: 600px) {
       font-size: 2rem;
 
