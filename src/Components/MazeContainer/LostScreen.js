@@ -5,7 +5,7 @@ import GenericButton from "./Buttons/GenericButton/GenericButton";
 const LostScreen = ({onRepeatLevel,onNewLevel}) => {
     return (
         <PlainScreen
-            screenBackground="./bg-for-screen-state.png"
+            screenBackground="./lost-screen.png"
         >
             <h1>You lost!</h1>
             <GenericButton

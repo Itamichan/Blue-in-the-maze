@@ -8,7 +8,7 @@ const FinishScreen = ({gameResult, onRepeatLevel, onNewLevel}) => {
     return (
         <Fragment>
             <PlainScreen
-                screenBackground="./bg-for-screen-state.png">
+                screenBackground="./win-screen.png">
                 <h1>Finish screen</h1>
                 <div>{gameResult}</div>
                 <GenericButton
