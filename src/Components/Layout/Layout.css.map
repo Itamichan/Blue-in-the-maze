@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGE,0BAAc;EACZ,aAAa,EAAE,IAAI;EACnB,UAAU,EAAE,MAAM;EAClB,gBAAgB,ECJP,OAAO;EDKhB,KAAK,EAAE,OAAO;AAGhB,wBAAY;EACV,cAAc,EAAE,GAAG;AAIrB,0BAAc;EACZ,eAAe,EAAE,aAAa;EAC9B,UAAU,EAAE,IAAI",
+"sources": ["Layout.scss","../../assets/scss/global-styles.scss"],
+"names": [],
+"file": "Layout.css"
+}

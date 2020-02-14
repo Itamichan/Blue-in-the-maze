@@ -8,6 +8,7 @@ import LostScreen from "../MazeContainer/LostScreen";
 import Footer from "../Footer/Footer";
 import Rules from "../MazeContainer/Rules/Rules";
 import {Button, Modal, ModalBody, ModalFooter, ModalHeader} from "reactstrap";
+import './Layout.scss';
 
 
 const Layout = (props) => {
@@ -72,13 +73,14 @@ const Layout = (props) => {
                     setShowRules(showModal)
                 }}/>
                 <Modal
+                    id={'rules-modal'}
                     isOpen={showRules}
                 >
-                    <ModalHeader>Rules</ModalHeader>
-                    <ModalBody>
+                    <ModalHeader id={'modal-header'}>Rules</ModalHeader>
+                    <ModalBody id={'modal-body'}>
                         here goes the rules
                     </ModalBody>
-                    <ModalFooter>
+                    <ModalFooter id={'modal-footer'}>
                         <Button onClick={toggleModal}> Understood!
                         </Button>
                     </ModalFooter>

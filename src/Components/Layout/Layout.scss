@@ -1,0 +1,21 @@
+@import "../../assets/scss/global-styles";
+
+#rules-modal {
+  #modal-header {
+    border-bottom: none;
+    text-align: center;
+    background-color: $main-color;
+    color: #ffffff;
+  }
+
+  #modal-body {
+    padding-bottom: 8px;
+
+  }
+
+  #modal-footer {
+    justify-content: space-between;
+    border-top: none;
+
+  }
+}

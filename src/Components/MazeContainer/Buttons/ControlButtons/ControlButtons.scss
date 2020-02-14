@@ -1,10 +1,12 @@
+@import "../../../../assets/scss/global-styles";
+
 #control-buttons {
   .button-center {
     text-align: center;
   }
 
   .move-buttons {
-    background-color: #1db394;
+    background-color: $main-color;
     border-color: transparent;
     @media (min-width: 0) and (max-width: 480px) {
       display: inline-block;

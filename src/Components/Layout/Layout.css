@@ -1,0 +1,12 @@
+#rules-modal #modal-header {
+  border-bottom: none;
+  text-align: center;
+  background-color: #1db394;
+  color: #ffffff; }
+#rules-modal #modal-body {
+  padding-bottom: 8px; }
+#rules-modal #modal-footer {
+  justify-content: space-between;
+  border-top: none; }
+
+/*# sourceMappingURL=Layout.css.map */
