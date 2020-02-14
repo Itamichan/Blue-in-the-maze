@@ -22,7 +22,7 @@ const LevelSelection = ({chooseLevel}) => {
             <PlainScreen
                 screenBackground="./bg-for-screen-state.png"
             >
-                <h1>Level selection screen</h1>
+                <h1>Select a level</h1>
                 {availableLevel}
             </PlainScreen>
 

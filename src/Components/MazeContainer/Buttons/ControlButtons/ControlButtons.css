@@ -1,18 +1,21 @@
 #control-buttons .button-center {
   text-align: center; }
-@media (min-width: 0) and (max-width: 480px) {
-  #control-buttons .move-buttons {
-    display: inline-block;
-    padding: 0;
-    width: 25vw;
-    height: 10vh; } }
-@media (min-width: 481px) {
-  #control-buttons .move-buttons {
-    display: none; } }
+#control-buttons .move-buttons {
+  background-color: #1db394;
+  border-color: transparent; }
+  @media (min-width: 0) and (max-width: 480px) {
+    #control-buttons .move-buttons {
+      display: inline-block;
+      padding: 0;
+      width: 22vw;
+      height: 8vh; } }
+  @media (min-width: 481px) {
+    #control-buttons .move-buttons {
+      display: none; } }
 #control-buttons #arrow-up {
   margin-top: 10px; }
 #control-buttons .fa-chevron-down, #control-buttons .fa-chevron-up, #control-buttons .fa-chevron-left, #control-buttons .fa-chevron-right {
   font-size: 10vw;
-  color: rgba(0, 0, 0, 0.7); }
+  color: rgba(255, 255, 255, 0.8); }
 
 /*# sourceMappingURL=ControlButtons.css.map */

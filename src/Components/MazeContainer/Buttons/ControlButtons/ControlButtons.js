@@ -10,26 +10,26 @@ const ControlButtons = ({up, left, down, right}) => {
         <Container fluid={true} id={'control-buttons'}>
             <Row>
                 <Col className={'button-center'}>
-                    <Button className={'move-buttons'} id={'arrow-up'} color="warning" onClick={up}>
+                    <Button className={'move-buttons'} id={'arrow-up'} onClick={up}>
                         <FontAwesomeIcon icon="chevron-up"/>
                     </Button>
                 </Col>
             </Row>
             <Row className={'button-center'}>
                 <Col>
-                    <Button className={'move-buttons'} color="warning" onClick={left}>
+                    <Button className={'move-buttons'} onClick={left}>
                         <FontAwesomeIcon icon="chevron-left"/>
                     </Button>
                 </Col>
                 <Col>
-                    <Button className={'move-buttons'} color="warning" onClick={right}>
+                    <Button className={'move-buttons'} onClick={right}>
                         <FontAwesomeIcon icon="chevron-right"/>
                     </Button>
                 </Col>
             </Row>
             <Row>
                 <Col className={'button-center'}>
-                    <Button className={'move-buttons'} color="warning" onClick={down}>
+                    <Button className={'move-buttons'} onClick={down}>
                         <FontAwesomeIcon icon="chevron-down"/>
                     </Button>
                 </Col>

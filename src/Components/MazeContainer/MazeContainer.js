@@ -4,6 +4,7 @@ import Cell from "./Cell/Cell";
 import ControlButtons from "./Buttons/ControlButtons/ControlButtons";
 import PropTypes from 'prop-types';
 import './MazeContainer.scss';
+import {LEVELS} from "./LevelSelection/levels";
 
 const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
 
@@ -14,11 +15,19 @@ const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
         const rowRepresentation = row.map((cell, cellIndex) => {
             //checks the player's location
             let isPlayerHere = currentLocation[0] === rowIndex && currentLocation[1] === cellIndex;
-            // level.keys.filter((e)=>{
-            //
-            // })
+            //checking if the maze has a key
+            // let keyPresent = LEVELS[mazeLevel].key.filter((e) => {
+            //     if (e.length > 0) {
+            //         let keyMatch = e[0].keyPosition[0] === rowIndex && e[0].keyPosition[1] === cellIndex;
+            //         return keyMatch;
+            //     }
+            // });
+            // console.log(keyPresent);
+            // let isKeyHere = keyPresent[0].keyPosition[0] === rowIndex && keyPresent[0].keyPosition[1] === cellIndex;
+            // console.log(isKeyHere);
             return <Cell key={rowIndex.toString() + cellIndex.toString()} cellValue={cell}
                          isPlayerHere={isPlayerHere}
+                // isKeyHere={isKeyHere}
             />;
         });
         return <div key={rowIndex.toString()} className={'mazeRow'}>{rowRepresentation}</div>

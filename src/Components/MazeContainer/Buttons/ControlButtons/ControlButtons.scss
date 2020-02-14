@@ -1,15 +1,16 @@
 #control-buttons {
-
   .button-center {
     text-align: center;
   }
 
   .move-buttons {
+    background-color: #1db394;
+    border-color: transparent;
     @media (min-width: 0) and (max-width: 480px) {
       display: inline-block;
       padding: 0;
-      width: 25vw;
-      height: 10vh;
+      width: 22vw;
+      height: 8vh;
     }
     @media (min-width: 481px) {
       display: none;
@@ -21,6 +22,6 @@
 
   .fa-chevron-down, .fa-chevron-up, .fa-chevron-left, .fa-chevron-right {
     font-size: 10vw;
-    color: rgba(0, 0, 0, 0.7);
+    color: rgba(255, 255, 255, 0.8);
   }
 }
