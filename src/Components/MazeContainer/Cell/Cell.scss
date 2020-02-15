@@ -1,22 +1,15 @@
 /*adding bg images to the cells*/
-$bgPath: '../../../assets/images/game_cells/grassCenter.png';
-$bgWall: '../../../assets/images/game_cells/castleCenter.png';
-$bgEarth: '../../../assets/images/game_cells/brickWall.png';
-$bgDoor: '../../../assets/images/game_cells/door_closedMid.png';
-$bg-key: '../../../assets/images/game_cells/keyGreen.png';
-$bgPlayer: '../../../assets/images/game_cells/p1_walk01.png';
-$bgRed: '../../../assets/images/game_cells/buttonRed.png';
-
 
 $minWidth: 10;
 $maxWidth: 40;
 $stepSize: 15px;
 
 .mazeRow {
+
   div {
-    display: inline-block;
-    background-size: contain;
-    background-repeat: no-repeat;
+    display: inline-block !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
 
     //todo update the max widh in the comment in accordance with the final decision
     //keeps the cells responsive to the screen size until 600px width
@@ -35,42 +28,3 @@ $stepSize: 15px;
     }
   }
 }
-
-.empty-field {
-  background: url($bgEarth);
-}
-
-.path-field {
-  background: url($bgPath);
-
-}
-
-.wall-field {
-  background: url($bgWall);
-
-}
-
-.finish-field {
-  background: url($bgDoor);
-
-}
-
-.path-field-player {
-  background: url($bgPlayer), url($bgPath);
-
-}
-
-.path-field-key {
-  background: url($bg-key), url($bgPath);
-
-}
-
-.finish-field-player {
-  background: url($bgPlayer), url($bgDoor);
-
-}
-
-.red {
-  background: url($bgRed) ;
-}
-

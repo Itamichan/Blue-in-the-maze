@@ -1,8 +1,8 @@
 /*adding bg images to the cells*/
 .mazeRow div {
-  display: inline-block;
-  background-size: contain;
-  background-repeat: no-repeat; }
+  display: inline-block !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important; }
   @media (min-width: 150px) {
     .mazeRow div {
       width: 10px;
@@ -220,29 +220,5 @@
 @media (min-width: 600px) {
   .mazeRow {
     height: 40px; } }
-
-.empty-field {
-  background: url("../../../assets/images/game_cells/brickWall.png"); }
-
-.path-field {
-  background: url("../../../assets/images/game_cells/grassCenter.png"); }
-
-.wall-field {
-  background: url("../../../assets/images/game_cells/castleCenter.png"); }
-
-.finish-field {
-  background: url("../../../assets/images/game_cells/door_closedMid.png"); }
-
-.path-field-player {
-  background: url("../../../assets/images/game_cells/p1_walk01.png"), url("../../../assets/images/game_cells/grassCenter.png"); }
-
-.path-field-key {
-  background: url("../../../assets/images/game_cells/keyGreen.png"), url("../../../assets/images/game_cells/grassCenter.png"); }
-
-.finish-field-player {
-  background: url("../../../assets/images/game_cells/p1_walk01.png"), url("../../../assets/images/game_cells/door_closedMid.png"); }
-
-.red {
-  background: url("../../../assets/images/game_cells/buttonRed.png"); }
 
 /*# sourceMappingURL=Cell.css.map */
