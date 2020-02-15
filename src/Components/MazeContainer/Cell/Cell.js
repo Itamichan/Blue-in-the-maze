@@ -1,6 +1,6 @@
 import React from 'react';
 import './Cell.scss';
-import {KEYS} from "../LevelSelection/levels";
+import {DOORS, KEYS} from "../LevelSelection/levels";
 
 //todo change the img names to be relevant
 
@@ -16,6 +16,10 @@ const BACKGROUND_MAPPING = {
     5: '/resources/keyYellow.png',
     6: '/resources/keyRed.png',
     7: '/resources/keyBlue.png',
+    44: '/resources/doorGreen.png',
+    55: '/resources/doorYellow.png',
+    66: '/resources/doorRed.png',
+    77: '/resources/doorBlue.png',
 };
 
 //component which represents every div in the mazeGrid
@@ -36,7 +40,7 @@ const Cell = React.memo(({cellValue, isPlayerHere, userBag}) => {
         cellBackgrounds.push(BACKGROUND_MAPPING[cellValue]);
     }
 
-    if (KEYS.includes(cellValue)) {
+    if (KEYS.includes(cellValue) || DOORS.includes(cellValue)) {
         cellBackgrounds.push(BACKGROUND_MAPPING[2])
     }
 
