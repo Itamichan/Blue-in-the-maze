@@ -1,16 +1,20 @@
 @import "../../../../assets/scss/global-styles";
 
-#generic-button {
-  border-color: rgba(0, 0, 0, 0.2);
+.generic-button {
+  border: 1px solid rgba(0, 0, 0, 0.2);
   display: inline-block;
   font-size: 2.5rem;
   background-color: $main-color;
   font-weight: 600;
-  margin-right: 15px;
-  margin-top: 16px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: #ececec;
+  //margin-right: 15px;
+  //margin-top: 16px;
 
   &:hover {
     background-color: $main-color-dark;
+    cursor: pointer;
   }
   @media (min-width: 0) and (max-width: 480px){
     font-size: 2rem;

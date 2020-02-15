@@ -6,11 +6,11 @@ import './GenericButton.scss';
 
 const GenericButton = ({changeScreen, children}) => {
     return (
-        <Button id={'generic-button'}
+        <div className={'generic-button'}
         onClick={changeScreen}
         >
             {children}
-        </Button>
+        </div>
 
     )
 };

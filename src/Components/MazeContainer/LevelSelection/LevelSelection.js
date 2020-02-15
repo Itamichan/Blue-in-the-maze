@@ -3,17 +3,22 @@ import PlainScreen from "../../Layout/PlainScreen/PlainScreen";
 import PropTypes from 'prop-types';
 import GenericButton from "../Buttons/GenericButton/GenericButton";
 import {LEVELS} from "./levels";
+import './LevelSelection.scss';
 
 const LevelSelection = ({chooseLevel}) => {
 
     let availableLevel = Object.keys(LEVELS).map((i, idx) => {
         let levelDifficulty;
         levelDifficulty = `Level ${idx + 1}`;
-        return <GenericButton
-            changeScreen={() => chooseLevel(i)}
-            key={`level ${idx + 1}`}>
-            {levelDifficulty}
-        </GenericButton>;
+        return (
+            <div>
+                <GenericButton
+                    changeScreen={() => chooseLevel(i)}
+                    key={`level ${idx + 1}`}>
+                    {levelDifficulty}
+                </GenericButton>
+            </div>
+        )
     });
 
 
@@ -23,7 +28,10 @@ const LevelSelection = ({chooseLevel}) => {
                 screenBackground="./bg-for-screen-state.png"
             >
                 <h1>Select a level</h1>
-                {availableLevel}
+                <div className={'level-button-container'}>
+                    {availableLevel}
+                </div>
+
             </PlainScreen>
 
         </Fragment>
