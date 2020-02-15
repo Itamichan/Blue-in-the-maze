@@ -8,7 +8,7 @@ import {LEVELS} from "./LevelSelection/levels";
 
 const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
 
-    const {mazeGrid, currentLocation, up, down, right, left, finish, screenTime, playerLost} = useMaze(mazeLevel, onPlayerLose);
+    const {mazeGrid, currentLocation, up, down, right, left, finish, screenTime, playerLost, userBag} = useMaze(mazeLevel, onPlayerLose);
 
     //maps through the mazeGrid to return cells in a specific style
     const gameRepresentation = mazeGrid.map((row, rowIndex) => {
@@ -16,17 +16,16 @@ const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
             //checks the player's location
             let isPlayerHere = currentLocation[0] === rowIndex && currentLocation[1] === cellIndex;
             //checking if the maze has a key
-            // let keyPresent = LEVELS[mazeLevel].key.filter((e) => {
-            //     if (e.length > 0) {
-            //         let keyMatch = e[0].keyPosition[0] === rowIndex && e[0].keyPosition[1] === cellIndex;
-            //         return keyMatch;
-            //     }
-            // });
-            // console.log(keyPresent);
-            // let isKeyHere = keyPresent[0].keyPosition[0] === rowIndex && keyPresent[0].keyPosition[1] === cellIndex;
-            // console.log(isKeyHere);
-            return <Cell key={rowIndex.toString() + cellIndex.toString()} cellValue={cell}
+            let keyPresent = LEVELS[mazeLevel].key.filter((e) => {
+
+
+                    return e.keyPosition[0] === rowIndex && e.keyPosition[1] === cellIndex;
+            });
+            console.log(keyPresent);
+            return <Cell key={rowIndex.toString() + cellIndex.toString()}
+                         cellValue={cell}
                          isPlayerHere={isPlayerHere}
+                         userBag={userBag}
                 // isKeyHere={isKeyHere}
             />;
         });

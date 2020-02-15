@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {LEVELS} from "./LevelSelection/levels";
+import {LEVELS, KEYS} from "./LevelSelection/levels";
 
 const useMaze = (mazeLevel, onPlayerLose) => {
 
@@ -11,8 +11,10 @@ const useMaze = (mazeLevel, onPlayerLose) => {
     // setting the currentLocation variable
     const [currentLocation, setCurrentLocation] = useState(LEVELS[mazeLevel].levelStart);
     const [startTime, setStartTime] = useState(new Date());
+    const [userBag, setUserBag] = useState([]);
 
-    let timeLeft = mazeLevel === 'level1' ? undefined : 60;
+    // Move to level constants
+    let timeLeft = mazeLevel === 'level1' ? undefined : 10;
     let countDirection = mazeLevel === 'level1' ? 'up' : 'down';
 
     const [screenTime, setScreenTime] = useState(countDirection === 'up' ? 0 : timeLeft);
@@ -53,9 +55,13 @@ const useMaze = (mazeLevel, onPlayerLose) => {
         let X = currentLocation[1];
 
         let newLocation = [Y + deltaY, X + deltaX];
+        let gridValue = mazeGrid[newLocation[0]][newLocation[1]];
         // doesn't allow to walk into a wall
-        if (mazeGrid[newLocation[0]][newLocation[1]] !== 1) {
+        if (gridValue !== 1) {
             setCurrentLocation(newLocation);
+            if (KEYS.includes(gridValue) && !userBag.includes(gridValue)) {
+                setUserBag([...userBag, gridValue])
+            }
         }
     };
 
@@ -93,7 +99,8 @@ const useMaze = (mazeLevel, onPlayerLose) => {
         right,
         left,
         screenTime,
-        playerLost
+        playerLost,
+        userBag
     }
 };
 

@@ -2,7 +2,7 @@ import React from 'react';
 import './Cell.scss';
 
 //component which represents every div in the mazeGrid
-const Cell = ({cellValue, isPlayerHere, }) => {
+const Cell = ({cellValue, isPlayerHere, userBag}) => {
 
 
     switch (cellValue) {
