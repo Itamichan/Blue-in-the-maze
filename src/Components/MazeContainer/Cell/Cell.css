@@ -242,4 +242,7 @@
 .finish-field-player {
   background: url("../../../assets/images/game_cells/p1_walk01.png"), url("../../../assets/images/game_cells/door_closedMid.png"); }
 
+.red {
+  background: url("../../../assets/images/game_cells/buttonRed.png"); }
+
 /*# sourceMappingURL=Cell.css.map */

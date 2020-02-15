@@ -5,6 +5,7 @@ $bgEarth: '../../../assets/images/game_cells/brickWall.png';
 $bgDoor: '../../../assets/images/game_cells/door_closedMid.png';
 $bg-key: '../../../assets/images/game_cells/keyGreen.png';
 $bgPlayer: '../../../assets/images/game_cells/p1_walk01.png';
+$bgRed: '../../../assets/images/game_cells/buttonRed.png';
 
 
 $minWidth: 10;
@@ -69,4 +70,7 @@ $stepSize: 15px;
 
 }
 
+.red {
+  background: url($bgRed) ;
+}
 

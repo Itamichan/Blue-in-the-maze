@@ -5,6 +5,8 @@ import GenericButton from "./Buttons/GenericButton/GenericButton";
 
 const FinishScreen = ({gameResult, onRepeatLevel, onNewLevel}) => {
 
+    //todo the finish time is wrong should be the time past not time remained
+
     return (
         <Fragment>
             <PlainScreen

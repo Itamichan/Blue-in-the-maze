@@ -16,8 +16,9 @@ const Cell = ({cellValue, isPlayerHere, userBag}) => {
             return <div className={isPlayerHere ? 'finish-field-player' : 'finish-field'}/>;
         case 4:
             return <div className={isPlayerHere ? 'path-field-player' : 'path-field-key'}/>;
+
         default:
-            return null
+            return <div className={'red'}/>
     }
 };
 

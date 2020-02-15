@@ -6,17 +6,14 @@ const useMaze = (mazeLevel, onPlayerLose) => {
     // data structure of the MazeContainer
     // numbers meaning: 0 - empty; 1 - wall; 2 - path; 3 - finish
     const mazeGrid = LEVELS[mazeLevel].levelGrid;
+    const timeLeft = LEVELS[mazeLevel].timeLeft;
+    const countDirection = timeLeft === undefined ? 'up' : 'down';
 
 
     // setting the currentLocation variable
     const [currentLocation, setCurrentLocation] = useState(LEVELS[mazeLevel].levelStart);
     const [startTime, setStartTime] = useState(new Date());
     const [userBag, setUserBag] = useState([]);
-
-    // Move to level constants
-    let timeLeft = mazeLevel === 'level1' ? undefined : 10;
-    let countDirection = mazeLevel === 'level1' ? 'up' : 'down';
-
     const [screenTime, setScreenTime] = useState(countDirection === 'up' ? 0 : timeLeft);
     const [playerLost, setPlayerLost] = useState(false);
 
@@ -43,6 +40,8 @@ const useMaze = (mazeLevel, onPlayerLose) => {
         }
     );
 
+    //todo index.js:1 Warning: Can't perform a React state update on an unmounted component. This is a no-op, but it indicates a memory leak in your application. To fix, cancel all subscriptions and asynchronous tasks in a useEffect cleanup function.
+
     // initialization of finish var and setting the condition when it becomes true
     let finish = false;
     if (mazeGrid[currentLocation[0]][currentLocation[1]] === 3) {
@@ -57,12 +56,27 @@ const useMaze = (mazeLevel, onPlayerLose) => {
         let newLocation = [Y + deltaY, X + deltaX];
         let gridValue = mazeGrid[newLocation[0]][newLocation[1]];
         // doesn't allow to walk into a wall
-        if (gridValue !== 1) {
+        if (canMove(gridValue)) {
             setCurrentLocation(newLocation);
             if (KEYS.includes(gridValue) && !userBag.includes(gridValue)) {
                 setUserBag([...userBag, gridValue])
             }
         }
+    };
+
+    const canMove = (gridValue) => {
+        let haveKey = userBag.some( (key) => {
+           return key * 11 === gridValue
+        });
+        //cannot step on wall or empty space
+        if (gridValue === 1 || gridValue === 0) {
+            return false
+        }
+        //allow to step on the path/ finish or on the keys
+        if (gridValue === 2 || gridValue === 3 || KEYS.includes(gridValue)) {
+            return true
+        }
+        return haveKey
     };
 
     const up = () => {

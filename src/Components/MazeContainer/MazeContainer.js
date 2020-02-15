@@ -15,18 +15,10 @@ const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
         const rowRepresentation = row.map((cell, cellIndex) => {
             //checks the player's location
             let isPlayerHere = currentLocation[0] === rowIndex && currentLocation[1] === cellIndex;
-            //checking if the maze has a key
-            let keyPresent = LEVELS[mazeLevel].key.filter((e) => {
-
-
-                    return e.keyPosition[0] === rowIndex && e.keyPosition[1] === cellIndex;
-            });
-            console.log(keyPresent);
             return <Cell key={rowIndex.toString() + cellIndex.toString()}
                          cellValue={cell}
                          isPlayerHere={isPlayerHere}
                          userBag={userBag}
-                // isKeyHere={isKeyHere}
             />;
         });
         return <div key={rowIndex.toString()} className={'mazeRow'}>{rowRepresentation}</div>
