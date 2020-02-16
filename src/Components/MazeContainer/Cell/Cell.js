@@ -20,12 +20,15 @@ const BACKGROUND_MAPPING = {
     55: '/resources/doorYellow.png',
     66: '/resources/doorRed.png',
     77: '/resources/doorBlue.png',
+    78: '/resources/doorBlueOpen.png',
 };
 
 //component which represents every div in the mazeGrid
 const Cell = React.memo(({cellValue, isPlayerHere, userBag}) => {
 
     let cellBackgrounds = [];
+
+    const openDoor = userBag.map((key) => key * 11);
 
     const buildBackground = (backgroundPaths) => {
         let styledString = backgroundPaths.map(e => `url(${process.env.PUBLIC_URL + e})`);
@@ -36,7 +39,7 @@ const Cell = React.memo(({cellValue, isPlayerHere, userBag}) => {
         cellBackgrounds.push(bgPlayer)
     }
 
-    if (!userBag.includes(cellValue)) {
+    if (!userBag.includes(cellValue) && !openDoor.includes(cellValue)) {
         cellBackgrounds.push(BACKGROUND_MAPPING[cellValue]);
     }
 
