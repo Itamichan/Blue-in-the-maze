@@ -43,6 +43,10 @@ const Cell = React.memo(({cellValue, isPlayerHere, userBag}) => {
         cellBackgrounds.push(BACKGROUND_MAPPING[cellValue]);
     }
 
+    if(openDoor.includes(cellValue)) {
+        cellBackgrounds.push(BACKGROUND_MAPPING[cellValue+1]);
+    }
+
     if (KEYS.includes(cellValue) || DOORS.includes(cellValue)) {
         cellBackgrounds.push(BACKGROUND_MAPPING[2])
     }
