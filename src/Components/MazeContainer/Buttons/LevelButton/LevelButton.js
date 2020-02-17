@@ -4,6 +4,7 @@ import './LevelButton.scss';
 
 const LevelButton = ({changeScreen, children, buttonLook, buttonDisabled}) => {
 
+    //checks what class to apply to the button
     let buttonStyle;
     if (buttonLook === 'levelCompleted') {
         buttonStyle = 'level-button'
