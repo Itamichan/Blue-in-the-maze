@@ -7,6 +7,8 @@
   padding: 8px 16px;
   border-radius: 4px;
   color: #ececec; }
+  .generic-button.disabled {
+    background-color: grey; }
   .generic-button:hover {
     background-color: #17917a;
     cursor: pointer; }

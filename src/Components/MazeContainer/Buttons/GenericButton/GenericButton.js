@@ -4,10 +4,10 @@ import {Button} from "reactstrap";
 import './GenericButton.scss';
 
 
-const GenericButton = ({changeScreen, children}) => {
+const GenericButton = ({changeScreen, children, disabled}) => {
     return (
-        <div className={'generic-button'}
-        onClick={changeScreen}
+        <div className={disabled? 'generic-button disabled' : 'generic-button'}
+        onClick={disabled? null : changeScreen}
         >
             {children}
         </div>

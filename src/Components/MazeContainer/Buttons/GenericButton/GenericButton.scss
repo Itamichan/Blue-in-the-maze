@@ -10,6 +10,10 @@
   border-radius: 4px;
   color: #ececec;
 
+  &.disabled {
+    background-color: grey;
+  }
+
   &:hover {
     background-color: $main-color-dark;
     cursor: pointer;

@@ -6,7 +6,7 @@ import {DOORS, KEYS} from "../LevelSelection/levels";
 
 const bgPlayer = '/resources/p1_walk01.png';
 
-
+//todo move to the levels
 const BACKGROUND_MAPPING = {
     0: '/resources/brickWall.png',
     1: '/resources/castleCenter.png',

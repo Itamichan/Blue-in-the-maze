@@ -64,7 +64,21 @@ const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
 
     //setts the winning condition
 
+
     if (finish) {
+        let completedLevels = localStorage.getItem('completedLevels');
+        // let levelsArray = completedLevels;
+        if (completedLevels === null) {
+            completedLevels = [];
+        } else completedLevels = completedLevels.split(",");
+
+        if (!completedLevels.includes(mazeLevel)) {
+            completedLevels.push(mazeLevel);
+        }
+
+        localStorage.setItem('completedLevels', completedLevels.join());
+
+
         onPlayerFinish(`You got free in ${screenTime} seconds!`)
     }
 

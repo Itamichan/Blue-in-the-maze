@@ -7,6 +7,10 @@ import './LevelSelection.scss';
 
 const LevelSelection = ({chooseLevel}) => {
 
+
+
+
+
     let availableLevel = Object.keys(LEVELS).map((i, idx) => {
         let levelDifficulty;
         levelDifficulty = `Level ${idx + 1}`;
@@ -14,7 +18,9 @@ const LevelSelection = ({chooseLevel}) => {
             <div>
                 <GenericButton
                     changeScreen={() => chooseLevel(i)}
-                    key={`level ${idx + 1}`}>
+                    key={`level ${idx + 1}`}
+                    disabled={false}
+                >
                     {levelDifficulty}
                 </GenericButton>
             </div>
