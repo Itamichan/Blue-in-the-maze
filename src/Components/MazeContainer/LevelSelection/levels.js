@@ -1,23 +1,22 @@
-// 0-empty field;
-// 1-wall;
-// 2-path;
-// 3-finish;
-
-// 5-green key;
-// 55-green door;
-
-
+//game keys and their corresponding doors
 export const KEYS = [4, 5, 6, 7];
-export const DOORS = KEYS.map(e => e*11);
+export const DOORS = KEYS.map(e => e * 11);
 
 
 export const BACKGROUND_PLAYER = '/resources/p1_walk01.png';
 export const BACKGROUND_MAPPING = {
+
+    // 0-empty field;
+    // 1-wall;
+    // 2-path;
+    // 3-finish;
     0: '/resources/earth.png',
     1: '/resources/wall.png',
     2: '/resources/path.png',
     3: '/resources/finish.png',
 
+    //key, door, openDoor
+    //ex: 4-green key, 44-greenDoor, 45-greenOpenDoor
     4: '/resources/keyGreen.png',
     44: '/resources/doorGreen.png',
     45: '/resources/doorGreenOpen.png',
