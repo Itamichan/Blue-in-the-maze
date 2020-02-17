@@ -9,7 +9,32 @@
 
 export const KEYS = [4, 5, 6, 7];
 export const DOORS = KEYS.map(e => e*11);
-export const OPEN_DOORS = KEYS.map(e => e*11+1);
+
+
+export const BACKGROUND_PLAYER = '/resources/p1_walk01.png';
+export const BACKGROUND_MAPPING = {
+    0: '/resources/earth.png',
+    1: '/resources/wall.png',
+    2: '/resources/path.png',
+    3: '/resources/finish.png',
+
+    4: '/resources/keyGreen.png',
+    44: '/resources/doorGreen.png',
+    45: '/resources/doorGreenOpen.png',
+
+    5: '/resources/keyYellow.png',
+    55: '/resources/doorYellow.png',
+    56: '/resources/doorYellowOpen.png',
+
+    6: '/resources/keyRed.png',
+    66: '/resources/doorRed.png',
+    67: '/resources/doorRedOpen.png',
+
+    7: '/resources/keyBlue.png',
+    77: '/resources/doorBlue.png',
+    78: '/resources/doorBlueOpen.png',
+};
+
 export const LEVELS = {
 
     level1: {

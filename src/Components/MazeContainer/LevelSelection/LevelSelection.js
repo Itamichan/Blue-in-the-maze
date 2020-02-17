@@ -3,7 +3,7 @@ import PlainScreen from "../../Layout/PlainScreen/PlainScreen";
 import PropTypes from 'prop-types';
 import {LEVELS} from "./levels";
 import './LevelSelection.scss';
-import LevelButton from "../Buttons/LevelButton";
+import LevelButton from "../Buttons/LevelButton/LevelButton";
 
 const LevelSelection = ({chooseLevel}) => {
 
