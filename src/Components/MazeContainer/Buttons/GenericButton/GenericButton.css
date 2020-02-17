@@ -9,6 +9,8 @@
   color: #ececec; }
   .generic-button.disabled {
     background-color: grey; }
+  .generic-button.next-button {
+    background-color: yellow; }
   .generic-button:hover {
     background-color: #17917a;
     cursor: pointer; }

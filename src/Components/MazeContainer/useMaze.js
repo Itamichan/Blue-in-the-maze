@@ -45,7 +45,16 @@ const useMaze = (mazeLevel, onPlayerLose) => {
     // initialization of finish var and setting the condition when it becomes true
     let finish = false;
     if (mazeGrid[currentLocation[0]][currentLocation[1]] === 3) {
-        finish = true
+        finish = true;
+        let completedLevels = localStorage.getItem('completedLevels');
+        // let levelsArray = completedLevels;
+        if (completedLevels === null) {
+            completedLevels = [];
+        } else completedLevels = completedLevels.split(",");
+        if (!completedLevels.includes(mazeLevel)) {
+            completedLevels.push(mazeLevel);
+        }
+        localStorage.setItem('completedLevels', completedLevels.join());
     }
 
     // allows us to change the currentLocation in the mazeGrid
@@ -65,8 +74,8 @@ const useMaze = (mazeLevel, onPlayerLose) => {
     };
 
     const canMove = (gridValue) => {
-        let haveKey = userBag.some( (key) => {
-           return key * 11 === gridValue
+        let haveKey = userBag.some((key) => {
+            return key * 11 === gridValue
         });
         //cannot step on wall or empty space
         if (gridValue === 1 || gridValue === 0) {

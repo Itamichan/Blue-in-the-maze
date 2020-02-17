@@ -1,8 +1,8 @@
 import React from 'react';
-import './GenericButton.scss';
+import './LevelButtons.scss';
 
 
-const GenericButton = ({changeScreen, children, disabled, levelStyle}) => {
+const LevelButton = ({changeScreen, children, disabled, levelStyle}) => {
 
     let buttonStyle;
     if (levelStyle === 'levelCompleted') {
@@ -15,7 +15,7 @@ const GenericButton = ({changeScreen, children, disabled, levelStyle}) => {
 
     return (
         <div className={buttonStyle}
-        onClick={changeScreen}
+             onClick={changeScreen}
         >
             {children}
         </div>
@@ -23,4 +23,4 @@ const GenericButton = ({changeScreen, children, disabled, levelStyle}) => {
     )
 };
 
-export default GenericButton;
+export default LevelButton;

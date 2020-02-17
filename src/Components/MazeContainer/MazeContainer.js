@@ -4,7 +4,6 @@ import Cell from "./Cell/Cell";
 import ControlButtons from "./Buttons/ControlButtons/ControlButtons";
 import PropTypes from 'prop-types';
 import './MazeContainer.scss';
-import {LEVELS} from "./LevelSelection/levels";
 
 const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
 
@@ -66,19 +65,6 @@ const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
 
 
     if (finish) {
-        let completedLevels = localStorage.getItem('completedLevels');
-        // let levelsArray = completedLevels;
-        if (completedLevels === null) {
-            completedLevels = [];
-        } else completedLevels = completedLevels.split(",");
-
-        if (!completedLevels.includes(mazeLevel)) {
-            completedLevels.push(mazeLevel);
-        }
-
-        localStorage.setItem('completedLevels', completedLevels.join());
-
-
         onPlayerFinish(`You got free in ${screenTime} seconds!`)
     }
 
