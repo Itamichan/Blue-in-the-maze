@@ -15,11 +15,9 @@ const LevelSelection = ({chooseLevel}) => {
 
 
     let gameLevels = Object.keys(LEVELS);
-    let notPlayedLevel = gameLevels.filter((level) => !finishedLevels.includes(level));
-
-    console.log(finishedLevels);
-    console.log(notPlayedLevel);
-
+    let notPlayedLevel = gameLevels.filter((level) => {
+        return !finishedLevels.includes(level)
+    });
 
     let availableLevel = Object.keys(LEVELS).map((i, idx) => {
         let disabled = false;
@@ -39,10 +37,9 @@ const LevelSelection = ({chooseLevel}) => {
             disabled = true
         }
         return (
-            <div>
+            <div key={`level ${idx + 1}`}>
                 <LevelButton
                     changeScreen={() => chooseLevel(i)}
-                    key={`level ${idx + 1}`}
                     buttonLook={levelState}
                     buttonDisabled={disabled}
                 >

@@ -7,7 +7,6 @@ import FinishScreen from "../MazeContainer/FinishScreen";
 import LostScreen from "../MazeContainer/LostScreen";
 import Footer from "../Footer/Footer";
 import Rules from "../MazeContainer/Rules/Rules";
-import {Button, Modal, ModalBody, ModalFooter, ModalHeader} from "reactstrap";
 import './Layout.scss';
 
 
