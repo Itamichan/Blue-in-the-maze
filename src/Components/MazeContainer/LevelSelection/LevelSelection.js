@@ -11,7 +11,9 @@ const LevelSelection = ({chooseLevel}) => {
     let finishedLevels = localStorage.getItem('completedLevels');
     if (finishedLevels === null) {
         finishedLevels = []
-    } else finishedLevels = finishedLevels.split(",");
+    } else {
+        finishedLevels = finishedLevels.split(",");
+    }
 
     //identifies which levels the player didn't play yet
     let gameLevels = Object.keys(LEVELS);
@@ -23,8 +25,7 @@ const LevelSelection = ({chooseLevel}) => {
         let disabled = false;
 
         //renders the button's name
-        let levelName;
-        levelName = `Level ${idx + 1}`;
+        let levelName = `Level ${idx + 1}`;
 
         //checks what's the state of the button based on the fact if
         //a level was finished or not and which level should be available next

@@ -52,10 +52,14 @@ const useMaze = (mazeLevel, onPlayerLose) => {
         finish = true;
         //accesses the local storage to see if a level have been finished if not the level is added
         //to the local storage once
+
+        //todo create a different js file which will have two functions: one write to local storage and another reads
         let completedLevels = localStorage.getItem('completedLevels');
         if (completedLevels === null) {
             completedLevels = [];
-        } else completedLevels = completedLevels.split(",");
+        } else {
+            completedLevels = completedLevels.split(",");
+        }
         if (!completedLevels.includes(mazeLevel)) {
             completedLevels.push(mazeLevel);
         }

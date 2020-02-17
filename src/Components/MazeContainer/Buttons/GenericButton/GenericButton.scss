@@ -1,5 +1,7 @@
 @import "../../../../assets/scss/global-styles";
 
+
+//todo add user-select to not allow user to select text on buttons
 .generic-button {
   border: 1px solid rgba(0, 0, 0, 0.2);
   display: inline-block;
@@ -9,14 +11,6 @@
   padding: 8px 16px;
   border-radius: 4px;
   color: #ececec;
-
-  &.disabled {
-    background-color: grey;
-  }
-
-  &.next-button {
-    background-color: yellow;
-  }
 
   &:hover {
     background-color: $main-color-dark;
