@@ -7,10 +7,14 @@
   padding: 8px 16px;
   border-radius: 4px;
   color: #ececec; }
-  .level-button.disabled {
-    background-color: grey; }
   .level-button.next-button {
-    background-color: yellow; }
+    background-color: #a79a26; }
+    .level-button.next-button:hover {
+      background-color: #998c25; }
+  .level-button.disabled {
+    background-color: rgba(98, 108, 105, 0.58); }
+    .level-button.disabled:hover {
+      background-color: rgba(82, 92, 89, 0.59); }
   .level-button:hover {
     background-color: #17917a;
     cursor: pointer; }

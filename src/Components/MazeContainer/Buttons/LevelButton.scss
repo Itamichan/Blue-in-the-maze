@@ -10,12 +10,18 @@
   border-radius: 4px;
   color: #ececec;
 
-  &.disabled {
-    background-color: grey;
+  &.next-button {
+    background-color: $button-next;
+    &:hover {
+      background-color: $button-next-dark;
+    }
   }
 
-  &.next-button {
-    background-color: yellow;
+  &.disabled {
+    background-color: $button-disabled;
+    &:hover {
+      background-color: $button-disabled-dark;
+    }
   }
 
   &:hover {
