@@ -2,19 +2,9 @@ import React from 'react';
 import './GenericButton.scss';
 
 
-const GenericButton = ({changeScreen, children, disabled, levelStyle}) => {
-
-    let buttonStyle;
-    if (levelStyle === 'levelCompleted') {
-        buttonStyle = 'generic-button'
-    } else if (levelStyle === 'nextLevel') {
-        buttonStyle = 'generic-button next-button'
-    } else if (levelStyle === 'unavailableLevel') {
-        buttonStyle = 'generic-button disabled'
-    }
-
+const GenericButton = ({changeScreen, children}) => {
     return (
-        <div className={buttonStyle}
+        <div className={'generic-button'}
         onClick={changeScreen}
         >
             {children}

@@ -1,9 +1,9 @@
 import React, {Fragment} from 'react';
 import PlainScreen from "../../Layout/PlainScreen/PlainScreen";
-import PropTypes, {number} from 'prop-types';
-import GenericButton from "../Buttons/GenericButton/GenericButton";
+import PropTypes from 'prop-types';
 import {LEVELS} from "./levels";
 import './LevelSelection.scss';
+import LevelButton from "../Buttons/LevelButton";
 
 const LevelSelection = ({chooseLevel}) => {
 
@@ -22,6 +22,8 @@ const LevelSelection = ({chooseLevel}) => {
 
 
     let availableLevel = Object.keys(LEVELS).map((i, idx) => {
+        let disabled = false;
+
         let levelName;
         levelName = `Level ${idx + 1}`;
 
@@ -34,17 +36,19 @@ const LevelSelection = ({chooseLevel}) => {
         }
         if (filteredLevels.includes(i) && i !== filteredLevels[0]) {
             levelStyle = 'unavailableLevel';
+            disabled = true
         }
         return (
             <div>
-                <GenericButton
+                <LevelButton
                     changeScreen={() => chooseLevel(i)}
                     key={`level ${idx + 1}`}
                     // disabled={disabled}
                     levelStyle={levelStyle}
+                    disabled={disabled}
                 >
                     {levelName}
-                </GenericButton>
+                </LevelButton>
             </div>
         )
     });

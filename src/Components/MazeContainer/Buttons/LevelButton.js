@@ -1,21 +1,21 @@
 import React from 'react';
-import './LevelButtons.scss';
+import './LevelButton.scss';
 
 
-const LevelButton = ({changeScreen, children, disabled, levelStyle}) => {
+const LevelButton = ({changeScreen, children, levelStyle, disabled}) => {
 
     let buttonStyle;
     if (levelStyle === 'levelCompleted') {
-        buttonStyle = 'generic-button'
+        buttonStyle = 'level-button'
     } else if (levelStyle === 'nextLevel') {
-        buttonStyle = 'generic-button next-button'
+        buttonStyle = 'level-button next-button'
     } else if (levelStyle === 'unavailableLevel') {
-        buttonStyle = 'generic-button disabled'
+        buttonStyle = 'level-button disabled'
     }
 
     return (
         <div className={buttonStyle}
-             onClick={changeScreen}
+             onClick={disabled? null :changeScreen}
         >
             {children}
         </div>
