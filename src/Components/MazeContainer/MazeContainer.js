@@ -59,7 +59,7 @@ const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
         setMoveAllowed(true)
     };
 
-    //shows the collected keys under the maze
+    //shows the collected keys below the maze
     let collectedKeys = userBag.map((key) => {
         return <div className={'keys'} style={{backgroundImage: `url(${process.env.PUBLIC_URL + BACKGROUND_MAPPING[key]})`}}/>
     });

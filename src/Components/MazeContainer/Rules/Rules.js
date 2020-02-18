@@ -28,7 +28,7 @@ const Rules = () => {
                         <p> Blue came from far away in the hope to see the creatures called
                             "humans".
                         </p>
-                        <p>Unfortunately instead he got trapped in a maze.</p>
+                        <p>Unfortunately he got trapped in a maze.</p>
                         <p>Help Blue to get out!</p>
                         <ul>
                             <li>Use the arrows below the maze - for mobile</li>

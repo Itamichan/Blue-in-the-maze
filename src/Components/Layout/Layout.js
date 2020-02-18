@@ -62,16 +62,11 @@ const Layout = (props) => {
 
     return (
         <Fragment>
-            <div>
-                navbar
-            </div>
             <GameBackground>
                 <Rules/>
-
                 {screenOption}
             </GameBackground>
             <Footer/>
-
         </Fragment>
     )
 };

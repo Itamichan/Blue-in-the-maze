@@ -1,3 +1,5 @@
+@import "../../assets/scss/global-styles";
+
 #maze-footer {
   margin-top: 10px;
   @media (min-width: 601px) {
@@ -7,11 +9,12 @@
 
   #time-tracker {
     color: white;
-    font-weight: 600;
+    font-weight: $global-weight;
     font-size: 1.5rem;
     text-align: center;
   }
 
+  //shows the keys in the same line as the timer
   #user-bag {
     margin-right: 1rem;
     text-align: right;
@@ -31,6 +34,5 @@
       }
     }
   }
-
 }
 

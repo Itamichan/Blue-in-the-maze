@@ -1,24 +1,24 @@
 .button-no-selection {
   user-select: none; }
 
-#control-buttons .button-center {
-  text-align: center; }
-#control-buttons .move-buttons {
-  background-color: #1db394;
-  border-color: transparent; }
-  @media (min-width: 0) and (max-width: 480px) {
-    #control-buttons .move-buttons {
-      display: inline-block;
-      padding: 0;
-      width: 22vw;
-      height: 8vh; } }
-  @media (min-width: 481px) {
-    #control-buttons .move-buttons {
-      display: none; } }
-#control-buttons #arrow-up {
-  margin-top: 10px; }
-#control-buttons .fa-chevron-down, #control-buttons .fa-chevron-up, #control-buttons .fa-chevron-left, #control-buttons .fa-chevron-right {
-  font-size: 10vw;
-  color: rgba(255, 255, 255, 0.8); }
+#control-buttons {
+  margin-top: 2.5rem; }
+  #control-buttons .button-center {
+    text-align: center; }
+  #control-buttons .move-buttons {
+    background-color: #1db394;
+    border-color: transparent; }
+    @media (min-width: 0) and (max-width: 1024px) {
+      #control-buttons .move-buttons {
+        display: inline-block;
+        padding: 0;
+        width: 22vw;
+        height: 8vh; } }
+    @media (min-width: 1025px) {
+      #control-buttons .move-buttons {
+        display: none; } }
+  #control-buttons .fa-chevron-down, #control-buttons .fa-chevron-up, #control-buttons .fa-chevron-left, #control-buttons .fa-chevron-right {
+    font-size: 10vw;
+    color: rgba(255, 255, 255, 0.8); }
 
 /*# sourceMappingURL=ControlButtons.css.map */

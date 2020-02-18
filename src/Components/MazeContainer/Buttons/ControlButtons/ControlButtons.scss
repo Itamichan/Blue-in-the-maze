@@ -1,6 +1,7 @@
 @import "../../../../assets/scss/global-styles";
 
 #control-buttons {
+  margin-top: 2.5rem;
   .button-center {
     text-align: center;
   }
@@ -8,18 +9,15 @@
   .move-buttons {
     background-color: $main-color;
     border-color: transparent;
-    @media (min-width: 0) and (max-width: 480px) {
+    @media (min-width: 0) and (max-width: 1024px) {
       display: inline-block;
       padding: 0;
       width: 22vw;
       height: 8vh;
     }
-    @media (min-width: 481px) {
+    @media (min-width: 1025px) {
       display: none;
     }
-  }
-  #arrow-up {
-    margin-top: 10px;
   }
 
   .fa-chevron-down, .fa-chevron-up, .fa-chevron-left, .fa-chevron-right {
