@@ -2,17 +2,18 @@
   user-select: none; }
 
 #control-buttons {
-  margin-top: 2.5rem; }
-  #control-buttons .button-center {
-    text-align: center; }
+  margin-top: 5rem;
+  text-align: center; }
   #control-buttons .move-buttons {
     background-color: #1db394;
-    border-color: transparent; }
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 0 1rem;
+    border-radius: 4px;
+    padding-top: 0.5rem; }
     @media (min-width: 0) and (max-width: 1024px) {
       #control-buttons .move-buttons {
         display: inline-block;
-        padding: 0;
-        width: 22vw;
+        width: 16vw;
         height: 8vh; } }
     @media (min-width: 1025px) {
       #control-buttons .move-buttons {

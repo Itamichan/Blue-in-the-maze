@@ -1,5 +1,4 @@
-import React from 'react';
-import {Button, Col, Container, Row} from "reactstrap";
+import React, {Fragment} from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import './ControlButtons.scss';
 
@@ -7,34 +6,23 @@ import PropTypes from 'prop-types';
 
 const ControlButtons = ({up, left, down, right}) => {
     return (
-        <Container fluid={true} id={'control-buttons'}>
-            <Row>
-                <Col className={'button-center'}>
-                    <Button className={'move-buttons button-no-selection'} id={'arrow-up'} onClick={up}>
-                        <FontAwesomeIcon icon="chevron-up"/>
-                    </Button>
-                </Col>
-            </Row>
-            <Row className={'button-center'}>
-                <Col>
-                    <Button className={'move-buttons button-no-selection'} onClick={left}>
-                        <FontAwesomeIcon icon="chevron-left"/>
-                    </Button>
-                </Col>
-                <Col>
-                    <Button className={'move-buttons button-no-selection'} onClick={right}>
-                        <FontAwesomeIcon icon="chevron-right"/>
-                    </Button>
-                </Col>
-            </Row>
-            <Row>
-                <Col className={'button-center'}>
-                    <Button className={'move-buttons button-no-selection'} onClick={down}>
-                        <FontAwesomeIcon icon="chevron-down"/>
-                    </Button>
-                </Col>
-            </Row>
-        </Container>
+        <Fragment>
+            <div id={'control-buttons'}>
+                <div className={'move-buttons button-no-selection'} onClick={left}>
+                    <FontAwesomeIcon icon="chevron-left"/>
+                </div>
+                <div className={'move-buttons button-no-selection'} onClick={up}>
+                    <FontAwesomeIcon icon="chevron-up"/>
+                </div>
+                <div className={'move-buttons button-no-selection'} onClick={down}>
+                    <FontAwesomeIcon icon="chevron-down"/>
+                </div>
+                <div className={'move-buttons button-no-selection'} onClick={right}>
+                    <FontAwesomeIcon icon="chevron-right"/>
+                </div>
+            </div>
+
+        </Fragment>
     )
 };
 
