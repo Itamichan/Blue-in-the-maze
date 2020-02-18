@@ -8,6 +8,7 @@
     border: 1px solid rgba(0, 0, 0, 0.2);
     margin: 0 1rem;
     border-radius: 4px;
+    //centering the arrows on the buttons
     @media (min-width: 0){
       padding-top: 0.2rem;
     }
@@ -20,7 +21,7 @@
     @media (min-width: 900px) {
       padding-top: 0.5rem;
     }
-    //show the control buttons for phones and tablets
+    //show the control buttons for phones and tablets only
     @media (min-width: 0) and (max-width: 1024px) {
       display: inline-block;
       width: 12vw;

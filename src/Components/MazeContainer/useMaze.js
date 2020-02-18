@@ -46,6 +46,12 @@ const useMaze = (mazeLevel, onPlayerLose) => {
 
     //todo index.js:1 Warning: Can't perform a React state update on an unmounted component. This is a no-op, but it indicates a memory leak in your application. To fix, cancel all subscriptions and asynchronous tasks in a useEffect cleanup function.
 
+    let finishTime;
+    if (countDirection === 'up') {
+        finishTime = screenTime
+    } else {finishTime = timeLeft - screenTime}
+
+
     // initialization of finish var and setting the condition when it becomes true
     let finish = false;
     if (mazeGrid[currentLocation[0]][currentLocation[1]] === 3) {
@@ -137,6 +143,7 @@ const useMaze = (mazeLevel, onPlayerLose) => {
         down,
         right,
         left,
+        finishTime
     }
 };
 

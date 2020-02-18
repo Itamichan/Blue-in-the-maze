@@ -4,11 +4,11 @@ import Cell from "./Cell/Cell";
 import ControlButtons from "./Buttons/ControlButtons/ControlButtons";
 import PropTypes from 'prop-types';
 import './MazeContainer.scss';
-import {BACKGROUND_MAPPING, KEYS} from "./LevelSelection/levels";
+import {BACKGROUND_MAPPING} from "./LevelSelection/levels";
 
 const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
 
-    const {mazeGrid, currentLocation, up, down, right, left, finish, screenTime, playerLost, userBag} = useMaze(mazeLevel, onPlayerLose);
+    const {mazeGrid, currentLocation, up, down, right, left, finish, screenTime, playerLost, userBag, finishTime} = useMaze(mazeLevel, onPlayerLose);
 
     //maps through the mazeGrid to return cells in a specific style
     const gameRepresentation = mazeGrid.map((row, rowIndex) => {
@@ -66,7 +66,7 @@ const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
 
     //setts the winning condition
     if (finish) {
-        onPlayerFinish(`You got free in ${screenTime} seconds!`)
+        onPlayerFinish(`You got free in ${finishTime} seconds!`)
     }
 
     if (playerLost) {
