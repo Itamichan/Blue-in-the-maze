@@ -1,6 +1,36 @@
-#time-tracker {
-  color: white;
-  font-weight: 600;
-  font-size: 1.5rem;
+#maze-footer {
   margin-top: 10px;
+  @media (min-width: 601px) {
+    max-width: 600px;
+    margin: auto;
+  }
+
+  #time-tracker {
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  #user-bag {
+    margin-right: 1rem;
+    text-align: right;
+    margin-top: -2rem;
+
+
+    .keys {
+      display: inline-block;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 2rem;
+      height: 2rem;
+      margin: 0 0.3rem;
+      @media (min-width: 0) and (max-width: 400px) {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+  }
+
 }
+

@@ -4,6 +4,7 @@ import Cell from "./Cell/Cell";
 import ControlButtons from "./Buttons/ControlButtons/ControlButtons";
 import PropTypes from 'prop-types';
 import './MazeContainer.scss';
+import {BACKGROUND_MAPPING, KEYS} from "./LevelSelection/levels";
 
 const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
 
@@ -58,12 +59,12 @@ const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
         setMoveAllowed(true)
     };
 
-    //re-renders the component every second and adds a second to the TimeTracker
-
+    //shows the collected keys under the maze
+    let collectedKeys = userBag.map((key) => {
+        return <div className={'keys'} style={{backgroundImage: `url(${process.env.PUBLIC_URL + BACKGROUND_MAPPING[key]})`}}/>
+    });
 
     //setts the winning condition
-
-
     if (finish) {
         onPlayerFinish(`You got free in ${screenTime} seconds!`)
     }
@@ -80,7 +81,10 @@ const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
                 onKeyUp={handleKeyUp}>
                 {gameRepresentation}
             </div>
-            <div id={'time-tracker'}>Time: {screenTime}</div>
+            <div id={'maze-footer'}>
+                <div id={'time-tracker'}>Time: {screenTime}</div>
+                <div id={'user-bag'}>{collectedKeys}</div>
+            </div>
             <ControlButtons
                 up={up}
                 down={down}
