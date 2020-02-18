@@ -5,7 +5,7 @@ import GenericButton from "./Buttons/GenericButton/GenericButton";
 const LostScreen = ({onRepeatLevel,onNewLevel}) => {
     return (
         <PlainScreen
-            screenBackground="./lost-screen.png"
+            screenBackground={process.env.PUBLIC_URL + "/resources/lost-screen.png"}
         >
             <h1>You lost!</h1>
             <GenericButton

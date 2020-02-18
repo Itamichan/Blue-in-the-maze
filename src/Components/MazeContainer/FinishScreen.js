@@ -10,7 +10,7 @@ const FinishScreen = ({gameResult, onRepeatLevel, onNewLevel}) => {
     return (
         <Fragment>
             <PlainScreen
-                screenBackground="./win-screen.png">
+                screenBackground={process.env.PUBLIC_URL + "/resources/win-screen.png"}>
                 <h1>Finish screen</h1>
                 <div>{gameResult}</div>
                 <GenericButton

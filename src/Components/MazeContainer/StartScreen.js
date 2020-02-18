@@ -8,7 +8,7 @@ const StartScreen = ({onStartClick}) => {
     return (
         <Fragment>
             <PlainScreen
-                screenBackground="./intro-image.png">
+                screenBackground={process.env.PUBLIC_URL + "/resources/intro-image.png"}>
                 <h1>Blue in the Maze</h1>
                 <GenericButton
                     changeScreen={onStartClick}>

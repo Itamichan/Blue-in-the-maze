@@ -57,7 +57,7 @@ const LevelSelection = ({chooseLevel}) => {
     return (
         <Fragment>
             <PlainScreen
-                screenBackground="./bg-for-screen-state.png"
+                screenBackground={process.env.PUBLIC_URL + "/resources/bg-for-screen-state.png"}
             >
                 <h1>Select a level</h1>
                 <div className={'level-button-container'}>
