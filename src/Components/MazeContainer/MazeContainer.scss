@@ -1,10 +1,10 @@
 @import "../../assets/scss/global-styles";
 
 #maze-footer {
-  margin-top: 10px;
+  margin: 2rem auto;
+  position: relative;
   @media (min-width: 601px) {
     max-width: 600px;
-    margin: auto;
   }
 
   #time-tracker {
@@ -16,10 +16,10 @@
 
   //shows the keys in the same line as the timer
   #user-bag {
+    position: absolute;
     margin-right: 1rem;
-    text-align: right;
-    margin-top: -2rem;
-
+    right: 0;
+    top: 0.2rem;
 
     .keys {
       display: inline-block;
@@ -27,7 +27,7 @@
       background-repeat: no-repeat;
       width: 2rem;
       height: 2rem;
-      margin: 0 0.3rem;
+      margin-right: 0.3rem;
       @media (min-width: 0) and (max-width: 400px) {
         width: 1.5rem;
         height: 1.5rem;

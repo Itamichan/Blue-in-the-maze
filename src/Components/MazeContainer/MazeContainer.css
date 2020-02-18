@@ -2,27 +2,28 @@
   user-select: none; }
 
 #maze-footer {
-  margin-top: 10px; }
+  margin: 2rem auto;
+  position: relative; }
   @media (min-width: 601px) {
     #maze-footer {
-      max-width: 600px;
-      margin: auto; } }
+      max-width: 600px; } }
   #maze-footer #time-tracker {
     color: white;
     font-weight: 600;
     font-size: 1.5rem;
     text-align: center; }
   #maze-footer #user-bag {
+    position: absolute;
     margin-right: 1rem;
-    text-align: right;
-    margin-top: -2rem; }
+    right: 0;
+    top: 0.2rem; }
     #maze-footer #user-bag .keys {
       display: inline-block;
       background-size: contain;
       background-repeat: no-repeat;
       width: 2rem;
       height: 2rem;
-      margin: 0 0.3rem; }
+      margin-right: 0.3rem; }
       @media (min-width: 0) and (max-width: 400px) {
         #maze-footer #user-bag .keys {
           width: 1.5rem;
