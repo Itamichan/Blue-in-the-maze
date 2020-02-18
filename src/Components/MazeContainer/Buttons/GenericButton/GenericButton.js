@@ -4,7 +4,7 @@ import './GenericButton.scss';
 
 const GenericButton = ({changeScreen, children}) => {
     return (
-        <div className={'generic-button'}
+        <div className={'generic-button button-no-selection'}
         onClick={changeScreen}
         >
             {children}

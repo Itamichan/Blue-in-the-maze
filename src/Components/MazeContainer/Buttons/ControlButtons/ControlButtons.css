@@ -1,3 +1,6 @@
+.button-no-selection {
+  user-select: none; }
+
 #control-buttons .button-center {
   text-align: center; }
 #control-buttons .move-buttons {

@@ -7,11 +7,11 @@ const LevelButton = ({changeScreen, children, buttonLook, buttonDisabled}) => {
     //checks what class to apply to the button
     let buttonStyle;
     if (buttonLook === 'levelCompleted') {
-        buttonStyle = 'level-button'
+        buttonStyle = 'level-button button-no-selection'
     } else if (buttonLook === 'nextLevel') {
-        buttonStyle = 'level-button next-button'
+        buttonStyle = 'level-button next-button button-no-selection'
     } else if (buttonLook === 'unavailableLevel') {
-        buttonStyle = 'level-button disabled'
+        buttonStyle = 'level-button disabled button-no-selection'
     }
 
     return (

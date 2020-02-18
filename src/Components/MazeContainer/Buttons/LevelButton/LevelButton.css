@@ -1,3 +1,6 @@
+.button-no-selection {
+  user-select: none; }
+
 .level-button {
   border: 1px solid rgba(0, 0, 0, 0.2);
   display: inline-block;

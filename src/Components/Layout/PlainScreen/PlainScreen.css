@@ -1,3 +1,6 @@
+.button-no-selection {
+  user-select: none; }
+
 #plain-screen {
   position: relative; }
   #plain-screen img {

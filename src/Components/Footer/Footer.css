@@ -1,3 +1,6 @@
+.button-no-selection {
+  user-select: none; }
+
 footer {
   width: 100%;
   position: absolute;
