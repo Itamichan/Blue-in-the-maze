@@ -1,5 +1,30 @@
 @import "../../assets/scss/global-styles";
 
+#screen-header {
+  margin: 2rem auto 1rem;
+  padding-top: 1rem;
+  position: relative;
+  @media (min-width: 601px) {
+    max-width: 600px;
+  }
+
+  #home-button {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-left: 0.5rem;
+    color: white;
+    font-weight: $global-weight;
+    font-size: 1.4rem;
+
+    &:hover {
+      cursor: pointer;
+      color: $main-color-dark;
+    }
+
+  }
+}
+
 #rules-modal {
   #modal-header {
     border-bottom: none;
@@ -9,7 +34,7 @@
   }
 
   #modal-body {
-    padding: 1rem 2rem ;
+    padding: 1rem 2rem;
     font-size: 1.5rem;
     @media (min-width: 600px) {
       font-size: 2rem;

@@ -63,7 +63,15 @@ const Layout = (props) => {
     return (
         <Fragment>
             <GameBackground>
-                <Rules/>
+                <div id={'screen-header'}>
+                    <div
+                        id={'home-button'}
+                    onClick={() => setCurrentScreen('startScreen')}
+                    >Home
+                    </div>
+                    <Rules/>
+                </div>
+
                 {screenOption}
             </GameBackground>
             <Footer/>

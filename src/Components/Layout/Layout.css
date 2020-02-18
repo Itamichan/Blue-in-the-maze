@@ -1,6 +1,25 @@
 .button-no-selection {
   user-select: none; }
 
+#screen-header {
+  margin: 2rem auto 1rem;
+  padding-top: 1rem;
+  position: relative; }
+  @media (min-width: 601px) {
+    #screen-header {
+      max-width: 600px; } }
+  #screen-header #home-button {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-left: 0.5rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1.4rem; }
+    #screen-header #home-button:hover {
+      cursor: pointer;
+      color: #17917a; }
+
 #rules-modal #modal-header {
   border-bottom: none;
   justify-content: center;

@@ -5,15 +5,12 @@
   color: white;
   font-size: 1.4rem;
   font-weight: 600;
-  padding-bottom: 0.5rem;
-  padding-right: 1rem;
-  text-align: end; }
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding-right: 0.5rem; }
   #rules:hover {
     cursor: pointer;
     color: #17917a; }
-  @media (min-width: 601px) {
-    #rules {
-      width: 600px;
-      margin: auto; } }
 
 /*# sourceMappingURL=Rules.css.map */

@@ -4,18 +4,15 @@
   color: white;
   font-size: 1.4rem;
   font-weight: $global-weight;
-  padding-bottom: 0.5rem;
-  padding-right: 1rem;
-  text-align: end;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding-right: 0.5rem;
+
 
   &:hover {
   cursor: pointer;
     color: $main-color-dark;
   }
 
-  //to keep rules on top-end of the PlainScreen
-  @media (min-width: 601px) {
-    width: 600px;
-    margin: auto;
-  }
 }

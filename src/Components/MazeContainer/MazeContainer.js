@@ -52,7 +52,6 @@ const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
                     break
             }
         }
-
     };
 
     const handleKeyUp = (e) => {
@@ -77,7 +76,6 @@ const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
     }
 
     return (<Fragment>
-
             <div
                 tabIndex={-1}
                 onKeyDown={handleKeyDown}
@@ -96,8 +94,6 @@ const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
             />
         </Fragment>
     );
-
-
 };
 
 MazeContainer.prototype = {
