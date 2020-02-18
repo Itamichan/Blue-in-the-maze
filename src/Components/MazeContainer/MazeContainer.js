@@ -61,7 +61,10 @@ const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
 
     //shows the collected keys below the maze
     let collectedKeys = userBag.map((key) => {
-        return <div className={'keys'} style={{backgroundImage: `url(${process.env.PUBLIC_URL + BACKGROUND_MAPPING[key]})`}}/>
+        return <div
+            key={key}
+            className={'keys'}
+            style={{backgroundImage: `url(${process.env.PUBLIC_URL + BACKGROUND_MAPPING[key]})`}}/>
     });
 
     //setts the winning condition

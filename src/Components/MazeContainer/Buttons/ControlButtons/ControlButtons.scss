@@ -6,8 +6,11 @@
   .move-buttons {
     background-color: $main-color;
     border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    box-shadow: 0 1px 2px #46a27a;
     margin: 0 1rem;
     border-radius: 4px;
+
     //centering the arrows on the buttons
     @media (min-width: 0){
       padding-top: 0.2rem;
