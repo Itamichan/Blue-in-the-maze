@@ -29,6 +29,11 @@ const Cell = ({cellValue, isPlayerHere, userBag}) => {
         cellBackgrounds.push(BACKGROUND_MAPPING[2])
     }
 
+    //applies the wall img under the exit sign img
+    if (cellValue === 8) {
+        cellBackgrounds.push(BACKGROUND_MAPPING[1])
+    }
+
     //maps through cellBackgrounds array and returns the img urls for each one
     //makes possible to apply several img on one div
     const buildBackground = (backgroundPaths) => {
