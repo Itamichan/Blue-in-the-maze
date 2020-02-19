@@ -13,8 +13,8 @@ const Rules = () => {
     let renderInstructions = () => {
         if (isMobile || isTablet) {
             return 'In order to move use the arrows below the maze.'
-        } else if (isBrowser) {
-            return 'In order to move use  the arrow keys on your keyboard.'
+        } else {
+            return 'In order to move use the arrow keys on your keyboard.'
         }
     };
 

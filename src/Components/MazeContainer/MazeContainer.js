@@ -76,6 +76,7 @@ const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
         onPlayerLose()
     }
 
+    //renders ControlButtons only on mobile and tablet devices
     let renderControlButtons = () => {
         if (isMobile || isTablet) {
             return <ControlButtons
@@ -84,7 +85,7 @@ const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
                 left={left}
                 right={right}
             />
-        } else if (isBrowser) {
+        } else {
             return null
         }
     };

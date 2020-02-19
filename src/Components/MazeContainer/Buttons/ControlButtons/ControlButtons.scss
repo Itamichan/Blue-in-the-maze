@@ -10,7 +10,6 @@
     box-shadow: 0 1px 2px #46a27a;
     margin: 0 1rem;
     border-radius: 4px;
-
     display: inline-block;
     width: 12vw;
     height: 12vw;
@@ -28,15 +27,6 @@
     @media (min-width: 900px) {
       padding-top: 0.5rem;
     }
-    //show the control buttons for phones and tablets only
-    //@media (min-width: 0) and (max-width: 1024px) {
-    //  display: inline-block;
-    //  width: 12vw;
-    //  height: 12vw;
-    //}
-    //@media (min-width: 1025px) {
-    //  display: none;
-    //}
   }
 
   .fa-chevron-down, .fa-chevron-up, .fa-chevron-left, .fa-chevron-right {
