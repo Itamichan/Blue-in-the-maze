@@ -1,11 +1,11 @@
-import React, {Fragment, useState} from 'react';
+import React, {Fragment, useEffect, useState} from 'react';
 import useMaze from "./useMaze";
 import Cell from "./Cell/Cell";
 import ControlButtons from "./Buttons/ControlButtons/ControlButtons";
 import PropTypes from 'prop-types';
 import './MazeContainer.scss';
 import {BACKGROUND_MAPPING} from "./LevelSelection/levels";
-import {isBrowser, isMobile, isTablet} from "react-device-detect";
+import {isMobile, isTablet} from "react-device-detect";
 
 const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
 
@@ -59,6 +59,16 @@ const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
         setMoveAllowed(true)
     };
 
+    //calls handleKeyDown and handleKeyUp functions when we press and release the key
+    useEffect(() => {
+        window.addEventListener('keydown', handleKeyDown);
+        window.addEventListener('keyup', handleKeyUp);
+        return () => {
+            window.removeEventListener('keydown', handleKeyDown);
+            window.removeEventListener('keyup', handleKeyUp);
+        }
+    });
+
     //shows the collected keys below the maze
     let collectedKeys = userBag.map((key) => {
         return <div
@@ -92,10 +102,7 @@ const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
 
 
     return (<Fragment>
-            <div
-                tabIndex={-1}
-                onKeyDown={handleKeyDown}
-                onKeyUp={handleKeyUp}>
+            <div>
                 {gameRepresentation}
             </div>
             <div id={'maze-footer'}>

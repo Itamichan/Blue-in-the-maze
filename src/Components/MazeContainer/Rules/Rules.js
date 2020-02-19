@@ -1,7 +1,7 @@
 import React, {Fragment, useState} from 'react';
 import './Rules.scss';
 import {Button, Modal, ModalBody, ModalFooter, ModalHeader} from "reactstrap";
-import {isMobile, isTablet, isBrowser} from "react-device-detect";
+import {isMobile, isTablet} from "react-device-detect";
 
 
 const Rules = () => {

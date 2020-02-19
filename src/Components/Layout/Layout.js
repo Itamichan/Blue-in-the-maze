@@ -58,8 +58,6 @@ const Layout = (props) => {
         />
     }
 
-
-
     return (
         <Fragment>
             <GameBackground>
@@ -71,7 +69,6 @@ const Layout = (props) => {
                     </div>
                     <Rules/>
                 </div>
-
                 {screenOption}
             </GameBackground>
             <Footer/>
