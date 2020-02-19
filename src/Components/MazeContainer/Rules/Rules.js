@@ -1,6 +1,7 @@
 import React, {Fragment, useState} from 'react';
 import './Rules.scss';
 import {Button, Modal, ModalBody, ModalFooter, ModalHeader} from "reactstrap";
+import {isMobile, isTablet, isBrowser} from "react-device-detect";
 
 
 const Rules = () => {
@@ -8,6 +9,14 @@ const Rules = () => {
     const [showRules, setShowRules] = useState(false);
 
     const toggleModal = () => setShowRules(!showRules);
+
+    let renderInstructions = () => {
+        if (isMobile || isTablet) {
+            return 'In order to move use the arrows below the maze.'
+        } else if (isBrowser) {
+            return 'In order to move use  the arrow keys on your keyboard.'
+        }
+    };
 
     return (
         <Fragment>
@@ -28,12 +37,9 @@ const Rules = () => {
                         <p> Blue came from far away in the hope to see the creatures called
                             "humans".
                         </p>
-                        <p>Unfortunately he got trapped in a maze.</p>
+                        <p>Unfortunately, instead he got trapped in a maze.</p>
                         <p>Help Blue to get out!</p>
-                        <ul>
-                            <li>Use the arrows below the maze - for mobile</li>
-                            <li>Use the arrows on your keyboard - for desktop</li>
-                        </ul>
+                        <p>{renderInstructions()}</p>
                     </div>
 
                 </ModalBody>

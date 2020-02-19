@@ -28,11 +28,13 @@
       font-size: 2rem; } }
   #rules-modal #modal-body div :nth-child(3) {
     text-align: center;
-    font-weight: 600; }
+    font-weight: 600;
+    padding-bottom: 1rem; }
 #rules-modal #modal-footer {
   justify-content: center;
   border-top: none; }
   #rules-modal #modal-footer button {
+    width: 7rem;
     font-size: 2rem;
     background-color: #1db394; }
     #rules-modal #modal-footer button:hover {

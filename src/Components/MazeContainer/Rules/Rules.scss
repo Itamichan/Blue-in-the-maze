@@ -39,6 +39,7 @@
       :nth-child(3) {
         text-align: center;
         font-weight: $global-weight;
+        padding-bottom: 1rem;
       }
     }
 
@@ -52,6 +53,7 @@
     border-top: none;
 
     button {
+      width: 7rem;
       font-size: 2rem;
       background-color: $main-color;
 
