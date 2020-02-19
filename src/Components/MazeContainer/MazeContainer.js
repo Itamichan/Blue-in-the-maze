@@ -5,6 +5,7 @@ import ControlButtons from "./Buttons/ControlButtons/ControlButtons";
 import PropTypes from 'prop-types';
 import './MazeContainer.scss';
 import {BACKGROUND_MAPPING} from "./LevelSelection/levels";
+import {isBrowser, isMobile, isTablet} from "react-device-detect";
 
 const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
 
@@ -75,6 +76,20 @@ const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
         onPlayerLose()
     }
 
+    let renderControlButtons = () => {
+        if (isMobile || isTablet) {
+            return <ControlButtons
+                up={up}
+                down={down}
+                left={left}
+                right={right}
+            />
+        } else if (isBrowser) {
+            return null
+        }
+    };
+
+
     return (<Fragment>
             <div
                 tabIndex={-1}
@@ -86,12 +101,7 @@ const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
                 <div id={'time-tracker'}>Time: {screenTime}</div>
                 <div id={'user-bag'}>{collectedKeys}</div>
             </div>
-            <ControlButtons
-                up={up}
-                down={down}
-                left={left}
-                right={right}
-            />
+            <div>{renderControlButtons()}</div>
         </Fragment>
     );
 };
