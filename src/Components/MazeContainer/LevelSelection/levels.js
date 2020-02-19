@@ -123,7 +123,7 @@ export const LEVELS = {
             [1, 2, 2, 2, 2, 2, 2, 2, 2, 3, 8, 1, 0, 0, 0],
         ],
         levelStart: [6, 14],
-        timeLeft: 60
+        timeLeft: 40
     },
 
     level5: {
