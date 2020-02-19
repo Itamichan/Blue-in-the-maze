@@ -20,27 +20,4 @@
       cursor: pointer;
       color: #17917a; }
 
-#rules-modal #modal-header {
-  border-bottom: none;
-  justify-content: center;
-  background-color: #1db394;
-  color: #ffffff; }
-#rules-modal #modal-body {
-  padding: 1rem 2rem;
-  font-size: 1.5rem; }
-  @media (min-width: 600px) {
-    #rules-modal #modal-body {
-      font-size: 2rem; } }
-  #rules-modal #modal-body div :nth-child(3) {
-    text-align: center;
-    font-weight: 600; }
-#rules-modal #modal-footer {
-  justify-content: center;
-  border-top: none; }
-  #rules-modal #modal-footer button {
-    font-size: 2rem;
-    background-color: #1db394; }
-    #rules-modal #modal-footer button:hover {
-      background-color: #17917a; }
-
 /*# sourceMappingURL=Layout.css.map */

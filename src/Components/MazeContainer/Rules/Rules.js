@@ -21,7 +21,7 @@ const Rules = () => {
                 isOpen={showRules}
             >
                 <ModalHeader id={'modal-header'}>
-                    <h1>How to play</h1>
+                    <div>How to play</div>
                 </ModalHeader>
                 <ModalBody id={'modal-body'}>
                     <div>
