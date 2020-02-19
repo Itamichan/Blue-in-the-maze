@@ -25,7 +25,7 @@ const LevelSelection = ({chooseLevel}) => {
         let disabled = false;
 
         //renders the button's name
-        let levelName = `Level ${idx + 1}`;
+        let levelName = `${idx + 1}`;
 
         //checks what's the state of the button based on the fact if
         //a level was finished or not and which level should be available next
