@@ -10,9 +10,9 @@
   border-radius: 4px;
   color: #ececec; }
   .level-button.next-button {
-    background-color: #a79a26; }
+    background-color: #d5a618; }
     .level-button.next-button:hover {
-      background-color: #998c25; }
+      background-color: #cd9e18; }
   .level-button.disabled {
     background-color: rgba(98, 108, 105, 0.58); }
     .level-button.disabled:hover {
