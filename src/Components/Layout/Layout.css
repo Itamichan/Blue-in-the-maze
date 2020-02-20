@@ -27,5 +27,8 @@
     position: absolute;
     bottom: 0;
     width: 100%; }
+    @media (max-height: 600px) {
+      #app-container footer {
+        position: relative; } }
 
 /*# sourceMappingURL=Layout.css.map */
