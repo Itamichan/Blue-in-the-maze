@@ -1,7 +1,7 @@
 {
 "version": 3,
 "mappings": "AAoBA,oBAAqB;EACnB,WAAW,EAAE,IAAI;;ACnBnB,MAAO;EACL,KAAK,EAAE,KAAK;EACZ,gBAAgB,EAAE,OAAO;EACzB,UAAU,EAAE,MAAM;EAClB,OAAO,EAAE,WAAW;EAEpB,SAAG;IACD,UAAU,EAAE,IAAI;IAChB,oBAAoB,EAAE,CAAC;IACvB,aAAa,EAAE,CAAC;IAEhB,YAAG;MACD,OAAO,EAAE,YAAY;MACrB,MAAM,EAAE,MAAM;MAEd,cAAE;QACA,KAAK,EAAE,KAAK;QACZ,eAAe,EAAE,IAAI;QACrB,SAAS,EAAE,MAAM;QAEjB,oBAAQ;UACN,KAAK,EDpBG,OAAO",
-"sources": ["../../assets/scss/global-styles.scss","Footer.scss"],
+"sources": ["../../global%20scss/global-styles.scss","Footer.scss"],
 "names": [],
 "file": "Footer.css"
 }

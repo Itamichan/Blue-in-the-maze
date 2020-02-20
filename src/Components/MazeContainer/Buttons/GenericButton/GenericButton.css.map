@@ -1,7 +1,7 @@
 {
 "version": 3,
 "mappings": "AAoBA,oBAAqB;EACnB,WAAW,EAAE,IAAI;;ACjBnB,eAAgB;EACd,MAAM,EAAE,4BAA4B;EACpC,OAAO,EAAE,YAAY;EACrB,SAAS,EAAE,MAAM;EACjB,gBAAgB,EDNL,OAAO;ECOlB,WAAW,EDEG,GAAG;ECDjB,OAAO,EAAE,QAAQ;EACjB,aAAa,EAAE,GAAG;EAClB,KAAK,EAAE,OAAO;EAEd,qBAAQ;IACN,gBAAgB,EDZF,OAAO;ICarB,MAAM,EAAE,OAAO;EAEjB,4CAA4C;IAd9C,eAAgB;MAeZ,SAAS,EAAE,IAAI",
-"sources": ["../../../../assets/scss/global-styles.scss","GenericButton.scss"],
+"sources": ["../../../../global%20scss/global-styles.scss","GenericButton.scss"],
 "names": [],
 "file": "GenericButton.css"
 }

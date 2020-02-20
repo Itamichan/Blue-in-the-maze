@@ -1,7 +1,7 @@
 {
 "version": 3,
 "mappings": "AAoBA,oBAAqB;EACnB,WAAW,EAAE,IAAI;;ACnBnB,aAAc;EACZ,MAAM,EAAE,4BAA4B;EACpC,SAAS,EAAE,IAAI;EACf,gBAAgB,EDHL,OAAO;ECIlB,WAAW,EDKG,GAAG;ECJjB,OAAO,EAAE,aAAa;EACtB,aAAa,EAAE,GAAG;EAClB,KAAK,EAAE,OAAO;EAEd,yBAAc;IACZ,gBAAgB,EDPN,OAAiB;ICQ3B,+BAAQ;MACN,gBAAgB,EDRH,OAAiB;ECYlC,sBAAW;IACT,gBAAgB,EDXF,wBAAwB;ICYtC,4BAAQ;MACN,gBAAgB,EDZC,sBAAsB;ECgB3C,mBAAQ;IACN,gBAAgB,EDvBF,OAAO;ICwBrB,MAAM,EAAE,OAAO",
-"sources": ["../../../../assets/scss/global-styles.scss","LevelButton.scss"],
+"sources": ["../../../../global%20scss/global-styles.scss","LevelButton.scss"],
 "names": [],
 "file": "LevelButton.css"
 }

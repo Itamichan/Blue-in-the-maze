@@ -1,7 +1,7 @@
 {
 "version": 3,
 "mappings": "AAoBA,oBAAqB;EACnB,WAAW,EAAE,IAAI;;ACnBnB,gBAAiB;EACf,UAAU,EAAE,MAAM;EAElB,8BAAc;IACZ,gBAAgB,EDJP,OAAO;ICKhB,MAAM,EAAE,4BAA4B;IACpC,UAAU,EAAE,UAAU;IACtB,UAAU,EAAE,iBAAiB;IAC7B,MAAM,EAAE,MAAM;IACd,aAAa,EAAE,GAAG;IAClB,OAAO,EAAE,YAAY;IACrB,KAAK,EAAE,IAAI;IACX,MAAM,EAAE,IAAI;IAGZ,qBAAqB;MAZvB,8BAAc;QAaV,WAAW,EAAE,MAAM;IAErB,yBAA0B;MAf5B,8BAAc;QAgBV,WAAW,EAAE,MAAM;IAErB,yBAA0B;MAlB5B,8BAAc;QAmBV,WAAW,EAAE,MAAM;IAErB,yBAA0B;MArB5B,8BAAc;QAsBV,WAAW,EAAE,MAAM;EAIvB,yIAAsE;IACpE,SAAS,EAAE,IAAI;IACf,KAAK,EAAE,wBAAwB",
-"sources": ["../../../../assets/scss/global-styles.scss","ControlButtons.scss"],
+"sources": ["../../../../global%20scss/global-styles.scss","ControlButtons.scss"],
 "names": [],
 "file": "ControlButtons.css"
 }

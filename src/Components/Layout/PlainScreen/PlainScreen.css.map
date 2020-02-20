@@ -1,7 +1,7 @@
 {
 "version": 3,
 "mappings": "AAoBA,oBAAqB;EACnB,WAAW,EAAE,IAAI;;ACnBnB,aAAc;EACZ,QAAQ,EAAE,QAAQ;EAElB,iBAAI;IACF,KAAK,EAAE,IAAI;IACX,MAAM,EAAE,IAAI;IACZ,SAAS,EAAE,KAAK;EAIlB,yBAAY;IACV,QAAQ,EAAE,QAAQ;IAClB,IAAI,EAAE,GAAG;IACT,GAAG,EAAE,GAAG;IACR,KAAK,EAAE,GAAG;IACV,SAAS,EAAE,IAAI;IAEf,4BAAG;MACD,WAAW,EDTD,GAAG;MCUb,cAAc,EAAE,IAAI;MACpB,SAAS,EAAE,MAAM",
-"sources": ["../../../assets/scss/global-styles.scss","PlainScreen.scss"],
+"sources": ["../../../global%20scss/global-styles.scss","PlainScreen.scss"],
 "names": [],
 "file": "PlainScreen.css"
 }
