@@ -8,9 +8,22 @@ const Footer = (props) => {
         <footer>
             <div>
                 <ul>
-                    <li><a href="https://github.com/Itamichan" rel='noreferrer noopener' target="_blank"> <FontAwesomeIcon icon={['fab', 'github']} /></a></li>
-                    <li><a href="mailto:garbuz@gmail.com"><FontAwesomeIcon icon='envelope' /></a></li>
-                    <li><a href="https://www.facebook.com/cristina.garbuz" rel='noreferrer noopener' target="_blank"> <FontAwesomeIcon icon={['fab', 'facebook']} /></a></li>
+                    <li>
+                        <a href="https://github.com/Itamichan/Blue-in-the-maze" rel='noreferrer noopener'
+                           target="_blank">
+                            <FontAwesomeIcon icon={['fab', 'github']}/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:cristinagarbuz@gmail.com" rel='noreferrer noopener' target="_blank">
+                            <FontAwesomeIcon icon='envelope'/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/cristina-garbuz-65aabb105/" rel='noreferrer noopener' target="_blank">
+                            <FontAwesomeIcon icon={['fab', 'linkedin']}/>
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div> &copy; 2020</div>
