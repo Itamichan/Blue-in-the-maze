@@ -35,7 +35,8 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    @media (max-height: 600px) {
+    //todo improve this adjustment
+    @media (max-width: 319px) {
       position: relative;
     }
   }
