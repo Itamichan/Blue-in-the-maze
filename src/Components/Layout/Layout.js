@@ -60,18 +60,20 @@ const Layout = (props) => {
 
     return (
         <Fragment>
-            <GameBackground>
-                <div id={'screen-header'}>
-                    <div
-                        id={'home-button'}
-                    onClick={() => setCurrentScreen('startScreen')}
-                    >Home
+            <div id={'app-container'}>
+                <GameBackground>
+                    <div id={'screen-header'}>
+                        <div
+                            id={'home-button'}
+                            onClick={() => setCurrentScreen('startScreen')}
+                        >Home
+                        </div>
+                        <Rules/>
                     </div>
-                    <Rules/>
-                </div>
-                {screenOption}
-            </GameBackground>
-            <Footer/>
+                    {screenOption}
+                </GameBackground>
+                <Footer/>
+            </div>
         </Fragment>
     )
 };

@@ -2,16 +2,10 @@
   user-select: none; }
 
 footer {
-  width: 100%;
-  position: absolute;
-  bottom: auto;
   color: white;
   background-color: #333333;
   text-align: center;
   padding: 20px 0 20px; }
-  @media (min-width: 481px) {
-    footer {
-      bottom: 0; } }
   footer ul {
     list-style: none;
     padding-inline-start: 0;
