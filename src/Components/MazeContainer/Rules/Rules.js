@@ -24,7 +24,8 @@ const Rules = () => {
                 id={'rules'}
                 onClick={() => setShowRules(true)}
 
-            >Rules</div>
+            >Rules
+            </div>
             <Modal
                 id={'rules-modal'}
                 isOpen={showRules}
@@ -43,7 +44,10 @@ const Rules = () => {
                     </div>
 
                 </ModalBody>
-                <ModalFooter id={'modal-footer'}>
+                <ModalFooter
+                    id={'modal-footer'}
+                    style={{background: `url(${process.env.PUBLIC_URL + "/resources/question.png"})`}}
+                >
                     <Button onClick={toggleModal}> Ok!
                     </Button>
                 </ModalFooter>

@@ -32,7 +32,9 @@
     padding-bottom: 1rem; }
 #rules-modal #modal-footer {
   justify-content: center;
-  border-top: none; }
+  border-top: none;
+  background-size: contain !important;
+  background-repeat: no-repeat !important; }
   #rules-modal #modal-footer button {
     width: 7rem;
     font-size: 2rem;
