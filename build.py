@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+# this script was kindly written by sheepy90 - https://github.com/sheepsy90
 
 import subprocess
 import sys

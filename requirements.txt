@@ -1,3 +1,5 @@
+# this code was kindly written by sheepy90 - https://github.com/sheepsy90
+
 boto3
 requests
 flask
