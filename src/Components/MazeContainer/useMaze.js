@@ -12,6 +12,7 @@ const useMaze = (mazeLevel, onPlayerLose) => {
 
     // keeps track of user's location
     const [currentLocation, setCurrentLocation] = useState(LEVELS[mazeLevel].levelStart);
+    // eslint-disable-next-line no-unused-vars
     const [startTime, setStartTime] = useState(new Date());
 
     //keeps track of collected keys

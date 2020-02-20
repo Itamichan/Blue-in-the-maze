@@ -9,22 +9,18 @@
     max-width: 600px;
   }
 
-
   //Text with the screen's name
   .screenHead {
     position: absolute;
     left: 10%;
     top: 15%;
     width: 80%;
+    font-size: 2rem;
 
     h1 {
       font-weight: $global-weight;
       padding-bottom: 1rem;
       font-size: 2.5rem;
-    }
-
-    @media (min-width: 250px) {
-      font-size: 2rem;
     }
   }
 }

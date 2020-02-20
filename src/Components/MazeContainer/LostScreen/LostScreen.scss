@@ -1,0 +1,10 @@
+#lost-buttons-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  div {
+    margin: 1.5rem 0.5rem;
+    font-size: 1.8rem;
+  }
+}

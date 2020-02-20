@@ -1,0 +1,9 @@
+#finish-buttons-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+  #finish-buttons-container div {
+    margin: 1.5rem 0.5rem;
+    font-size: 1.8rem; }
+
+/*# sourceMappingURL=FinishScreen.css.map */
