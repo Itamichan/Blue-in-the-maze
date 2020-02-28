@@ -25,7 +25,7 @@
   padding: 0.4rem 1.4rem; }
   @media (min-width: 0) and (max-width: 480px) {
     .button-default {
-      font-size: 2rem; } }
+      font-size: 1.8rem; } }
   .button-default:hover {
     background-color: #17917a;
     cursor: pointer; }
@@ -42,7 +42,7 @@
   font-size: 2.5rem; }
   @media (min-width: 0) and (max-width: 480px) {
     .button-move-global {
-      font-size: 2rem; } }
+      font-size: 1.8rem; } }
 
 footer {
   color: white;
