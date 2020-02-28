@@ -13,8 +13,6 @@ $button-next-dark: rgb(205, 158, 24);
 $button-disabled: rgba(98, 108, 105, 0.58);
 $button-disabled-dark: rgba(82, 92, 89, 0.59);
 
-
-
 //text
 
 @mixin text() {
@@ -53,7 +51,7 @@ $button-disabled-dark: rgba(82, 92, 89, 0.59);
 
 .button-default {
   @include button-style();
-  padding: 0.7rem 1.4rem;
+  padding: 0.4rem 1.4rem;
 
   &:hover {
     background-color: $main-color-dark;

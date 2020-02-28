@@ -22,7 +22,7 @@
   color: white;
   background-color: #1db394;
   font-size: 2.5rem;
-  padding: 0.7rem 1.4rem; }
+  padding: 0.4rem 1.4rem; }
   @media (min-width: 0) and (max-width: 480px) {
     .button-default {
       font-size: 2rem; } }
@@ -46,7 +46,6 @@
 
 #rules {
   color: white;
-  font-size: 1.4rem;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -60,14 +59,8 @@
   justify-content: center;
   background-color: #1db394;
   color: #ffffff; }
-  #rules-modal #modal-header div {
-    font-size: 3rem; }
 #rules-modal #modal-body {
-  padding: 1rem 2rem;
-  font-size: 1.5rem; }
-  @media (min-width: 600px) {
-    #rules-modal #modal-body {
-      font-size: 2rem; } }
+  padding: 1rem 2rem; }
   #rules-modal #modal-body div :nth-child(3) {
     text-align: center;
     padding-bottom: 1rem; }
@@ -76,11 +69,5 @@
   border-top: none;
   background-size: contain !important;
   background-repeat: no-repeat !important; }
-  #rules-modal #modal-footer button {
-    width: 7rem;
-    font-size: 2rem;
-    background-color: #1db394; }
-    #rules-modal #modal-footer button:hover {
-      background-color: #17917a; }
 
 /*# sourceMappingURL=Rules.css.map */

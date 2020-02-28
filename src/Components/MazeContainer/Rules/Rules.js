@@ -1,6 +1,6 @@
 import React, {Fragment, useState} from 'react';
 import './Rules.scss';
-import {Button, Modal, ModalBody, ModalFooter, ModalHeader} from "reactstrap";
+import {Modal, ModalBody, ModalFooter, ModalHeader} from "reactstrap";
 import {isMobile, isTablet} from "react-device-detect";
 
 
@@ -22,6 +22,7 @@ const Rules = () => {
         <Fragment>
             <div
                 id={'rules'}
+                className={'text-default'}
                 onClick={() => setShowRules(true)}
 
             >Rules
@@ -31,9 +32,13 @@ const Rules = () => {
                 isOpen={showRules}
             >
                 <ModalHeader id={'modal-header'}>
-                    <div>How to play</div>
+                    <div
+                        className={'text-header'}>How to play
+                    </div>
                 </ModalHeader>
-                <ModalBody id={'modal-body'}>
+                <ModalBody
+                    id={'modal-body'}
+                    className={'text-default'}>
                     <div>
                         <p> Blue came from far away in the hope to see the creatures called
                             "humans".
@@ -42,19 +47,19 @@ const Rules = () => {
                         <p>Help Blue to get out!</p>
                         <p>{renderInstructions()}</p>
                     </div>
-
                 </ModalBody>
                 <ModalFooter
                     id={'modal-footer'}
                     style={{background: `url(${process.env.PUBLIC_URL + "/resources/question.png"})`}}
                 >
-                    <Button onClick={toggleModal}> Ok!
-                    </Button>
+                    <button
+                        className={'button-default'}
+                        onClick={toggleModal}>
+                        Ok!
+                    </button>
                 </ModalFooter>
             </Modal>
-
         </Fragment>
-
     )
 };
 
