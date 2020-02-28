@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,yBAA0B;EACxB,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,QAAQ;EACnB,eAAe,EAAE,MAAM;EAEvB,6BAAI;IACF,MAAM,EAAE,aAAa;IACrB,SAAS,EAAE,MAAM",
+"mappings": "AAAA,yBAA0B;EACxB,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,QAAQ;EACnB,eAAe,EAAE,MAAM;EAEvB,6BAAI;IACF,MAAM,EAAE,aAAa",
 "sources": ["FinishScreen.scss"],
 "names": [],
 "file": "FinishScreen.css"

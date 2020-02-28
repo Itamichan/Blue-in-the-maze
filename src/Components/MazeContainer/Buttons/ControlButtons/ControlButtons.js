@@ -8,20 +8,19 @@ const ControlButtons = ({up, left, down, right}) => {
     return (
         <Fragment>
             <div id={'control-buttons'}>
-                <div className={'move-buttons button-no-selection'} onClick={left}>
+                <div className={'move-buttons button-move-global'} onClick={left}>
                     <FontAwesomeIcon icon="chevron-left"/>
                 </div>
-                <div className={'move-buttons button-no-selection'} onClick={up}>
+                <div className={'move-buttons button-move-global'} onClick={up}>
                     <FontAwesomeIcon icon="chevron-up"/>
                 </div>
-                <div className={'move-buttons button-no-selection'} onClick={down}>
+                <div className={'move-buttons button-move-global'} onClick={down}>
                     <FontAwesomeIcon icon="chevron-down"/>
                 </div>
-                <div className={'move-buttons button-no-selection'} onClick={right}>
+                <div className={'move-buttons button-move-global'} onClick={right}>
                     <FontAwesomeIcon icon="chevron-right"/>
                 </div>
             </div>
-
         </Fragment>
     )
 };

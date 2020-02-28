@@ -9,7 +9,10 @@ const StartScreen = ({onStartClick}) => {
         <Fragment>
             <PlainScreen
                 screenBackground={process.env.PUBLIC_URL + "/resources/intro-image.png"}>
-                <h1>Blue in the Maze</h1>
+                <h1
+                    className={'text-header'}>
+                    Blue in the Maze
+                </h1>
                 <GenericButton
                     changeScreen={onStartClick}>
                     Start

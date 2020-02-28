@@ -59,7 +59,10 @@ const LevelSelection = ({chooseLevel}) => {
             <PlainScreen
                 screenBackground={process.env.PUBLIC_URL + "/resources/bg-for-screen-state.png"}
             >
-                <h1>Select a level</h1>
+                <h1
+                    className={'text-header'}>
+                    Select a level
+                </h1>
                 <div className={'level-button-container'}>
                     {availableLevel}
                 </div>

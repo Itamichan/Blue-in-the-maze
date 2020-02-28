@@ -1,11 +1,12 @@
+@import "./global scss/global-styles";
+
 html {
     font-size: 12px;
-    background-color: #333333;
+    background-color: $main-bg-color;
     scroll-behavior: smooth;
     @media (max-width: 400px) {
         font-size: 10px;
     }
-
 }
 
 body {

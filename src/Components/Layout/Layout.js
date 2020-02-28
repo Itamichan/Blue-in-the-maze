@@ -65,6 +65,7 @@ const Layout = (props) => {
                     <div id={'screen-header'}>
                         <div
                             id={'home-button'}
+                            className={'text-default'}
                             onClick={() => setCurrentScreen('startScreen')}
                         >Home
                         </div>

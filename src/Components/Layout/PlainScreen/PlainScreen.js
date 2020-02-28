@@ -7,7 +7,7 @@ const PlainScreen = ({screenBackground, children}) => {
         <Fragment>
             <div id={'plain-screen'}>
                 <img src={screenBackground} alt="background"/>
-                <div className={'screenHead'}>{children}</div>
+                <div className={'screen-head'}>{children}</div>
             </div>
         </Fragment>
     )

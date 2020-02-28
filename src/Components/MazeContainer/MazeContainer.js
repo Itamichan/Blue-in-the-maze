@@ -106,7 +106,11 @@ const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
                 {gameRepresentation}
             </div>
             <div id={'maze-footer'}>
-                <div id={'time-tracker'}>Time: {screenTime}</div>
+                <div
+                    id={'time-tracker'}
+                    className={'text-default'}>
+                    Time: {screenTime}
+                </div>
                 <div id={'user-bag'}>{collectedKeys}</div>
             </div>
             <div>{renderControlButtons()}</div>

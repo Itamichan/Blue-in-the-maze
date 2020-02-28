@@ -1,22 +1,5 @@
 @import "../../../../global scss/global-styles";
 
-
-//todo add user-select to not allow user to select text on buttons
 .generic-button {
-  border: 1px solid rgba(0, 0, 0, 0.2);
   display: inline-block;
-  font-size: 2.5rem;
-  background-color: $main-color;
-  font-weight: $global-weight;
-  padding: 8px 16px;
-  border-radius: 4px;
-  color: #ececec;
-
-  &:hover {
-    background-color: $main-color-dark;
-    cursor: pointer;
-  }
-  @media (min-width: 0) and (max-width: 480px){
-    font-size: 2rem;
-  }
 }

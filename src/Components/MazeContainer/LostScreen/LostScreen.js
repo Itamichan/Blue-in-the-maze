@@ -9,7 +9,7 @@ const LostScreen = ({onRepeatLevel, onNewLevel}) => {
             screenBackground={process.env.PUBLIC_URL + "/resources/lost-screen.png"}
         >
             <h1>You lost!</h1>
-            <div id={'lost-buttons-container'}>
+            <div id={'lost-buttons-container'} className={'text-default'}>
                 <GenericButton
                     changeScreen={onRepeatLevel}
                 >Try again!</GenericButton>

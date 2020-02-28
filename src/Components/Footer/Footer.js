@@ -7,7 +7,8 @@ const Footer = (props) => {
     return (
         <footer>
             <div>
-                <ul>
+                <ul
+                    className={'text-default'}>
                     <li>
                         <a href="https://github.com/Itamichan/Blue-in-the-maze" rel='noreferrer noopener'
                            target="_blank">
@@ -20,7 +21,8 @@ const Footer = (props) => {
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/cristina-garbuz-65aabb105/" rel='noreferrer noopener' target="_blank">
+                        <a href="https://www.linkedin.com/in/cristina-garbuz-65aabb105/" rel='noreferrer noopener'
+                           target="_blank">
                             <FontAwesomeIcon icon={['fab', 'linkedin']}/>
                         </a>
                     </li>

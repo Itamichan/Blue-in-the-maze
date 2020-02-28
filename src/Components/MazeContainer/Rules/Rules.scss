@@ -3,7 +3,6 @@
 #rules {
   color: white;
   font-size: 1.4rem;
-  font-weight: $global-weight;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -38,7 +37,6 @@
     div {
       :nth-child(3) {
         text-align: center;
-        font-weight: $global-weight;
         padding-bottom: 1rem;
       }
     }
