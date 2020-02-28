@@ -4,16 +4,12 @@ import PropTypes from 'prop-types';
 import {LEVELS} from "./levels";
 import './LevelSelection.scss';
 import LevelButton from "../Buttons/LevelButton/LevelButton";
+import {readFromLocalStorage} from '../localStorage';
 
 const LevelSelection = ({chooseLevel}) => {
 
     //retrieving the data from the local storage
-    let finishedLevels = localStorage.getItem('completedLevels');
-    if (finishedLevels === null) {
-        finishedLevels = []
-    } else {
-        finishedLevels = finishedLevels.split(",");
-    }
+    let finishedLevels = readFromLocalStorage();
 
     //identifies which levels the player didn't play yet
     let gameLevels = Object.keys(LEVELS);

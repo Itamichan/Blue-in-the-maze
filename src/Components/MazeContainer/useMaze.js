@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react";
 import {LEVELS, KEYS} from "./LevelSelection/levels";
+import {readFromLocalStorage, writeToLocalStorage} from "./localStorage";
 
 const useMaze = (mazeLevel, onPlayerLose) => {
 
@@ -50,7 +51,9 @@ const useMaze = (mazeLevel, onPlayerLose) => {
     let finishTime;
     if (countDirection === 'up') {
         finishTime = screenTime
-    } else {finishTime = timeLeft - screenTime}
+    } else {
+        finishTime = timeLeft - screenTime
+    }
 
 
     // initialization of finish var and setting the condition when it becomes true
@@ -58,19 +61,10 @@ const useMaze = (mazeLevel, onPlayerLose) => {
     if (mazeGrid[currentLocation[0]][currentLocation[1]] === 3) {
         finish = true;
         //accesses the local storage to see if a level have been finished if not the level is added
-        //to the local storage once
+        //to the local storage one time
 
-        //todo create a different js file which will have two functions: one write to local storage and another reads
-        let completedLevels = localStorage.getItem('completedLevels');
-        if (completedLevels === null) {
-            completedLevels = [];
-        } else {
-            completedLevels = completedLevels.split(",");
-        }
-        if (!completedLevels.includes(mazeLevel)) {
-            completedLevels.push(mazeLevel);
-        }
-        localStorage.setItem('completedLevels', completedLevels.join());
+        readFromLocalStorage();
+        writeToLocalStorage(mazeLevel);
     }
 
     // allows us to change the currentLocation in the mazeGrid
@@ -146,6 +140,6 @@ const useMaze = (mazeLevel, onPlayerLose) => {
         left,
         finishTime
     }
-};
+}
 
 export default useMaze;
