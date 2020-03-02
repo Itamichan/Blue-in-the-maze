@@ -2,7 +2,7 @@
 
 A live demo can be found [here](https://cristina-maze-game.herokuapp.com/)
 
-![Desktop Demo](assets/images/webpage_response.jpg)
+![Desktop Demo](public/resources/webpage-response/webpage-responsivnes.jpg)
 
 ## Introduction
 
