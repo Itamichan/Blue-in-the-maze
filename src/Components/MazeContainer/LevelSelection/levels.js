@@ -3,7 +3,7 @@ export const KEYS = [4, 5, 6, 7];
 export const DOORS = KEYS.map(e => e * 11);
 
 
-export const BACKGROUND_PLAYER = '/resources/p1_walk01.png';
+export const BACKGROUND_PLAYER = '/resources/player.png';
 export const BACKGROUND_MAPPING = {
 
     // 0-empty field;
