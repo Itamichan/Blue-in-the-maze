@@ -1,17 +1,16 @@
-/*adding bg images to the cells*/
+//changes the cell size depending on the screen size
 
 $minWidth: 10;
 $maxWidth: 40;
 $stepSize: 15px;
 
-.mazeRow {
+.maze-row {
 
   div {
     display: inline-block !important;
     background-size: contain !important;
     background-repeat: no-repeat !important;
 
-    //todo update the max widh in the comment in accordance with the final decision
     //keeps the cells responsive to the screen size until 600px width
     @for $i from $minWidth through $maxWidth {
       @media (min-width: $i*$stepSize) {

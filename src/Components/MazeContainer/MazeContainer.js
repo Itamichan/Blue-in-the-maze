@@ -22,7 +22,7 @@ const MazeContainer = ({mazeLevel, onPlayerFinish, onPlayerLose}) => {
                          userBag={userBag}
             />;
         });
-        return <div key={rowIndex.toString()} className={'mazeRow'}>{rowRepresentation}</div>
+        return <div key={rowIndex.toString()} className={'maze-row'}>{rowRepresentation}</div>
     });
 
 
