@@ -26,7 +26,7 @@ yarn-error.log*
 deployAWS.sh
 
 
-#hiding the unecessary scss related files
+#hiding the unnecessary scss related files
 /src/Components/Footer/.sass-cache/
 /src/Components/Footer/Footer.css
 /src/Components/Footer/Footer.css.map
@@ -89,3 +89,4 @@ deployAWS.sh
 /src/index.css
 /src/index.css.map
 
+/src/*.sass-cache
