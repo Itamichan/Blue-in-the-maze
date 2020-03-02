@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,uBAAwB;EACtB,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,QAAQ;EACnB,eAAe,EAAE,MAAM;EAEvB,2BAAI;IACF,MAAM,EAAE,WAAW",
-"sources": ["LostScreen.scss"],
-"names": [],
-"file": "LostScreen.css"
-}
