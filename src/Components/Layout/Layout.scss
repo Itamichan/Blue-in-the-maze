@@ -32,7 +32,7 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    //todo improve this adjustment
+    //have footer directly after the rest of the content
     @media (max-width: 319px) {
       position: relative;
     }
