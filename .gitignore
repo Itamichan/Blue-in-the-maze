@@ -26,5 +26,5 @@ yarn-error.log*
 deployAWS.sh
 
 /src/Components/Footer/.sass-cache/
-/src/Components/Footer/Footer.scss/*.css
-/src/Components/Footer/Footer.scss/*.css.map
+/src/Components/Footer/Footer.css
+/src/Components/Footer/Footer.css.map
