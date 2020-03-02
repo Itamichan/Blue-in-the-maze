@@ -1,24 +1,21 @@
 @import "../../global-scss/global-styles";
 
+
+
 #app-container {
   min-height: 100vh;
   position: relative;
   background-color: #333333;
-  //center the game on high screens
-  @media (min-height: 800px) {
-    padding-top: 2rem;
-  }
-  @media (min-height: 900px) {
-    padding-top: 4rem;
-  }
-  @media (min-height: 1000px) {
-    padding-top: 6rem;
-  }
-  @media (min-height: 1100px) {
-    padding-top: 8rem;
-  }
-  @media (min-height: 1200px) {
-    padding-top: 12rem;
+
+  //center the game on y axis
+  $minHeight: 110;
+  $maxHeight: 300;
+  $stepSize: 10px;
+
+  @for $i from $minHeight through $maxHeight {
+    @media (min-height: $i*$stepSize) {
+     padding-top: floor($i*$stepSize/5);
+    }
   }
 
   #screen-header {
