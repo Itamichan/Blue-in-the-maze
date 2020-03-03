@@ -114,11 +114,11 @@ All User Stories were added as [issues](https://github.com/Itamichan/Blue-in-the
 
 Taking in consideration all the user stories, their importance and viability of their implementation at the moment certain value and complexity levels have been attributed to the user stories. In the issues a new category has been created as “MVP” in order to highlight which stories must be implemented in the first release.
 
-[User Stories evaluation](MVP/user-stories.md)
+[User Stories evaluation](src/MVP/user-stories.md)
 
-![chart](MVP/maze-game-graph.jpg)
+![chart](src/MVP/maze-game-graph.jpg)
 
-**Conclusion based on the chart**
+**Conclusions based on the chart**
 
 * User Stories A,I,M are included in the first sprint. This is connected with their high value and importance they for creation of the MVP.
 * User Stories B,D,E,H,J,N,K,L are included in the second sprint since they have a high value for the project.
