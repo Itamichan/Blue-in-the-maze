@@ -132,27 +132,28 @@ User Stories identified as important for MVP were attributed the respective labe
 #### Colors
 
 Following colors have been used:
-* `#932244` - dark pink
-* `#7e1f3f` - darker version of the initial pink
-* `#000000` - black
+* `#1db394` - medium aquamarine
+* `#17917a` - darker version of the initial aquamarine
+* `#D5A618` - dark gold
+* `#CD9E18` - darker version of the initial gold
+* `#333333` - less intense black
 * `#ffffff` - white
-* `#898989` - grey
-* `#6a6a6a` - dark grey
+* `rgba(98, 108, 105, 0.58)` - light grey, with transparency
+* `rgba(82, 92, 89, 0.59)` - dark grey, with transparency
 
-The stand out color for this web page is dark pink which according to [Color Psychology](https://www.colorpsychology.org/pink/) is associated with romance, love, femininity and tenderness. Concepts that seem relevant for a couple photography web page.
+The stand out color for this web page is medium aquamarine. The color was inspired from the player's character which has a aquamarine color. This choice allows to have a constant color which the player can recognise. We also avoid to use a non related color to the game which can create potential confusion.
 
-Considering that this color is very strong and easily attract attention I decided to not use any other bright color. Therefore, the other used colors are the classic white and black.
+The variations of gold and grey were used for the level buttons. This was necessary in order to denote the availability of a level or if it was already completed.
 
-The grey colors were used only for the "close" button in the Contact Form.
+The black color was used as a background on which the game is placed. It is supposed to not attract to much attention to itself since we do not care about this space and in a commercial version of the game it would be covered with adds.
 
 #### Font
 
-The used Font for this project is **Montserrat** with the font weight: 
-* 400 - for most of the text.
-* 500 - for logo, button and headers on the hero images.
-* 600 - for heavy headers.
+The used Font for this project is **Eczar** with the font weight: 
+* 500 - for most of the text.
+* 600 - for headers.
 
-The [Montserrat](https://fonts.google.com/specimen/Montserrat) font was chosen for its easy readability and common use.
+The [Eczar](https://fonts.google.com/specimen/Eczar) font was chosen due to its slight ancient style. It fits well with the game's concept.
 
 ### Wireframes
 
