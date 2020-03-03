@@ -235,7 +235,7 @@ Testing information can be fond [here](src/readme-related-documents/testing/test
 
 ## Deployment
 
-This web page was locally developed in WebStorm and pushed to the remote repository - GitHub. The live page is hosted on GitHub Pages. 
+This web page was locally developed in WebStorm and pushed to the remote repository - GitHub. The live page is hosted AWS and Heroku. 
 
 ### Hosting to GitHub
 
