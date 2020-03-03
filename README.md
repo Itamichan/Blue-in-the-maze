@@ -1,4 +1,4 @@
-# CG*photography*
+# Blue in the Maze
 
 A live demo can be found [here](https://cristina-maze-game.herokuapp.com/)
 
@@ -6,16 +6,9 @@ A live demo can be found [here](https://cristina-maze-game.herokuapp.com/)
 
 ## Introduction
 
-CGphotography is a couple photography website.
+Blue in the Maze is a labyrinth game.
 
-It presents previous works of the photographer in order to attract new clients. The portfolios present:
-* Couples photographs
-* Wedding photographs
-* More than two photographs
-
-Each portfolio type consists of three sub portfolios which photographs of individual couples.
-
-The main purpose of the web page is to have a high conversion rate. Therefore, a potential customer can find the Contact button both in the menu bar and at the bottom of every page.
+The main purpose of the game is to entertain people who have a interest in solving puzzle style games. Through this goal the game owner want to have a high conversion rate which will offer a high adds revenue.
 
 ## Table of Content
 
@@ -57,41 +50,49 @@ The main purpose of the web page is to have a high conversion rate. Therefore, a
 
 ### Goals
 
-#### CGphotography goal
+#### Blue in the Maze goal
 
-The goal of this web page is to present previous works of the photographer and as such, attract new clients.
+The goal of this web page is to make available a cute labyrinth game which will ensure a high conversion of users.
 
 **Target audience is:**
-* Couples with the age between 20-45 years.
-* Couples interested in photo services.
-* Couples interested in wedding photo services. 
-* Couples interested in pregnancy photo services. 
+* People above 13 years.
+* People interested in short, online games.
+* People interested in solving puzzles, in special mazes.
 
 #### Business goals
 
-* Reach new, potential customers.
+* Create a fun game.
 * Have a high conversion rate.
-* Have a fully proficient web page.
-* Have an intuitive design.
+* Have a fully working game with an attractive design.
+
 
 #### Customer goals
 
-* Find a photographer for their photo session.
-* Find previous works made by the photographer.
-* Find contact information of the photographer.
+* Play a functional game and potentially win it.
+* Use a web page which has an easy navigation.
 
 Both business and customer goals are addressed through user stories.
 
 ### User Stories
 
-#### The Photographer
+#### The game designer
 
-* As a photographer, I want to show my previous works so that people hire me.
-* As a Photographer, I want my page to load fast so that the user is engaged.
-* As a Photographer, I want the potential customers to have an easy way to find my contact details so that they can order a photo session.
-* As a photographer, I want to show positive reviews so that I convince people to book my services.
-* As a photographer, I want them to know my current location so that I can  avoid orders that are too far away for me to come.
-* As a Photographer I want that the user remember me so that they come back.
+* As a game designer, I want to create a game story so that the user can immerse into it via playing.
+* As a game designer, I want to add extra items in the maze so that the game is more interesting.
+
+#### The game developer
+
+* As a game developer, I want to have a game timer so that the user is motivated to solve the maze faster.
+* As a game developer, I want to create several levels in the game so that the user can have a progressing story.
+* As a game developer, I want  to give the user the possibility to save the game so that he/she is motivated to come back and continue.
+* As a game developer, I want to introduce winning points so that the user can see how well they have played.
+* As a game developer, I want to create a leader-board so that the user can see if he/she was better than others.
+
+#### The business owner
+
+* As a website owner,  I want the page to load fast so that the game functions in optimal time.
+* As a website owner,  I want to have a well structured web page so that the user can easily orientate on it.
+* As a website owner,  I want to retain the user's attention so that I get ad revenue.
 
 #### The UX designer
 
@@ -99,46 +100,30 @@ Both business and customer goals are addressed through user stories.
     * As a UX designer, I want to track the user behaviour so that I can identify the possible user confusion.
     * As a UX designer, I want to find which parts are not accessed by the user so that I can improve the website’s structure.
 
-#### The potential customer
+#### The potential user
 
-* As a customer, I want to know the prices of the services so that I can decide if I want to pay the price.
-* As a customer, I want to see the  previous work so that I can decide if I would like to have something similar or not.
-* As a customer, I want to have an easy way to contact the photographer so that I can book a session.
-* As a customer, I want an easy way to contact the photographer so that I can clarify some information.
-* As a customer, I want to know if the photographer is willing to come to remote/distant locations so that I can have a photo session there.
-* As a customer, I want to know what is the duration of the photo session so that I know how much time it will take.
-* As a customer, I want to know how many photos I will get so that I can assess if this is enough for me or not.
-* As a customer, I want to know if the photos will be edited so that I have a professional editing of my photographs.
-* As a customer, I want to know what are the photographer’s values and vision so that I can know if they align with mine.
-* As a customer, I want to know if I can change the clothing during the photo session so that I can have different looks.
+* As a user, I want to know the rules of the game so that I know how to play it.
+* As a user, I want to play an interesting game so that I feel joy while doing it.
+* As a user, I want to see my end game results so that I know how well I performed.
 
-#### The future married couple
 
-* As a couple, we want to be able to see when the photographer is available so that we can book his services on our wedding day.
-* As a couple, we want to divide our photo session in two different days so that we can have a wedding and pre-wedding photo session.
-* As a couple, we want to know if any discount system exists so that we can  take benefit of it.
-* As a couple, we want to have a physical photo album so that we can have a paper version of our photographs.
-* As a couple, we want to choose how our photo album looks so that it is personalized.
+All User Stories were added as [issues](https://github.com/Itamichan/Blue-in-the-maze/issues) on GitHub in order to keep track and address them in the project's [dashboard](https://github.com/Itamichan/Blue-in-the-maze/projects). In this way I can easily track which user stories have been addressed and on which I still need to work.
 
-All User Stories were added as [issues](https://github.com/Itamichan/CG_photography/issues?q=is%3Aopen+is%3Aissue) on GitHub in order to keep track and address them in the project's [dashboard](https://github.com/Itamichan/CG_photography/projects/1).
 
 ### Minimum Viable Product
 
-All the User Stories have been assessed against value/complexity chart. Considering the relative short time for implementation of the web page only the MVPs will be implemented in the first release of the web page.
+Taking in consideration all the user stories, their importance and viability of their implementation at the moment certain value and complexity levels have been attributed to the user stories. In the issues a new category has been created as “MVP” in order to highlight which stories must be implemented in the first release.
 
 [User Stories evaluation](MVP/user-stories.md)
 
-![chart](MVP/value-chart.jpg)
+![chart](MVP/maze-game-graph.jpg)
 
-**Explanation of the chart**
+**Conclusion based on the chart**
 
-* The top right corner have been given the higher priority of implementation because it represents the most important functionality features. Such as:
-    * The Contact Form.
-    * The Portfolios.
-    * The Gallery.
-* Features with a medium value and with a low complexity have been addressed in second place since most of them can be easily resolved through creation of the FAQ Page.
-* Features with low complexity and low value where addressed in the third place. It didn't represent a must feature for the first release but was very easy to implement.
-* Features with medium value and high complexity have been postponed for future releases.
+* User Stories A,I,M are included in the first sprint. This is connected with their high value and importance they for creation of the MVP.
+* User Stories B,D,E,H,J,N,K,L are included in the second sprint since they have a high value for the project.
+* User Stories C,O are included in the 3rd sprint since they have a medium value and high complexity.
+* User Story F,G are also in the third sprint but they are put in the the backlog for the moment since Issue F has a medium value/high complexity and doesn't represent a priority at the moment. While issue G has a low value and high complexity and should be dropped out. However, the story is also added to the backlog category since it seems that at a later stage its complexity might change to a lower level.
 
 User Stories identified as important for MVP were attributed the respective label in the [issues](https://github.com/Itamichan/CG_photography/issues?q=is%3Aopen+is%3Aissue) section on GitHub.
 
