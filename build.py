@@ -1,4 +1,4 @@
-# this script was kindly written by sheepy90 - https://github.com/sheepsy90
+# this script was kindly written by sheepsy90 - https://github.com/sheepsy90
 
 import subprocess
 import sys

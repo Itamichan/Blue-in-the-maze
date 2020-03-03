@@ -235,15 +235,15 @@ Testing information can be fond [here](src/readme-related-documents/testing/test
 
 ## Deployment
 
-This web page was locally developed in WebStorm and pushed to the remote repository - GitHub. The live page is hosted AWS and Heroku. 
+This web page was locally developed in WebStorm and pushed to the remote repository - GitHub. The live page is hosted on AWS and Heroku. 
 
-### Hosting to GitHub
+### Version control on GitHub
 
 In order to connect the local IDE to GitHub I used the command `git remote add origin` and added the link to the remote repository: `https://github.com/Itamichan/Blue-in-the-maze.git`
 
 My main local branch is `master` which I deployed as `origin/master` to GitHub.
 
-**Used commands during deployment:**
+**Used commands during version control:**
 * `git add .` - to add the files to the staging area.
 * `git commit -m "text message here"` - to commit the files.
 * `git push origin master` - to push to origin master branch on GitHub.
@@ -253,39 +253,44 @@ My main local branch is `master` which I deployed as `origin/master` to GitHub.
 
 This project is stored on AWS. If you would like to also deploy your project to AWS then execute the following steps:
 
-1. Go to [AWS](https://aws.amazon.com/) and create there an account. Choose Amazon Simple Storage Service in order to benefit the free version.
+1. Go to [AWS](https://aws.amazon.com/) and create there an account. Choose Amazon Free Teer option in order to benefit the free version.
 2. Go to "Services" and search for "S3".
-3. Access "S3" and create there a bucket with "Create bucket" button. You can call it `maze-game`.
+3. Access "S3" and create a bucket there with "Create bucket" button. You can call it `maze-game`.
+ Files need to be public in order to access it. you can test by clicking an img and see if you can see it
 4. Now you can add all your files related to the project into the bucket. You can do this by clicking "Upload" button. **Or** you can upload all the files in an automatic way by using python scripts.
-    * I chose to upload them automatically with the help of the scripts written by [sheepy90](https://github.com/sheepsy90). Since the scripts are not written by me I will not go into describing them. For your general knowledge the used python files are:
-        * server.py
+    * I chose to upload them automatically with the help of the scripts written by [sheepsy90](https://github.com/sheepsy90). Since the scripts are not written by me I will not go into describing them. For your general knowledge the used python files are:
         * build.py
         * deploy.py
-        * Additionally, you will need a shell file where you would store the values of your AWS credentials - This file should be added to .gitignore file and never deployed to GitHub.
+        * Additionally, you can use a shell script where you would store the values of your AWS credentials - This file should be added to .gitignore file and never deployed to GitHub to not expose the access credentials.
     * If you want to deploy the code in an automated way [here](https://www.freecodecamp.org/news/automated-deployment-in-aws-5aadc2e708a9/) is a good online resource.
 5. Now your project is deployed to AWS.
-    * Since the files on AWS are stored in a specific format in order to be able to access your webpage you will need to additionally deploy your project to Heroku. Please look below how to do this.
+    * Since the files on AWS are stored in a specific format in order to be able to access your web page you will need to additionally deploy your project to Heroku. Please look below how to do this.
 
 ### Deployment to Heroku
 
-In order to access our project which is saved on AWS we need to create an app on Heroku.
+In order to serve our project which is saved on AWS we need a web server. In our case we chose to host on Heroku.
 To deploy Blue in the Maze to Heroku, take the following steps:
 
-1. Create a `requirements.txt` file and add inside `boto3 requests flask gunicorn`.
-2. Create a `Procfile` file and add inside `web: gunicorn -w 2 server`.
-3. `git add` and `git commit` the new requirements and Procfile and then `git push` the project to GitHub.
+1. Create a `requirements.txt` file and add inside `requests flask gunicorn` for the python dependencies.
+2. Create `server.py` file that will contain the end point. It will handle our request deliver of index page.
+3. Create a `Procfile` file and add inside `web: gunicorn -w 2 server`. This file tells Heroku which processes need to be available. In our example we need a web server that runs our server.
 4. Create a new app on the [Heroku website](https://dashboard.heroku.com/apps) by clicking the "New" button in your dashboard. Give it a name and set the region to Europe.
 5. Select "Deploy" > "Deployment method" and select GitHub.
-6. Confirm the linking of the heroku app to the correct GitHub repository.
+6. Confirm the linking of the Heroku app to the correct GitHub repository.
 7. Select "Settings" > "Reveal Config Vars".
 8. Set the following config vars:
 
     **Key**: AWS_INDEX_URL 
 
-    **Value**: `https://cristina-maze-game.s3.eu-north-1.amazonaws.com/index.html`
-
-9. In the heroku dashboard, click "Deploy" > "Manual Deployment" and make sure the master branch is selected, then click "Deploy Branch".
+    **Value**: here you put the link to your index.html file from AWS
+        
+    * The link you will find on opening the index.html file in your bucket (maze-game).
+9. Enable the web worker on Heroku.
+    * Go to "Resources" > under Free Dynos choose to edit your dyno - turn it on and confirm it.
+10. In the heroku dashboard, click "Deploy" > "Manual Deployment" and make sure the master branch is selected, then click "Deploy Branch".
 11. The site is now successfully deployed.
+12. To find the link to your web page go to "Settings" > "Domains".
+13. Additionally, you can add the Papertrail add-ons which will help you with future debugging on Heroku. You will find it in "Resources" > under "Add-ons".
 
 ### How to run this project locally
 
@@ -299,9 +304,9 @@ To deploy Blue in the Maze to Heroku, take the following steps:
 * Type git clone, and add the URL you copied from Github: `git clone https://github.com/Itamichan/Blue-in-the-maze.git`
 * Press Enter and your local clone will be created.
     * If you do not want to deploy the project to AWS and Heroku remove all the related files to this process.
-* You are good to go.
-
-For more information regarding cloning of a repository click [here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
+* Run `npm install` and `npm run` in order to run the project.
+    * For these commands to work you need to have npm and node installed locally.
+* Now you are good to go.
 
 ## Credits
 
