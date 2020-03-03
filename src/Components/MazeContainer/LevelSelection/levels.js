@@ -35,6 +35,7 @@ export const BACKGROUND_MAPPING = {
     78: '/resources/doorBlueOpen.png',
 };
 
+//determines how each level will look
 export const LEVELS = {
 
     level1: {
