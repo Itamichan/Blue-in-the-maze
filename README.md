@@ -287,9 +287,9 @@ To deploy Blue in the Maze to Heroku, take the following steps:
 
 7. Set the following config vars:
 
-**Key**: AWS_INDEX_URL 
+    **Key**: AWS_INDEX_URL 
 
-**Value**: `https://cristina-maze-game.s3.eu-north-1.amazonaws.com/index.html`
+    **Value**: `https://cristina-maze-game.s3.eu-north-1.amazonaws.com/index.html`
 
 8. In the heroku dashboard, click "Deploy".
 
