@@ -29,6 +29,7 @@ const Rules = () => {
             </div>
             <Modal
                 id={'rules-modal'}
+                centered
                 isOpen={showRules}
             >
                 <ModalHeader id={'modal-header'}>
