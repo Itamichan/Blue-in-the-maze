@@ -190,28 +190,29 @@ In case the links to the wireframes don't work please find the pictures [here](s
 ### Features left to implement after testing
 
 * **Album covers** - Make it more obvious that the albums are clickable in desktop view.
-
-    
+  
 ## Technologies Used
 
 ### Languages
 
-* HTML - served as the base language for this project.
+* HTML
+* Java Script - served as the base language for this project.
 * CSS - used for styling the HTML code.
-* [Sass](https://sass-lang.com/) - used for creation of variables, mixins and easy nesting and grouping  of styles.
+* [Sass](https://sass-lang.com/) - used for creation of variables, mixins and easy nesting and grouping of styles.
 
 ### Libraries
 
-* [Bootstrap](https://getbootstrap.com/) - used for responsive grid system. As well as for navigation, modal contact form and carousel.
-* [JQuery](https://jquery.com/) & [Popper](https://popper.js.org/) - were used in connection with the functionality of the Bootstrap library.
-* [FontAwseome](https://fontawesome.com/) - used for social media icons as well as for contact related icons.
-* [Google Fonts](https://fonts.google.com/) - used for the Montserrat font.
+* [React](https://reactjs.org/) - the entire project was built in React.
+* [react-device-detect](https://www.npmjs.com/package/react-device-detect) - used for conditional rendering of content depending on which type of device the user has.
+* [reactstrap](https://reactstrap.github.io/) - used for the modal Rules window.
+* [FontAwseome](https://fontawesome.com/) - used for social media icons.
+* [Google Fonts](https://fonts.google.com/) - used for the Eczar font.
 
 ### Tools
 
 * [WebStorm](https://www.jetbrains.com/webstorm/) - used as local IDE for this project.
 * [Git](https://git-scm.com/) - used for version control.
-* [Figma](https://www.figma.com/) - used for creation of mockups.
+* [Figma](https://www.figma.com/) - used for creation of wireframes.
 * [favicon.io](https://favicon.io/) - used for creation of the fav icon for the web page.
 * [GIMP](https://www.gimp.org/) - used as image editor.
 * [Tinyjpg](https://tinyjpg.com/) - used for image compression.
@@ -220,6 +221,8 @@ In case the links to the wireframes don't work please find the pictures [here](s
 * [Google Analytics](https://analytics.google.com/) - used for user testing purposes.
 * [Hotjar](https://www.hotjar.com/) - used for user testing purposes.
 * [PageSpeed insights](https://developers.google.com/speed/pagespeed/insights/) - used for testing the loading speed of the site.
+* [AWS](https://aws.amazon.com/s3/?nc=sn&loc=0) - used to store and retrieve project's data.
+* [Heroku](https://id.heroku.com/) - used for deployment of the project.
 
 ## Testing
 
