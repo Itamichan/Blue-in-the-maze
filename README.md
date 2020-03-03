@@ -39,6 +39,7 @@ The main purpose of the game is to entertain people who have a interest in solvi
     * [How to run this project locally](#how-to-run-this-project-locally)
 6. [Credits](#credits)
     * [Media](#media)
+    * [Deployment scripts](#deployment-scripts)
     * [Acknowledgements](#acknowledgements)
         * [Pages used for Inspiration](#pages-used-for-inspiration)
         * [Pages used for information](#pages-used-for-information)
@@ -312,60 +313,33 @@ To deploy Blue in the Maze to Heroku, take the following steps:
 
 ### Content
 
-All content on the web page was written by me with the exception of the quote in the About page which was written by an anonymous person and posted on [dpreview.com](https://www.dpreview.com/forums/thread/3680347). 
+All content on the web page was written by me.
 
 ### Media
 
-**Photographs for Couples page:**
-* [Ion Ples Alexandru photography](https://ionplesalexandru.com/features-works/)
+**Game tiles resources:**
+* [Kenney.nl](https://opengameart.org/content/platformer-art-complete-pack-often-updated)
 
-**Photographs for Wedding page:**
+### Deployment scripts
 
-* [Ion Ples Alexandru photography](https://ionplesalexandru.com/features-works/)
-* [Vadim Jantic photography](http://jantic.md/weddings.html)
-
-**Photographs for More than two page:**
-
-* [UND photography](https://undphotography.ro/)
-* [Cristina Velina](https://fotografbotezbucuresti.ro/portofoliu/sedinte-foto/)
-
-**Photographs for various pages:**
-
-* [Adorable Wallpapers](http://avante.biz/camera-image-wallpapers-22-wallpapers/)
-* [WallpapersCraft](https://wallpaperscraft.com/download/couple_hands_love_tenderness_coffee_118921/1366x768)
-* [Ashley Smith](https://www.ashleysmithphotos.com/)
-
+All the scripts which made possible storage of the project on AWS and its deployment on Heroku was written by [sheepsy90](https://github.com/sheepsy90).
 
 ### Acknowledgements
 
 #### Pages used for Inspiration
 
-* [Ion Ples Alexandru photography](https://ionplesalexandru.com/features-works/)
-* [Vadim Jantic photography](http://jantic.md/weddings.html)
-* [Maxim Chumash photography](http://chumash.us/)
-* [Scott Kelby](https://scottkelby.com/)
-* [Fiona Kelly photography](https://www.fionakellyphotography.com/blog/)
-* [Peter McKinnon](http://www.petermckinnon.com/)
-* [Dave Marrow photography](https://photos.davemorrowphotography.com)
-* [Vadim Jantic](http://jantic.md/weddings.html)
+* [JavaScript: Amazing Maze Game](https://www.the-art-of-web.com/javascript/maze-game-large/)
+* [Maze game by Henry Morgan](https://codepen.io/rayrayxvv/pen/gaVjRN)
+* [HTML5 and JS Maze Game by Thomas Daniels](https://www.codeproject.com/Articles/577080/Create-an-HTML-and-JavaScript-Maze-Game-with-a-ti)
 * Inspiration resources for writing this README file:
-    * [Mattlister](https://github.com/Mattlister/The-Monkees-Monkees)
     * [AJGreaves](https://github.com/AJGreaves/familyhub)
-    * [TravelTimN](https://github.com/TravelTimN/ci-milestone01-ucfd)
-   
-
+ 
 #### Pages used for information
 
-* [UX Planet](https://uxplanet.org/information-architecture-basics-for-designers-b5d43df62e20)
-* [tubik](https://tubikstudio.com/)
-* [stormotion](https://stormotion.io/blog/how-to-write-a-good-user-story-with-examples-templates/)
-* [Agile Alliance](https://www.agilealliance.org/)
 * [W3schools](https://www.w3schools.com/)
 * [W3C](https://www.w3.org/)
-* [stack overflow](https://stackoverflow.com/) - massively used for debugging and understanding certain concepts.
 * [CSS-Tricks](https://css-tricks.com/)
 * [MDN web docs](https://developer.mozilla.org/)
-
 
 ## Disclaimer
 
