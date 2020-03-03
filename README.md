@@ -203,6 +203,7 @@ In case the links to the wireframes don't work please find the pictures [here](s
 * Java Script - served as the base language for this project.
 * CSS - used for styling the HTML code.
 * [Sass](https://sass-lang.com/) - used for creation of variables, mixins and easy nesting and grouping of styles.
+* [Python](https://www.python.org/) - a small python script in order to deploy the project to AWS and Heroku.
 
 ### Libraries
 
@@ -236,46 +237,78 @@ Testing information can be fond [here](src/readme-related-documents/testing/test
 
 This web page was locally developed in WebStorm and pushed to the remote repository - GitHub. The live page is hosted on GitHub Pages. 
 
-### Deployment to GitHub
+### Hosting to GitHub
 
-In order to connect the local IDE to GitHub I used the command `git remote add origin` and added the link to the remote repository: `https://github.com/Itamichan/CG_photography.git`
+In order to connect the local IDE to GitHub I used the command `git remote add origin` and added the link to the remote repository: `https://github.com/Itamichan/Blue-in-the-maze.git`
 
-My main local branch is `master` which I deployed as `origin/master` to GitHub. All different features were first developed on a separate branch and deployed on a remote, same name branch, on GitHub. Once the features were ready to go live they were merged into the master branch.
+My main local branch is `master` which I deployed as `origin/master` to GitHub.
 
 **Used commands during deployment:**
-* `git branch feature/specific_feature` - to create a new local branch for a specific feature.
 * `git add .` - to add the files to the staging area.
 * `git commit -m "text message here"` - to commit the files.
-* `git merge name_of_the_branch --no-ff` - done from master branch in order to merge a feature branch into the master branch without fast forwarding.
 * `git push origin master` - to push to origin master branch on GitHub.
-* `git push origin branch_name` - to push to origin specific branch name on GitHub.
-* `git checkout name_of_the_branch` - in order to leave the current branch and move to a new one.
 * `git status` - was extensively used in order to see the current status of the files.
 
-### Hosting on GitHub Pages
+### Deployment to AWS
 
-* Log into GitHub.
-* From the list with repositories choose [CG*photography*](https://github.com/Itamichan/CG_photography).
-* Go to settings.
-* Scroll down to GitHub Pages section.
-* Select as a source **master branch**.
-* The page is now automatically refreshed and the project is deployed.
-* To access the project scroll down again to GitHub Pages section and click on the provided link.
-* For your convenience, save the link as a bookmark.
+This project is stored on AWS. In order to do the same following steps are needed:
 
-For more detailed information regarding deployment to GitHub Pages click [here](https://pages.github.com/).
+1. Go to [AWS](https://aws.amazon.com/) and create there an account. Choose Amazon Simple Storage Service in order to benefit the free version.
+2. Go to "Services" and search for "S3".
+3. Access "S3" and create there a bucket with "Create bucket" button. You can call it `maze-game`.
+4. Now you can add all your files related to the project into the bucket. You can do this by clicking "Upload" button. **Or** you can upload all the files in an automatic way by using python scripts.
+    * I chose to automatically upload all the files to AWS. Since the scripts are not written by me I will not go into describing them. The used python files are:
+        * server.py
+        * build.py
+        * deploy.py
+        * Additionally, you will need a shell file where you would store the values of your AWS credentials - This file should be added to .gitignore file and never deployed to GitHub.
+    * If you want to deploy the code in an automated way [here](https://www.freecodecamp.org/news/automated-deployment-in-aws-5aadc2e708a9/) is a good online resource.
+5. Now your project is deployed to AWS.
+    * Since the files on AWS a stored in a specific format in order to be able to access your project you will need to additionally deploy your project to Heroku. Please look below how to do this.
+
+### Deployment to Heroku
+
+In order to access our project which is saved on AWS we need to create an app on Heroku.
+To deploy Blue in the Maze to Heroku, take the following steps:
+
+1. Create a `requirements.txt` file.
+
+2. Create a `Procfile` file.
+
+3. `git add` and `git commit` the new requirements and Procfile and then `git push` the project to GitHub.
+
+3. Create a new app on the [Heroku website](https://dashboard.heroku.com/apps) by clicking the "New" button in your dashboard. Give it a name and set the region to Europe.
+
+4. From the heroku dashboard of your newly created application, click on "Deploy" > "Deployment method" and select GitHub.
+
+5. Confirm the linking of the heroku app to the correct GitHub repository.
+
+6. In the heroku dashboard for the application, click on "Settings" > "Reveal Config Vars".
+
+7. Set the following config vars:
+
+**Key**: AWS_INDEX_URL 
+
+**Value**: `https://cristina-maze-game.s3.eu-north-1.amazonaws.com/index.html`
+
+8. In the heroku dashboard, click "Deploy".
+
+9. In the "Manual Deployment" section of this page, make sure the master branch is selected and then click "Deploy Branch".
+
+10. The site is now successfully deployed.
 
 ### How to run this project locally
 
 **Clone this project from GitHub:**
 
-* Go to [CG*photography*](https://github.com/Itamichan/CG_photography) GitHub repository.
+* Go to [Blue-in-the-Maze](https://github.com/Itamichan/Blue-in-the-maze) GitHub repository.
 * Click on "Clone or download" green button.
 * Copy the URL to the repository.
 * Open the terminal in your local IDE.
 * Choose the working directory where you would like to have the cloned repository.
-* Type git clone, and add the URL you copied from Github: `git clone https://github.com/Itamichan/CG_photography.git`
+* Type git clone, and add the URL you copied from Github: `git clone https://github.com/Itamichan/Blue-in-the-maze.git`
 * Press Enter and your local clone will be created.
+    * If you do not want to deploy the project to AWS and Heroku remove all the related files to this process.
 * You are good to go.
 
 For more information regarding cloning of a repository click [here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
