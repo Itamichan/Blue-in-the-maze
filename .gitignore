@@ -27,6 +27,6 @@ deployAWS.sh
 
 #hiding the unnecessary scss related files
 
-/src/*.sass-cache
+/src/.sass-cache
 /src/*.css
 /src/*.css.map
