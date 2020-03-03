@@ -2,7 +2,7 @@
 
 A live demo can be found [here](https://cristina-maze-game.herokuapp.com/)
 
-![Desktop Demo](public/resources/webpage-response/webpage-responsivnes.jpg)
+![Desktop Demo](src/readme-related-documents/webpage-response/webpage-responsivnes.jpg)
 
 ## Introduction
 
@@ -112,9 +112,9 @@ All User Stories were added as [issues](https://github.com/Itamichan/Blue-in-the
 
 Taking in consideration all the user stories, their importance and viability of their implementation at the moment certain value and complexity levels have been attributed to the user stories. In the issues a new category has been created as “MVP” in order to highlight which stories must be implemented in the first release.
 
-[User Stories evaluation](src/MVP/user-stories.md)
+[User Stories evaluation](src/readme-related-documents/MVP/user-stories.md)
 
-![chart](src/MVP/maze-game-graph.jpg)
+![chart](src/readme-related-documents/MVP/maze-game-graph.jpg)
 
 **Conclusions based on the chart**
 
@@ -161,7 +161,7 @@ Link to the mobile version can be found [here](https://www.figma.com/file/S4Awi2
 
 Link to the desktop version can be found [here](https://www.figma.com/file/DaQhx72fCc1FgdEFQX6Dr7/game-desktop?node-id=0%3A1).
 
-In case the links to the wireframes don't work please find the pictures [here](src/wireframes).
+In case the links to the wireframes don't work please find the pictures [here](src/readme-related-documents/wireframes).
 
 ## Features
 
@@ -222,11 +222,11 @@ In case the links to the wireframes don't work please find the pictures [here](s
 * [Hotjar](https://www.hotjar.com/) - used for user testing purposes.
 * [PageSpeed insights](https://developers.google.com/speed/pagespeed/insights/) - used for testing the loading speed of the site.
 * [AWS](https://aws.amazon.com/s3/?nc=sn&loc=0) - used to store and retrieve project's data.
-* [Heroku](https://id.heroku.com/) - used for deployment of the project.
+* [Heroku](https://id.heroku.com/) - The live page is hosted on Heroku.
 
 ## Testing
 
-Testing information can be fond [here](testing/testing.md).
+Testing information can be fond [here](src/readme-related-documents/testing/testing.md).
 
 ## Deployment
 
