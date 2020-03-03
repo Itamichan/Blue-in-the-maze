@@ -29,8 +29,6 @@ The main purpose of the game is to entertain people who have a interest in solvi
     * [Wireframes](#wireframes)
 2. [Features](#features)
     * [Existing Features](#existing-features)
-        * [Elements present on every page](#elements-present-on-every-page)
-        * [Other elements](#other-elements)
     * [Features left to implement](#features-left-to-implement)
     * [Features left to implement after testing](#features-left-to-implement-after-testing)
 3. [Technologies Used](#technologies-used)
@@ -160,58 +158,39 @@ The [Eczar](https://fonts.google.com/specimen/Eczar) font was chosen due to its 
 Blue in the Maze's wireframes are made both for mobile and desktop view. The wireframes were done in [figma](https://www.figma.com/). 
 
 Link to the mobile version can be found [here](https://www.figma.com/file/S4Awi2Wc8RJ8zjWNNuRLQ3/game-mobile?node-id=0%3A1).
+
 Link to the desktop version can be found [here](https://www.figma.com/file/DaQhx72fCc1FgdEFQX6Dr7/game-desktop?node-id=0%3A1).
 
-In case the links to the wireframes doesn't work please find the pictures of the wireframes [here](src/wireframes).
+In case the links to the wireframes don't work please find the pictures [here](src/wireframes).
 
 ## Features
 
 ### Existing Features
 
-#### Elements present on every page
+* **The Game**
+    * Represents a dynamic area of the web page which makes possible to start the game,choose a level and enjoy the game itself.
+        * Addresses issue #2, #5, #7, #10, #12, #15.
+    * Has two constant buttons: "Home" button and "Rules" button. The first one ensures that the player can go back to the initial start screen. While the second button provides the story of the game and how to play it.
+        * Addresses issue #1, #14.
+    * A timer appears when the selected level starts. The timer serves as an indicator of how much time the player needed to complete the level or triggers the losing condition (from level 3 onwards) if the player runs out of time.
+        * Addresses issue #4, #16.
+    * Control buttons are added while playing the chosen level if the device type is detected as "mobile" or "tablet."
+        * Addresses issue #10.
+    * Graduate access to the levels - at the beginning the player can play only the first level. Access to the next level is allowed only on passing the current level.
+        * Addresses issue #5, #6.
 
-* **Navigation bar** - Has a `fixed` position in order to ensure that the user can access it at any time.
-    * CG*photography* logo in the left corner which serves as a link to go back to the landing page.
-    * Links that can be accessed are placed on the right side. They collapse if the screen width is bellow 992px.
 * **Footer**
-    * Call to Action part - contains call to action text and the contact button.
-    * Main part
-        * Explore column - contains links to different parts of the web page.
-        * Contact column - contains contact information. It disappears on small screens in order to avoid a cluttered footer.
-        * Follow me column - contains links to social media
-    * Addresses issue #3, #5, #10 & #11.
-* **Modal Contact Form**
-    * The Contact Form is present on every page so that the user can easily find it. Additionally, it comes up as a modal window in order to fully capture the attention of the user, as well as to reduces the loading time.
-    * Addresses issue #3, #10 & #11.
-* **Hero Image** - with the exception of the landing page which has a carousel.
-    * Each page has a hero image with text which is related to the content of the page. It helps the user to understand where they are at the moment.
-
-#### Other elements
-
-* **Portfolio** - every type of couple photography has its own portfolio and a subsequent portfolio with specific photo sessions. They were created in order to have a clear distinction between different types of photographs and give the user the chance to choose the portfolio in which they are the most interested.
-    * Addresses issue #1 & #9.
-* **Gallery** - every individual album contains a gallery of 12 photographs. The gallery are created in order to show the previous works of the photographer.
-    * In order to have a fast loading page the maximum width of a photograph is 750px. This decision was made considering that 750px is the largest size the photograph will ever have on a screen. In this way the weight of the photographs is greatly reduced.
-    * Addresses issue #1, #2 & #9.
-* **Testimonials** - this section was created in order to show to the potential customer what other customers though about the photographer and her work.
-    * Addresses issue #4.
-* **FAQ page** - after the evaluation of the User Stories it became clear that a potential customer can have a lot of common questions which can be answered in an FAQ. In this way the user will be informed in a short time and will contact the photographer only for more specific question. In the same time, the photographer will not have to answer to a common question on repetitive occasions.
-    * Addresses issue #5, #8, #12, #13, #14, #15, #17, #19 & #20.
-* **About page** - this page's goal is to give a short insight about the photographer and present once again the contact details. This is important, especially because the contact details are omitted in the footer on smaller screens.
-    * Addresses issue #3, #5, #10, #11 & partially #16.
+    * Provides the links which makes possible to contact the game owner as well as to see their Github account or LinkedIn.
 
 ### Features left to implement
 
-* **FAQ page** - User Story #21 & #27, where the user is interested in the option of a physical photo album.
-* **About page** - User Story #16, where user is interested in the photographer's values and vision.
-* **Contact Form** - User Story #18, where the user wants to know the photographer's availability. Additionally, they want to be able to book a date directly in an existing calendar.
+* **Leader-board** - User Story #8, at the moment it has a low value. Will be implemented if after a reevaluation of priorities it will get a higher value.
+* **Winning points** - User Story #7, at the moment we have only the final time as a parameter which indicates how well the user performed. Use story #7 has a high complexity therefore it will be implemented at a later stage.
 
 ### Features left to implement after testing
 
 * **Album covers** - Make it more obvious that the albums are clickable in desktop view.
-* **Gallery images** - It will be better to load the images one after another and not all in the same time.
-* **Reviews** - To link the reviews to the relevant portfolios in a future release.
-* **Gallery carousel** - It will allow to see each photo individually, in a bigger size.
+
     
 ## Technologies Used
 
