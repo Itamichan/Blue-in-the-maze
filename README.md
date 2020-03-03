@@ -189,7 +189,11 @@ In case the links to the wireframes don't work please find the pictures [here](s
 
 ### Features left to implement after testing
 
-* **Album covers** - Make it more obvious that the albums are clickable in desktop view.
+* **New characters** - as per user review suggestion.
+* **Final scene with Blue meeting the human** - as per user review suggestion.
+* **Improve levels' difficulty** - in order to have more challenging levels.
+* **Improve game's design** - in order to have more visually attractive game.
+* **Improve web page's speed on mobile** - in order to have more visually attractive game.
   
 ## Technologies Used
 
