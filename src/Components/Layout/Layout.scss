@@ -14,7 +14,7 @@
 
   @for $i from $minHeight through $maxHeight {
     @media (min-height: $i*$stepSize) {
-     padding-top: floor($i*$stepSize/5);
+     padding-top: floor($i*$stepSize/10);
     }
   }
 
