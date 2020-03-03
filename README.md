@@ -251,51 +251,41 @@ My main local branch is `master` which I deployed as `origin/master` to GitHub.
 
 ### Deployment to AWS
 
-This project is stored on AWS. In order to do the same following steps are needed:
+This project is stored on AWS. If you would like to also deploy your project to AWS then execute the following steps:
 
 1. Go to [AWS](https://aws.amazon.com/) and create there an account. Choose Amazon Simple Storage Service in order to benefit the free version.
 2. Go to "Services" and search for "S3".
 3. Access "S3" and create there a bucket with "Create bucket" button. You can call it `maze-game`.
 4. Now you can add all your files related to the project into the bucket. You can do this by clicking "Upload" button. **Or** you can upload all the files in an automatic way by using python scripts.
-    * I chose to automatically upload all the files to AWS. Since the scripts are not written by me I will not go into describing them. The used python files are:
+    * I chose to upload them automatically with the help of the scripts written by [sheepy90](https://github.com/sheepsy90). Since the scripts are not written by me I will not go into describing them. For your general knowledge the used python files are:
         * server.py
         * build.py
         * deploy.py
         * Additionally, you will need a shell file where you would store the values of your AWS credentials - This file should be added to .gitignore file and never deployed to GitHub.
     * If you want to deploy the code in an automated way [here](https://www.freecodecamp.org/news/automated-deployment-in-aws-5aadc2e708a9/) is a good online resource.
 5. Now your project is deployed to AWS.
-    * Since the files on AWS a stored in a specific format in order to be able to access your project you will need to additionally deploy your project to Heroku. Please look below how to do this.
+    * Since the files on AWS are stored in a specific format in order to be able to access your webpage you will need to additionally deploy your project to Heroku. Please look below how to do this.
 
 ### Deployment to Heroku
 
 In order to access our project which is saved on AWS we need to create an app on Heroku.
 To deploy Blue in the Maze to Heroku, take the following steps:
 
-1. Create a `requirements.txt` file.
-
-2. Create a `Procfile` file.
-
+1. Create a `requirements.txt` file and add inside `boto3 requests flask gunicorn`.
+2. Create a `Procfile` file and add inside `web: gunicorn -w 2 server`.
 3. `git add` and `git commit` the new requirements and Procfile and then `git push` the project to GitHub.
-
-3. Create a new app on the [Heroku website](https://dashboard.heroku.com/apps) by clicking the "New" button in your dashboard. Give it a name and set the region to Europe.
-
-4. From the heroku dashboard of your newly created application, click on "Deploy" > "Deployment method" and select GitHub.
-
-5. Confirm the linking of the heroku app to the correct GitHub repository.
-
-6. In the heroku dashboard for the application, click on "Settings" > "Reveal Config Vars".
-
-7. Set the following config vars:
+4. Create a new app on the [Heroku website](https://dashboard.heroku.com/apps) by clicking the "New" button in your dashboard. Give it a name and set the region to Europe.
+5. Select "Deploy" > "Deployment method" and select GitHub.
+6. Confirm the linking of the heroku app to the correct GitHub repository.
+7. Select "Settings" > "Reveal Config Vars".
+8. Set the following config vars:
 
     **Key**: AWS_INDEX_URL 
 
     **Value**: `https://cristina-maze-game.s3.eu-north-1.amazonaws.com/index.html`
 
-8. In the heroku dashboard, click "Deploy".
-
-9. In the "Manual Deployment" section of this page, make sure the master branch is selected and then click "Deploy Branch".
-
-10. The site is now successfully deployed.
+9. In the heroku dashboard, click "Deploy" > "Manual Deployment" and make sure the master branch is selected, then click "Deploy Branch".
+11. The site is now successfully deployed.
 
 ### How to run this project locally
 
