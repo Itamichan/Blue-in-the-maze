@@ -157,12 +157,12 @@ The [Eczar](https://fonts.google.com/specimen/Eczar) font was chosen due to its 
 
 ### Wireframes
 
-Considering that CG*photography* has at its core presentation of photographs I decided that it will be more helpful to have mockups than simple wireframes. The mockups were done in [figma](https://www.figma.com/). 
+Blue in the Maze's wireframes are made both for mobile and desktop view. The wireframes were done in [figma](https://www.figma.com/). 
 
-Link to the mockups can be found [here](https://www.figma.com/file/yAH8DKgNrouL7mu2Jc0Ipv/CGphotography?node-id=0%3A1). The mockups were done for the mobile first approach. The final result on tablet and desktop has only minor differences in comparison with the mobile version.
-Besides the preliminary design of the web page, I also created a prototype of the flow between the pages. You can try this by pressing the play button in [figma](https://www.figma.com/). 
+Link to the mobile version can be found [here](https://www.figma.com/file/S4Awi2Wc8RJ8zjWNNuRLQ3/game-mobile?node-id=0%3A1).
+Link to the desktop version can be found [here](https://www.figma.com/file/DaQhx72fCc1FgdEFQX6Dr7/game-desktop?node-id=0%3A1).
 
-In case the link to the mockups doesn't work please find the pictures of the mockups [here](wireframes).
+In case the links to the wireframes doesn't work please find the pictures of the wireframes [here](src/wireframes).
 
 ## Features
 
