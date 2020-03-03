@@ -28,7 +28,7 @@ As a result the web page is responsive on different screen sizes and existing bu
 
 ## Manual Testing
 
-Was used for:
+Was used:
 * To test links' functionality.
 * To assess the flow and intuitiveness of the content placement.
 * To see web page's performance in different browsers, such as Chrome, Firefox and Safari.
@@ -126,7 +126,6 @@ The conclusion should be perceived with skepticism considering that it is based 
 
 **Opportunities for improvement:**
 * Eliminate render-blocking resources- which will save 0.3s loading time
-* Remove unused CSS - which will save 0.3s loading time.
 
 #### Conclusion
 

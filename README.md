@@ -157,9 +157,9 @@ The [Eczar](https://fonts.google.com/specimen/Eczar) font was chosen due to its 
 
 Blue in the Maze's wireframes are made both for mobile and desktop view. The wireframes were done in [figma](https://www.figma.com/). 
 
-Link to the mobile version can be found [here](https://www.figma.com/file/S4Awi2Wc8RJ8zjWNNuRLQ3/game-mobile?node-id=0%3A1).
+Link to wireframes for mobile can be found [here](https://www.figma.com/file/S4Awi2Wc8RJ8zjWNNuRLQ3/game-mobile?node-id=0%3A1).
 
-Link to the desktop version can be found [here](https://www.figma.com/file/DaQhx72fCc1FgdEFQX6Dr7/game-desktop?node-id=0%3A1).
+Link to wireframes for desktop can be found [here](https://www.figma.com/file/DaQhx72fCc1FgdEFQX6Dr7/game-desktop?node-id=0%3A1).
 
 In case the links to the wireframes don't work please find the pictures [here](src/readme-related-documents/wireframes).
 
