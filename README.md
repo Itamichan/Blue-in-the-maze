@@ -322,7 +322,7 @@ All content on the web page was written by me.
 
 ### Deployment scripts
 
-All the scripts which made possible storage of the project on AWS and its deployment on Heroku was written by [sheepsy90](https://github.com/sheepsy90).
+All scripts which made possible to store the project to AWS and deploy it to Heroku was written by [sheepsy90](https://github.com/sheepsy90).
 
 ### Acknowledgements
 
