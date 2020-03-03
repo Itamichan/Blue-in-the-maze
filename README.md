@@ -8,7 +8,9 @@ A live demo can be found [here](https://cristina-maze-game.herokuapp.com/)
 
 Blue in the Maze is a labyrinth game.
 
-The main purpose of the game is to entertain people who have a interest in solving puzzle style games. Through this goal the game owner want to have a high conversion rate which will offer a high adds revenue.
+The main purpose of the game is to entertain people who have a interest in solving puzzle style games. Through this goal the game owner want to have a high conversion rate which will offer high adds revenue.
+
+The game consists of 6 levels. Where with every new level the difficulty is increased. Ultimately the potential user will have to play against the time and collect certain items in order to be able to finish the game.
 
 ## Table of Content
 
