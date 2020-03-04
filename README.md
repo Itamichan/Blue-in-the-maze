@@ -245,9 +245,9 @@ This project was entirely built in React, which as a result has a directory stru
 **The distinctive points are:**
 * The project is divided in components.
     * As a rule each component directory will contain a JS file and a scss file which is related to it.
-    * Two main components are:
+    * Two main components present in the project are:
         * Layout - which incorporates subcomponents related to the web page's look.
-        * MazeContainer - which incorporates all the components related to the game itself as well as the custom hook "useMaze" that is responsible for the most of the controller part of the data.
+        * MazeContainer - which incorporates all the components related to the game itself as well as the custom hook "useMaze" which is responsible for the most of the controller part of the data.
 * The final index.html is placed in the public folder and has only one root div. This div renders the App.js which represents our main JavaScript file.
 * The project uses "real" HTML in an limited amount. The most HTML alike code is written with JSX. 
 
