@@ -35,6 +35,10 @@ The game consists of 6 levels. Where with every new level the difficulty is incr
     * [Features left to implement](#features-left-to-implement)
     * [Features left to implement after testing](#features-left-to-implement-after-testing)
 3. [Technologies Used](#technologies-used)
+    * [Languages](#languages)
+    * [Libraries](#libraries)
+    * [Tools](#tools)
+    * [React in detail](#react-in-detail)
 4. [Testing](#testing)
 5. [Deployment](#deployment)
     * [Version control on GitHub](#version-control-on-github)
@@ -204,10 +208,10 @@ In case the links to the wireframes don't work please find the pictures [here](s
 
 ### Languages
 
-* HTML
+* HTML - more precisely this project uses JSX which is a JavaScript extension and allows us to write "HTML" alike code in React.
 * Java Script - served as the base language for this project.
 * CSS - used for styling the HTML code.
-* [Sass](https://sass-lang.com/) - used for creation of variables, mixins and easy nesting and grouping of styles.
+* [Sass](https://sass-lang.com/) - Sass was used in order to write an easier css. It allowed to create variables, mixins and create for loops.
 * [Python](https://www.python.org/) - a small python script in order to deploy the project to AWS and Heroku.
 
 ### Libraries
@@ -233,6 +237,19 @@ In case the links to the wireframes don't work please find the pictures [here](s
 * [PageSpeed insights](https://developers.google.com/speed/pagespeed/insights/) - used for testing the loading speed of the site.
 * [AWS](https://aws.amazon.com/s3/?nc=sn&loc=0) - used to store and retrieve project's data.
 * [Heroku](https://id.heroku.com/) - The live page is hosted on Heroku.
+
+### React in detail
+
+This project was entirely built in React, which as a result has a directory structure different then the classic projects built only in HTML and JavaScript.
+
+**The distinctive points are:**
+* The project is divided in components.
+    * As a rule each component directory will contain a JS file and a scss file which is related to it.
+    * Two main components are:
+        * Layout - which incorporates subcomponents related to the web page's look.
+        * MazeContainer - which incorporates all the components related to the game itself as well as the custom hook "useMaze" that is responsible for the most of the controller part of the data.
+* The final index.html is placed in the public folder and has only one root div. This div renders the App.js which represents our main JavaScript file.
+* The project uses "real" HTML in an limited amount. The most HTML alike code is written with JSX. 
 
 ## Testing
 
