@@ -27,7 +27,10 @@ deployAWS.sh
 
 #hiding the unnecessary scss related files
 
-/src/*.sass-cache
 /src/*.css
 /src/*.css.map
 /src/Components/Footer/.sass-cache/
+/src/Components/MazeContainer/Cell/.sass-cache/
+/src/Components/Layout/GameBackground/.sass-cache/
+/src/Components/Layout/PlainScreen/.sass-cache/
+/src/Components/MazeContainer/Rules/.sass-cache/
