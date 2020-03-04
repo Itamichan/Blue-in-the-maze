@@ -30,3 +30,4 @@ deployAWS.sh
 /src/*.sass-cache
 /src/*.css
 /src/*.css.map
+/src/Components/Footer/.sass-cache/

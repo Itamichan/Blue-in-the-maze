@@ -16,14 +16,15 @@ The game consists of 6 levels. Where with every new level the difficulty is incr
 
 1. [UX](#ux)
     * [Goals](#goals)
-        * [CGphotography goal](#cgphotography-goal)
+        * [Blue in the Maze goal](#cgphotography-goal)
         * [Business goals](#business-goals)
-        * [Visitor goals](#customer-goals)
+        * [Customer goals](#customer-goals)
     * [User Stories](#user-stories)
-        * [The photographer](#the-photographer)
+        * [The game designer](#the-game-designer)
+        * [The game developer](#the-game-developer)
+        * [The business owner](#the-business-owner)
         * [The UX designer](#the-ux-designer)
-        * [The potential customer](#the-potential-customer)
-        * [The future married couple](#the-future-married-couple)
+        * [The potential user](#the-potential-user)
     * [Minimum Viable Product](#minimum-viable-product)
     * [Design](#design)
         * [Colors](#colors)
@@ -36,13 +37,14 @@ The game consists of 6 levels. Where with every new level the difficulty is incr
 3. [Technologies Used](#technologies-used)
 4. [Testing](#testing)
 5. [Deployment](#deployment)
-    * [Deployment to GitHub](#deployment-to-github)
-    * [Hosting on GitHub Pages](#hosting-on-github-pages)
+    * [Version control on GitHub](#version-control-on-github)
+    * [Deployment to AWS](#deployment-to-aws)
+    * [Deployment to Heroku](#deployment-to-heroku)
     * [How to run this project locally](#how-to-run-this-project-locally)
 6. [Credits](#credits)
     * [Media](#media)
-    * [Deployment scripts](#deployment-scripts)
     * [Acknowledgements](#acknowledgements)
+        * [Deployment scripts](#deployment-scripts)
         * [Pages used for Inspiration](#pages-used-for-inspiration)
         * [Pages used for information](#pages-used-for-information)
 7. [Disclaimer](#disclaimer)
@@ -322,11 +324,11 @@ All content on the web page was written by me.
 **Game tiles resources:**
 * [Kenney.nl](https://opengameart.org/content/platformer-art-complete-pack-often-updated)
 
-### Deployment scripts
+### Acknowledgements
+
+#### Deployment scripts
 
 All scripts which made possible to store the project to AWS and deploy it to Heroku was written by [sheepsy90](https://github.com/sheepsy90).
-
-### Acknowledgements
 
 #### Pages used for Inspiration
 
