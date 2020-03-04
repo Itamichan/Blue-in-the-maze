@@ -12,6 +12,13 @@ The main purpose of the game is to entertain people who have a interest in solvi
 
 The game consists of 6 levels. Where with every new level the difficulty is increased. Ultimately the potential user will have to play against the time and collect certain items in order to be able to finish the game.
 
+### Requirements to play the game
+
+* Blue in the Maze can be played on any device. 
+    * In case of mobile devices the game should be played in portrait mode.
+* A player can move to a new level only after the completion of the previous level.
+* From level 3 onwards the player needs to finish the game before the Timer runs out.
+
 ## Table of Content
 
 1. [UX](#ux)
@@ -195,6 +202,7 @@ In case the links to the wireframes don't work please find the pictures [here](s
 
 * **Leader-board** - User Story #8, at the moment it has a low value. Will be implemented if after a reevaluation of priorities it will get a higher value.
 * **Winning points** - User Story #7, at the moment we have only the final time as a parameter which indicates how well the user performed. Use story #7 has a high complexity therefore it will be implemented at a later stage.
+* **Landscape mode** - the possibility to play the game in landscape mode will be added in a future update.
 
 ### Features left to implement after testing
 
