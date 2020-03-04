@@ -227,6 +227,7 @@ In case the links to the wireframes don't work please find the pictures [here](r
 * [React](https://reactjs.org/) - the entire project was built in React.
 * [react-device-detect](https://www.npmjs.com/package/react-device-detect) - used for conditional rendering of content depending on which type of device the user has.
 * [reactstrap](https://reactstrap.github.io/) - used for the modal Rules window.
+* [prop-types](https://www.npmjs.com/package/prop-types) - used to ensure that the correct data type is passed to the component.
 * [react-fontawesome](https://github.com/FortAwesome/react-fontawesome) - used for social media icons.
 * [Google Fonts](https://fonts.google.com/) - used for the Eczar font.
 
@@ -330,8 +331,11 @@ In order to be able to run the project locally uou need to have an IDE with the 
 * [nodejs v12.14.1](https://nodejs.org/en/)
 * [React v16.12.0](https://reactjs.org/)
 * [Ruby Sass 3.7.4](https://sass-lang.com/)
-* [reactstrap v8.4.1](https://reactstrap.github.io/) 
-* [react-fontawesome v0.1.8](https://github.com/FortAwesome/react-fontawesome)
+
+Optionally:
+* [reactstrap v8.4.1](https://reactstrap.github.io/) - for the modal "Rules" window
+* [react-fontawesome v0.1.8](https://github.com/FortAwesome/react-fontawesome) - for the social media icons
+* [prop-types](https://www.npmjs.com/package/prop-types) - for data type check
 
 **Clone this project from GitHub:**
 
