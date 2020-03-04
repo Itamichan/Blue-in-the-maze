@@ -215,7 +215,7 @@ In case the links to the wireframes don't work please find the pictures [here](s
 * [React](https://reactjs.org/) - the entire project was built in React.
 * [react-device-detect](https://www.npmjs.com/package/react-device-detect) - used for conditional rendering of content depending on which type of device the user has.
 * [reactstrap](https://reactstrap.github.io/) - used for the modal Rules window.
-* [FontAwseome](https://fontawesome.com/) - used for social media icons.
+* [react-fontawesome](https://github.com/FortAwesome/react-fontawesome) - used for social media icons.
 * [Google Fonts](https://fonts.google.com/) - used for the Eczar font.
 
 ### Tools
@@ -261,14 +261,14 @@ This project is stored on AWS. If you would like to also deploy your project to 
 1. Go to [AWS](https://aws.amazon.com/) and create there an account. Choose Amazon Free Teer option in order to benefit the free version.
 2. Go to "Services" and search for "S3".
 3. Access "S3" and create a bucket there with "Create bucket" button. You can call it `maze-game`.
- Files need to be public in order to access it. you can test by clicking an img and see if you can see it
-4. Now you can add all your files related to the project into the bucket. You can do this by clicking "Upload" button. **Or** you can upload all the files in an automatic way by using python scripts.
+4. Under "Permissions" ensure that you set the access to public in order to be able to access the bucket's content.
+5. Now you can add all your files related to the project into the bucket. You can do this by clicking "Upload" button. **Or** you can upload all the files in an automatic way by using python scripts.
     * I chose to upload them automatically with the help of the scripts written by [sheepsy90](https://github.com/sheepsy90). Since the scripts are not written by me I will not go into describing them. For your general knowledge the used python files are:
         * build.py
         * deploy.py
         * Additionally, you can use a shell script where you would store the values of your AWS credentials - This file should be added to .gitignore file and never deployed to GitHub to not expose the access credentials.
     * If you want to deploy the code in an automated way [here](https://www.freecodecamp.org/news/automated-deployment-in-aws-5aadc2e708a9/) is a good online resource.
-5. Now your project is deployed to AWS.
+6. Now your project is deployed to AWS.
     * Since the files on AWS are stored in a specific format in order to be able to access your web page you will need to additionally deploy your project to Heroku. Please look below how to do this.
 
 ### Deployment to Heroku
@@ -299,6 +299,14 @@ To deploy Blue in the Maze to Heroku, take the following steps:
 
 ### How to run this project locally
 
+In order to be able to run the project locally uou need to have an IDE with the following installed dependencies:
+    * [npm v.6.13.7](https://www.npmjs.com/)
+    * [nodejs v12.14.1](https://nodejs.org/en/)
+    * [React v16.12.0](https://reactjs.org/)
+    * [Ruby Sass 3.7.4](https://sass-lang.com/)
+    * [reactstrap v8.4.1](https://reactstrap.github.io/) 
+    * [react-fontawesome v0.1.8](https://github.com/FortAwesome/react-fontawesome)
+
 **Clone this project from GitHub:**
 
 * Go to [Blue-in-the-Maze](https://github.com/Itamichan/Blue-in-the-maze) GitHub repository.
@@ -310,7 +318,6 @@ To deploy Blue in the Maze to Heroku, take the following steps:
 * Press Enter and your local clone will be created.
     * If you do not want to deploy the project to AWS and Heroku remove all the related files to this process.
 * Run `npm install` and `npm run` in order to run the project.
-    * For these commands to work you need to have npm and node installed locally.
 * Now you are good to go.
 
 ## Credits
