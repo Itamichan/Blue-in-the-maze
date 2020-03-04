@@ -325,12 +325,13 @@ To deploy Blue in the Maze to Heroku, take the following steps:
 ### How to run this project locally
 
 In order to be able to run the project locally uou need to have an IDE with the following installed dependencies:
-    * [npm v.6.13.7](https://www.npmjs.com/)
-    * [nodejs v12.14.1](https://nodejs.org/en/)
-    * [React v16.12.0](https://reactjs.org/)
-    * [Ruby Sass 3.7.4](https://sass-lang.com/)
-    * [reactstrap v8.4.1](https://reactstrap.github.io/) 
-    * [react-fontawesome v0.1.8](https://github.com/FortAwesome/react-fontawesome)
+    
+* [npm v.6.13.7](https://www.npmjs.com/)
+* [nodejs v12.14.1](https://nodejs.org/en/)
+* [React v16.12.0](https://reactjs.org/)
+* [Ruby Sass 3.7.4](https://sass-lang.com/)
+* [reactstrap v8.4.1](https://reactstrap.github.io/) 
+* [react-fontawesome v0.1.8](https://github.com/FortAwesome/react-fontawesome)
 
 **Clone this project from GitHub:**
 
