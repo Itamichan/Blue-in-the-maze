@@ -1,3 +1,5 @@
+# this script was kindly written by sheepsy90 - https://github.com/sheepsy90
+
 from flask import Flask, escape, request
 import requests
 import os
