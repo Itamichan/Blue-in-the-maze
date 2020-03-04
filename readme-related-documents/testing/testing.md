@@ -1,6 +1,6 @@
 # Testing
 
-[back to README.md file](../../../README.md)
+[back to README.md file](../../README.md)
 
 ## Table of Content
 

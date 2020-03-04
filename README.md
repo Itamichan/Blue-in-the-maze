@@ -2,7 +2,7 @@
 
 A live demo can be found [here](https://cristina-maze-game.herokuapp.com/)
 
-![Desktop Demo](src/readme-related-documents/webpage-response/webpage-responsivnes.jpg)
+![Desktop Demo](readme-related-documents/webpage-response/webpage-responsivnes.jpg)
 
 ## Introduction
 
@@ -128,9 +128,9 @@ All User Stories were added as [issues](https://github.com/Itamichan/Blue-in-the
 
 Taking in consideration all the user stories, their importance and viability of their implementation at the moment certain value and complexity levels have been attributed to the user stories. In the issues a new category has been created as “MVP” in order to highlight which stories must be implemented in the first release.
 
-[User Stories evaluation](src/readme-related-documents/MVP/user-stories.md)
+[User Stories evaluation](readme-related-documents/MVP/user-stories.md)
 
-![chart](src/readme-related-documents/MVP/maze-game-graph.jpg)
+![chart](readme-related-documents/MVP/maze-game-graph.jpg)
 
 **Conclusions based on the chart**
 
@@ -177,7 +177,7 @@ Link to wireframes for mobile can be found [here](https://www.figma.com/file/S4A
 
 Link to wireframes for desktop can be found [here](https://www.figma.com/file/DaQhx72fCc1FgdEFQX6Dr7/game-desktop?node-id=0%3A1).
 
-In case the links to the wireframes don't work please find the pictures [here](src/readme-related-documents/wireframes).
+In case the links to the wireframes don't work please find the pictures [here](readme-related-documents/wireframes).
 
 ## Features
 
@@ -261,7 +261,7 @@ This project was entirely built in React, which as a result has a directory stru
 
 ## Testing
 
-Testing information can be fond [here](src/readme-related-documents/testing/testing.md).
+Testing information can be fond [here](readme-related-documents/testing/testing.md).
 
 ## Deployment
 
